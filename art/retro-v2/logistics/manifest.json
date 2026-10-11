@@ -1,0 +1,1922 @@
+{
+  "version": 1,
+  "stage": "logistics-assets-only",
+  "pixelsPerTile": 32,
+  "directions": [
+    "N",
+    "E",
+    "S",
+    "W"
+  ],
+  "phase": {
+    "frames": 8,
+    "repeatPixels": 8,
+    "stepPixels": 1,
+    "formula": "floor(mod(globalTravelTiles * 32 - piece.s0 * 32, 8))",
+    "note": "Quantized travel phase, never wall-clock animation. Pause freezes phase; reverse directions use their own entry/exit key."
+  },
+  "facilities": {
+    "Splitter": {
+      "size": [
+        16,
+        16
+      ],
+      "pixelsPerTile": 16,
+      "footprint": [
+        1,
+        1
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "rotations": [
+        "buildings/splitter-r0.png",
+        "buildings/splitter-r1.png",
+        "buildings/splitter-r2.png",
+        "buildings/splitter-r3.png"
+      ],
+      "ports": [
+        [
+          {
+            "kind": "in",
+            "side": 3,
+            "pixel": [
+              0,
+              16
+            ]
+          },
+          {
+            "kind": "out",
+            "side": 0,
+            "pixel": [
+              16,
+              0
+            ]
+          },
+          {
+            "kind": "out",
+            "side": 1,
+            "pixel": [
+              32,
+              16
+            ]
+          },
+          {
+            "kind": "out",
+            "side": 2,
+            "pixel": [
+              16,
+              32
+            ]
+          }
+        ],
+        [
+          {
+            "kind": "in",
+            "side": 0,
+            "pixel": [
+              16,
+              0
+            ]
+          },
+          {
+            "kind": "out",
+            "side": 1,
+            "pixel": [
+              32,
+              16
+            ]
+          },
+          {
+            "kind": "out",
+            "side": 2,
+            "pixel": [
+              16,
+              32
+            ]
+          },
+          {
+            "kind": "out",
+            "side": 3,
+            "pixel": [
+              0,
+              16
+            ]
+          }
+        ],
+        [
+          {
+            "kind": "in",
+            "side": 1,
+            "pixel": [
+              32,
+              16
+            ]
+          },
+          {
+            "kind": "out",
+            "side": 2,
+            "pixel": [
+              16,
+              32
+            ]
+          },
+          {
+            "kind": "out",
+            "side": 3,
+            "pixel": [
+              0,
+              16
+            ]
+          },
+          {
+            "kind": "out",
+            "side": 0,
+            "pixel": [
+              16,
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "kind": "in",
+            "side": 2,
+            "pixel": [
+              16,
+              32
+            ]
+          },
+          {
+            "kind": "out",
+            "side": 3,
+            "pixel": [
+              0,
+              16
+            ]
+          },
+          {
+            "kind": "out",
+            "side": 0,
+            "pixel": [
+              16,
+              0
+            ]
+          },
+          {
+            "kind": "out",
+            "side": 1,
+            "pixel": [
+              32,
+              16
+            ]
+          }
+        ]
+      ],
+      "menu": "buildings/splitter-r0.png",
+      "portOverlayRequired": true
+    },
+    "Converger": {
+      "size": [
+        16,
+        16
+      ],
+      "pixelsPerTile": 16,
+      "footprint": [
+        1,
+        1
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "rotations": [
+        "buildings/converger-r0.png",
+        "buildings/converger-r1.png",
+        "buildings/converger-r2.png",
+        "buildings/converger-r3.png"
+      ],
+      "ports": [
+        [
+          {
+            "kind": "in",
+            "side": 3,
+            "pixel": [
+              0,
+              16
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 0,
+            "pixel": [
+              16,
+              0
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 2,
+            "pixel": [
+              16,
+              32
+            ]
+          },
+          {
+            "kind": "out",
+            "side": 1,
+            "pixel": [
+              32,
+              16
+            ]
+          }
+        ],
+        [
+          {
+            "kind": "in",
+            "side": 0,
+            "pixel": [
+              16,
+              0
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 1,
+            "pixel": [
+              32,
+              16
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 3,
+            "pixel": [
+              0,
+              16
+            ]
+          },
+          {
+            "kind": "out",
+            "side": 2,
+            "pixel": [
+              16,
+              32
+            ]
+          }
+        ],
+        [
+          {
+            "kind": "in",
+            "side": 1,
+            "pixel": [
+              32,
+              16
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 2,
+            "pixel": [
+              16,
+              32
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 0,
+            "pixel": [
+              16,
+              0
+            ]
+          },
+          {
+            "kind": "out",
+            "side": 3,
+            "pixel": [
+              0,
+              16
+            ]
+          }
+        ],
+        [
+          {
+            "kind": "in",
+            "side": 2,
+            "pixel": [
+              16,
+              32
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 3,
+            "pixel": [
+              0,
+              16
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 1,
+            "pixel": [
+              32,
+              16
+            ]
+          },
+          {
+            "kind": "out",
+            "side": 0,
+            "pixel": [
+              16,
+              0
+            ]
+          }
+        ]
+      ],
+      "menu": "buildings/converger-r0.png",
+      "portOverlayRequired": true
+    },
+    "Terminal": {
+      "size": [
+        64,
+        64
+      ],
+      "pixelsPerTile": 32,
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "rotations": [
+        "buildings/terminal-r0.png",
+        "buildings/terminal-r1.png",
+        "buildings/terminal-r2.png",
+        "buildings/terminal-r3.png"
+      ],
+      "ports": [
+        [
+          {
+            "kind": "in",
+            "side": 0,
+            "pixel": [
+              16,
+              0
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 0,
+            "pixel": [
+              48,
+              0
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 1,
+            "pixel": [
+              64,
+              16
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 1,
+            "pixel": [
+              64,
+              48
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 2,
+            "pixel": [
+              48,
+              64
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 2,
+            "pixel": [
+              16,
+              64
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 3,
+            "pixel": [
+              0,
+              48
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 3,
+            "pixel": [
+              0,
+              16
+            ]
+          }
+        ],
+        [
+          {
+            "kind": "in",
+            "side": 1,
+            "pixel": [
+              64,
+              16
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 1,
+            "pixel": [
+              64,
+              48
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 2,
+            "pixel": [
+              48,
+              64
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 2,
+            "pixel": [
+              16,
+              64
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 3,
+            "pixel": [
+              0,
+              48
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 3,
+            "pixel": [
+              0,
+              16
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 0,
+            "pixel": [
+              16,
+              0
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 0,
+            "pixel": [
+              48,
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "kind": "in",
+            "side": 2,
+            "pixel": [
+              48,
+              64
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 2,
+            "pixel": [
+              16,
+              64
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 3,
+            "pixel": [
+              0,
+              48
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 3,
+            "pixel": [
+              0,
+              16
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 0,
+            "pixel": [
+              16,
+              0
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 0,
+            "pixel": [
+              48,
+              0
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 1,
+            "pixel": [
+              64,
+              16
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 1,
+            "pixel": [
+              64,
+              48
+            ]
+          }
+        ],
+        [
+          {
+            "kind": "in",
+            "side": 3,
+            "pixel": [
+              0,
+              48
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 3,
+            "pixel": [
+              0,
+              16
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 0,
+            "pixel": [
+              16,
+              0
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 0,
+            "pixel": [
+              48,
+              0
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 1,
+            "pixel": [
+              64,
+              16
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 1,
+            "pixel": [
+              64,
+              48
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 2,
+            "pixel": [
+              48,
+              64
+            ]
+          },
+          {
+            "kind": "in",
+            "side": 2,
+            "pixel": [
+              16,
+              64
+            ]
+          }
+        ]
+      ],
+      "menu": "buildings/terminal-r0.png",
+      "portOverlayRequired": true
+    },
+    "Depot": {
+      "size": [
+        64,
+        64
+      ],
+      "pixelsPerTile": 32,
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "rotations": [
+        "buildings/depot-r0.png",
+        "buildings/depot-r1.png",
+        "buildings/depot-r2.png",
+        "buildings/depot-r3.png"
+      ],
+      "ports": [
+        [
+          {
+            "kind": "out",
+            "side": 1,
+            "pixel": [
+              64,
+              16
+            ]
+          },
+          {
+            "kind": "out",
+            "side": 1,
+            "pixel": [
+              64,
+              48
+            ]
+          }
+        ],
+        [
+          {
+            "kind": "out",
+            "side": 2,
+            "pixel": [
+              48,
+              64
+            ]
+          },
+          {
+            "kind": "out",
+            "side": 2,
+            "pixel": [
+              16,
+              64
+            ]
+          }
+        ],
+        [
+          {
+            "kind": "out",
+            "side": 3,
+            "pixel": [
+              0,
+              48
+            ]
+          },
+          {
+            "kind": "out",
+            "side": 3,
+            "pixel": [
+              0,
+              16
+            ]
+          }
+        ],
+        [
+          {
+            "kind": "out",
+            "side": 0,
+            "pixel": [
+              16,
+              0
+            ]
+          },
+          {
+            "kind": "out",
+            "side": 0,
+            "pixel": [
+              48,
+              0
+            ]
+          }
+        ]
+      ],
+      "menu": "buildings/depot-r0.png",
+      "portOverlayRequired": true
+    },
+    "Crossover": {
+      "size": [
+        32,
+        32
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "menu": "buildings/crossover-menu.png",
+      "map": "Layer a straight under-belt and its cargo, a bridge deck and tread, then over-belt cargo. Do not use this menu icon as a map tile."
+    }
+  },
+  "belts": {
+    "n-e--connected": {
+      "entry": 0,
+      "exit": 1,
+      "openStart": false,
+      "openEnd": false,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "lengthTiles": 0.7853981633974483,
+      "body": "belts/n-e--connected.png",
+      "flow": [
+        "flow/n-e--connected-0.png",
+        "flow/n-e--connected-1.png",
+        "flow/n-e--connected-2.png",
+        "flow/n-e--connected-3.png",
+        "flow/n-e--connected-4.png",
+        "flow/n-e--connected-5.png",
+        "flow/n-e--connected-6.png",
+        "flow/n-e--connected-7.png"
+      ]
+    },
+    "n-s--connected": {
+      "entry": 0,
+      "exit": 2,
+      "openStart": false,
+      "openEnd": false,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "lengthTiles": 1,
+      "body": "belts/n-s--connected.png",
+      "flow": [
+        "flow/n-s--connected-0.png",
+        "flow/n-s--connected-1.png",
+        "flow/n-s--connected-2.png",
+        "flow/n-s--connected-3.png",
+        "flow/n-s--connected-4.png",
+        "flow/n-s--connected-5.png",
+        "flow/n-s--connected-6.png",
+        "flow/n-s--connected-7.png"
+      ]
+    },
+    "n-s--open-start": {
+      "entry": 0,
+      "exit": 2,
+      "openStart": true,
+      "openEnd": false,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "lengthTiles": 1,
+      "body": "belts/n-s--open-start.png",
+      "flow": [
+        "flow/n-s--open-start-0.png",
+        "flow/n-s--open-start-1.png",
+        "flow/n-s--open-start-2.png",
+        "flow/n-s--open-start-3.png",
+        "flow/n-s--open-start-4.png",
+        "flow/n-s--open-start-5.png",
+        "flow/n-s--open-start-6.png",
+        "flow/n-s--open-start-7.png"
+      ]
+    },
+    "n-s--open-end": {
+      "entry": 0,
+      "exit": 2,
+      "openStart": false,
+      "openEnd": true,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "lengthTiles": 1,
+      "body": "belts/n-s--open-end.png",
+      "flow": [
+        "flow/n-s--open-end-0.png",
+        "flow/n-s--open-end-1.png",
+        "flow/n-s--open-end-2.png",
+        "flow/n-s--open-end-3.png",
+        "flow/n-s--open-end-4.png",
+        "flow/n-s--open-end-5.png",
+        "flow/n-s--open-end-6.png",
+        "flow/n-s--open-end-7.png"
+      ]
+    },
+    "n-s--isolated": {
+      "entry": 0,
+      "exit": 2,
+      "openStart": true,
+      "openEnd": true,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "lengthTiles": 1,
+      "body": "belts/n-s--isolated.png",
+      "flow": [
+        "flow/n-s--isolated-0.png",
+        "flow/n-s--isolated-1.png",
+        "flow/n-s--isolated-2.png",
+        "flow/n-s--isolated-3.png",
+        "flow/n-s--isolated-4.png",
+        "flow/n-s--isolated-5.png",
+        "flow/n-s--isolated-6.png",
+        "flow/n-s--isolated-7.png"
+      ]
+    },
+    "n-w--connected": {
+      "entry": 0,
+      "exit": 3,
+      "openStart": false,
+      "openEnd": false,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "lengthTiles": 0.7853981633974483,
+      "body": "belts/n-w--connected.png",
+      "flow": [
+        "flow/n-w--connected-0.png",
+        "flow/n-w--connected-1.png",
+        "flow/n-w--connected-2.png",
+        "flow/n-w--connected-3.png",
+        "flow/n-w--connected-4.png",
+        "flow/n-w--connected-5.png",
+        "flow/n-w--connected-6.png",
+        "flow/n-w--connected-7.png"
+      ]
+    },
+    "e-n--connected": {
+      "entry": 1,
+      "exit": 0,
+      "openStart": false,
+      "openEnd": false,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "lengthTiles": 0.7853981633974483,
+      "body": "belts/e-n--connected.png",
+      "flow": [
+        "flow/e-n--connected-0.png",
+        "flow/e-n--connected-1.png",
+        "flow/e-n--connected-2.png",
+        "flow/e-n--connected-3.png",
+        "flow/e-n--connected-4.png",
+        "flow/e-n--connected-5.png",
+        "flow/e-n--connected-6.png",
+        "flow/e-n--connected-7.png"
+      ]
+    },
+    "e-s--connected": {
+      "entry": 1,
+      "exit": 2,
+      "openStart": false,
+      "openEnd": false,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "lengthTiles": 0.7853981633974483,
+      "body": "belts/e-s--connected.png",
+      "flow": [
+        "flow/e-s--connected-0.png",
+        "flow/e-s--connected-1.png",
+        "flow/e-s--connected-2.png",
+        "flow/e-s--connected-3.png",
+        "flow/e-s--connected-4.png",
+        "flow/e-s--connected-5.png",
+        "flow/e-s--connected-6.png",
+        "flow/e-s--connected-7.png"
+      ]
+    },
+    "e-w--connected": {
+      "entry": 1,
+      "exit": 3,
+      "openStart": false,
+      "openEnd": false,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "lengthTiles": 1,
+      "body": "belts/e-w--connected.png",
+      "flow": [
+        "flow/e-w--connected-0.png",
+        "flow/e-w--connected-1.png",
+        "flow/e-w--connected-2.png",
+        "flow/e-w--connected-3.png",
+        "flow/e-w--connected-4.png",
+        "flow/e-w--connected-5.png",
+        "flow/e-w--connected-6.png",
+        "flow/e-w--connected-7.png"
+      ]
+    },
+    "e-w--open-start": {
+      "entry": 1,
+      "exit": 3,
+      "openStart": true,
+      "openEnd": false,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "lengthTiles": 1,
+      "body": "belts/e-w--open-start.png",
+      "flow": [
+        "flow/e-w--open-start-0.png",
+        "flow/e-w--open-start-1.png",
+        "flow/e-w--open-start-2.png",
+        "flow/e-w--open-start-3.png",
+        "flow/e-w--open-start-4.png",
+        "flow/e-w--open-start-5.png",
+        "flow/e-w--open-start-6.png",
+        "flow/e-w--open-start-7.png"
+      ]
+    },
+    "e-w--open-end": {
+      "entry": 1,
+      "exit": 3,
+      "openStart": false,
+      "openEnd": true,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "lengthTiles": 1,
+      "body": "belts/e-w--open-end.png",
+      "flow": [
+        "flow/e-w--open-end-0.png",
+        "flow/e-w--open-end-1.png",
+        "flow/e-w--open-end-2.png",
+        "flow/e-w--open-end-3.png",
+        "flow/e-w--open-end-4.png",
+        "flow/e-w--open-end-5.png",
+        "flow/e-w--open-end-6.png",
+        "flow/e-w--open-end-7.png"
+      ]
+    },
+    "e-w--isolated": {
+      "entry": 1,
+      "exit": 3,
+      "openStart": true,
+      "openEnd": true,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "lengthTiles": 1,
+      "body": "belts/e-w--isolated.png",
+      "flow": [
+        "flow/e-w--isolated-0.png",
+        "flow/e-w--isolated-1.png",
+        "flow/e-w--isolated-2.png",
+        "flow/e-w--isolated-3.png",
+        "flow/e-w--isolated-4.png",
+        "flow/e-w--isolated-5.png",
+        "flow/e-w--isolated-6.png",
+        "flow/e-w--isolated-7.png"
+      ]
+    },
+    "s-n--connected": {
+      "entry": 2,
+      "exit": 0,
+      "openStart": false,
+      "openEnd": false,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "lengthTiles": 1,
+      "body": "belts/s-n--connected.png",
+      "flow": [
+        "flow/s-n--connected-0.png",
+        "flow/s-n--connected-1.png",
+        "flow/s-n--connected-2.png",
+        "flow/s-n--connected-3.png",
+        "flow/s-n--connected-4.png",
+        "flow/s-n--connected-5.png",
+        "flow/s-n--connected-6.png",
+        "flow/s-n--connected-7.png"
+      ]
+    },
+    "s-n--open-start": {
+      "entry": 2,
+      "exit": 0,
+      "openStart": true,
+      "openEnd": false,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "lengthTiles": 1,
+      "body": "belts/s-n--open-start.png",
+      "flow": [
+        "flow/s-n--open-start-0.png",
+        "flow/s-n--open-start-1.png",
+        "flow/s-n--open-start-2.png",
+        "flow/s-n--open-start-3.png",
+        "flow/s-n--open-start-4.png",
+        "flow/s-n--open-start-5.png",
+        "flow/s-n--open-start-6.png",
+        "flow/s-n--open-start-7.png"
+      ]
+    },
+    "s-n--open-end": {
+      "entry": 2,
+      "exit": 0,
+      "openStart": false,
+      "openEnd": true,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "lengthTiles": 1,
+      "body": "belts/s-n--open-end.png",
+      "flow": [
+        "flow/s-n--open-end-0.png",
+        "flow/s-n--open-end-1.png",
+        "flow/s-n--open-end-2.png",
+        "flow/s-n--open-end-3.png",
+        "flow/s-n--open-end-4.png",
+        "flow/s-n--open-end-5.png",
+        "flow/s-n--open-end-6.png",
+        "flow/s-n--open-end-7.png"
+      ]
+    },
+    "s-n--isolated": {
+      "entry": 2,
+      "exit": 0,
+      "openStart": true,
+      "openEnd": true,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "lengthTiles": 1,
+      "body": "belts/s-n--isolated.png",
+      "flow": [
+        "flow/s-n--isolated-0.png",
+        "flow/s-n--isolated-1.png",
+        "flow/s-n--isolated-2.png",
+        "flow/s-n--isolated-3.png",
+        "flow/s-n--isolated-4.png",
+        "flow/s-n--isolated-5.png",
+        "flow/s-n--isolated-6.png",
+        "flow/s-n--isolated-7.png"
+      ]
+    },
+    "s-e--connected": {
+      "entry": 2,
+      "exit": 1,
+      "openStart": false,
+      "openEnd": false,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "lengthTiles": 0.7853981633974483,
+      "body": "belts/s-e--connected.png",
+      "flow": [
+        "flow/s-e--connected-0.png",
+        "flow/s-e--connected-1.png",
+        "flow/s-e--connected-2.png",
+        "flow/s-e--connected-3.png",
+        "flow/s-e--connected-4.png",
+        "flow/s-e--connected-5.png",
+        "flow/s-e--connected-6.png",
+        "flow/s-e--connected-7.png"
+      ]
+    },
+    "s-w--connected": {
+      "entry": 2,
+      "exit": 3,
+      "openStart": false,
+      "openEnd": false,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "lengthTiles": 0.7853981633974483,
+      "body": "belts/s-w--connected.png",
+      "flow": [
+        "flow/s-w--connected-0.png",
+        "flow/s-w--connected-1.png",
+        "flow/s-w--connected-2.png",
+        "flow/s-w--connected-3.png",
+        "flow/s-w--connected-4.png",
+        "flow/s-w--connected-5.png",
+        "flow/s-w--connected-6.png",
+        "flow/s-w--connected-7.png"
+      ]
+    },
+    "w-n--connected": {
+      "entry": 3,
+      "exit": 0,
+      "openStart": false,
+      "openEnd": false,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "lengthTiles": 0.7853981633974483,
+      "body": "belts/w-n--connected.png",
+      "flow": [
+        "flow/w-n--connected-0.png",
+        "flow/w-n--connected-1.png",
+        "flow/w-n--connected-2.png",
+        "flow/w-n--connected-3.png",
+        "flow/w-n--connected-4.png",
+        "flow/w-n--connected-5.png",
+        "flow/w-n--connected-6.png",
+        "flow/w-n--connected-7.png"
+      ]
+    },
+    "w-e--connected": {
+      "entry": 3,
+      "exit": 1,
+      "openStart": false,
+      "openEnd": false,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "lengthTiles": 1,
+      "body": "belts/w-e--connected.png",
+      "flow": [
+        "flow/w-e--connected-0.png",
+        "flow/w-e--connected-1.png",
+        "flow/w-e--connected-2.png",
+        "flow/w-e--connected-3.png",
+        "flow/w-e--connected-4.png",
+        "flow/w-e--connected-5.png",
+        "flow/w-e--connected-6.png",
+        "flow/w-e--connected-7.png"
+      ]
+    },
+    "w-e--open-start": {
+      "entry": 3,
+      "exit": 1,
+      "openStart": true,
+      "openEnd": false,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "lengthTiles": 1,
+      "body": "belts/w-e--open-start.png",
+      "flow": [
+        "flow/w-e--open-start-0.png",
+        "flow/w-e--open-start-1.png",
+        "flow/w-e--open-start-2.png",
+        "flow/w-e--open-start-3.png",
+        "flow/w-e--open-start-4.png",
+        "flow/w-e--open-start-5.png",
+        "flow/w-e--open-start-6.png",
+        "flow/w-e--open-start-7.png"
+      ]
+    },
+    "w-e--open-end": {
+      "entry": 3,
+      "exit": 1,
+      "openStart": false,
+      "openEnd": true,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "lengthTiles": 1,
+      "body": "belts/w-e--open-end.png",
+      "flow": [
+        "flow/w-e--open-end-0.png",
+        "flow/w-e--open-end-1.png",
+        "flow/w-e--open-end-2.png",
+        "flow/w-e--open-end-3.png",
+        "flow/w-e--open-end-4.png",
+        "flow/w-e--open-end-5.png",
+        "flow/w-e--open-end-6.png",
+        "flow/w-e--open-end-7.png"
+      ]
+    },
+    "w-e--isolated": {
+      "entry": 3,
+      "exit": 1,
+      "openStart": true,
+      "openEnd": true,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "lengthTiles": 1,
+      "body": "belts/w-e--isolated.png",
+      "flow": [
+        "flow/w-e--isolated-0.png",
+        "flow/w-e--isolated-1.png",
+        "flow/w-e--isolated-2.png",
+        "flow/w-e--isolated-3.png",
+        "flow/w-e--isolated-4.png",
+        "flow/w-e--isolated-5.png",
+        "flow/w-e--isolated-6.png",
+        "flow/w-e--isolated-7.png"
+      ]
+    },
+    "w-s--connected": {
+      "entry": 3,
+      "exit": 2,
+      "openStart": false,
+      "openEnd": false,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "lengthTiles": 0.7853981633974483,
+      "body": "belts/w-s--connected.png",
+      "flow": [
+        "flow/w-s--connected-0.png",
+        "flow/w-s--connected-1.png",
+        "flow/w-s--connected-2.png",
+        "flow/w-s--connected-3.png",
+        "flow/w-s--connected-4.png",
+        "flow/w-s--connected-5.png",
+        "flow/w-s--connected-6.png",
+        "flow/w-s--connected-7.png"
+      ]
+    }
+  },
+  "bridges": {
+    "r0-join00": {
+      "incoming": 0,
+      "outgoing": 2,
+      "joinedIncoming": false,
+      "joinedOutgoing": false,
+      "size": [
+        40,
+        40
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "drawOffsetPixels": [
+        -4,
+        -4
+      ],
+      "tileBounds": [
+        4,
+        4,
+        32,
+        32
+      ],
+      "body": "bridges/r0-join00.png",
+      "flowKey": "n-s--connected",
+      "flowOffsetPixels": [
+        4,
+        4
+      ]
+    },
+    "r0-join01": {
+      "incoming": 0,
+      "outgoing": 2,
+      "joinedIncoming": false,
+      "joinedOutgoing": true,
+      "size": [
+        40,
+        40
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "drawOffsetPixels": [
+        -4,
+        -4
+      ],
+      "tileBounds": [
+        4,
+        4,
+        32,
+        32
+      ],
+      "body": "bridges/r0-join01.png",
+      "flowKey": "n-s--connected",
+      "flowOffsetPixels": [
+        4,
+        4
+      ]
+    },
+    "r0-join10": {
+      "incoming": 0,
+      "outgoing": 2,
+      "joinedIncoming": true,
+      "joinedOutgoing": false,
+      "size": [
+        40,
+        40
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "drawOffsetPixels": [
+        -4,
+        -4
+      ],
+      "tileBounds": [
+        4,
+        4,
+        32,
+        32
+      ],
+      "body": "bridges/r0-join10.png",
+      "flowKey": "n-s--connected",
+      "flowOffsetPixels": [
+        4,
+        4
+      ]
+    },
+    "r0-join11": {
+      "incoming": 0,
+      "outgoing": 2,
+      "joinedIncoming": true,
+      "joinedOutgoing": true,
+      "size": [
+        40,
+        40
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "drawOffsetPixels": [
+        -4,
+        -4
+      ],
+      "tileBounds": [
+        4,
+        4,
+        32,
+        32
+      ],
+      "body": "bridges/r0-join11.png",
+      "flowKey": "n-s--connected",
+      "flowOffsetPixels": [
+        4,
+        4
+      ]
+    },
+    "r1-join00": {
+      "incoming": 1,
+      "outgoing": 3,
+      "joinedIncoming": false,
+      "joinedOutgoing": false,
+      "size": [
+        40,
+        40
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "drawOffsetPixels": [
+        -4,
+        -4
+      ],
+      "tileBounds": [
+        4,
+        4,
+        32,
+        32
+      ],
+      "body": "bridges/r1-join00.png",
+      "flowKey": "e-w--connected",
+      "flowOffsetPixels": [
+        4,
+        4
+      ]
+    },
+    "r1-join01": {
+      "incoming": 1,
+      "outgoing": 3,
+      "joinedIncoming": false,
+      "joinedOutgoing": true,
+      "size": [
+        40,
+        40
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "drawOffsetPixels": [
+        -4,
+        -4
+      ],
+      "tileBounds": [
+        4,
+        4,
+        32,
+        32
+      ],
+      "body": "bridges/r1-join01.png",
+      "flowKey": "e-w--connected",
+      "flowOffsetPixels": [
+        4,
+        4
+      ]
+    },
+    "r1-join10": {
+      "incoming": 1,
+      "outgoing": 3,
+      "joinedIncoming": true,
+      "joinedOutgoing": false,
+      "size": [
+        40,
+        40
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "drawOffsetPixels": [
+        -4,
+        -4
+      ],
+      "tileBounds": [
+        4,
+        4,
+        32,
+        32
+      ],
+      "body": "bridges/r1-join10.png",
+      "flowKey": "e-w--connected",
+      "flowOffsetPixels": [
+        4,
+        4
+      ]
+    },
+    "r1-join11": {
+      "incoming": 1,
+      "outgoing": 3,
+      "joinedIncoming": true,
+      "joinedOutgoing": true,
+      "size": [
+        40,
+        40
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "drawOffsetPixels": [
+        -4,
+        -4
+      ],
+      "tileBounds": [
+        4,
+        4,
+        32,
+        32
+      ],
+      "body": "bridges/r1-join11.png",
+      "flowKey": "e-w--connected",
+      "flowOffsetPixels": [
+        4,
+        4
+      ]
+    },
+    "r2-join00": {
+      "incoming": 2,
+      "outgoing": 0,
+      "joinedIncoming": false,
+      "joinedOutgoing": false,
+      "size": [
+        40,
+        40
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "drawOffsetPixels": [
+        -4,
+        -4
+      ],
+      "tileBounds": [
+        4,
+        4,
+        32,
+        32
+      ],
+      "body": "bridges/r2-join00.png",
+      "flowKey": "s-n--connected",
+      "flowOffsetPixels": [
+        4,
+        4
+      ]
+    },
+    "r2-join01": {
+      "incoming": 2,
+      "outgoing": 0,
+      "joinedIncoming": false,
+      "joinedOutgoing": true,
+      "size": [
+        40,
+        40
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "drawOffsetPixels": [
+        -4,
+        -4
+      ],
+      "tileBounds": [
+        4,
+        4,
+        32,
+        32
+      ],
+      "body": "bridges/r2-join01.png",
+      "flowKey": "s-n--connected",
+      "flowOffsetPixels": [
+        4,
+        4
+      ]
+    },
+    "r2-join10": {
+      "incoming": 2,
+      "outgoing": 0,
+      "joinedIncoming": true,
+      "joinedOutgoing": false,
+      "size": [
+        40,
+        40
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "drawOffsetPixels": [
+        -4,
+        -4
+      ],
+      "tileBounds": [
+        4,
+        4,
+        32,
+        32
+      ],
+      "body": "bridges/r2-join10.png",
+      "flowKey": "s-n--connected",
+      "flowOffsetPixels": [
+        4,
+        4
+      ]
+    },
+    "r2-join11": {
+      "incoming": 2,
+      "outgoing": 0,
+      "joinedIncoming": true,
+      "joinedOutgoing": true,
+      "size": [
+        40,
+        40
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "drawOffsetPixels": [
+        -4,
+        -4
+      ],
+      "tileBounds": [
+        4,
+        4,
+        32,
+        32
+      ],
+      "body": "bridges/r2-join11.png",
+      "flowKey": "s-n--connected",
+      "flowOffsetPixels": [
+        4,
+        4
+      ]
+    },
+    "r3-join00": {
+      "incoming": 3,
+      "outgoing": 1,
+      "joinedIncoming": false,
+      "joinedOutgoing": false,
+      "size": [
+        40,
+        40
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "drawOffsetPixels": [
+        -4,
+        -4
+      ],
+      "tileBounds": [
+        4,
+        4,
+        32,
+        32
+      ],
+      "body": "bridges/r3-join00.png",
+      "flowKey": "w-e--connected",
+      "flowOffsetPixels": [
+        4,
+        4
+      ]
+    },
+    "r3-join01": {
+      "incoming": 3,
+      "outgoing": 1,
+      "joinedIncoming": false,
+      "joinedOutgoing": true,
+      "size": [
+        40,
+        40
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "drawOffsetPixels": [
+        -4,
+        -4
+      ],
+      "tileBounds": [
+        4,
+        4,
+        32,
+        32
+      ],
+      "body": "bridges/r3-join01.png",
+      "flowKey": "w-e--connected",
+      "flowOffsetPixels": [
+        4,
+        4
+      ]
+    },
+    "r3-join10": {
+      "incoming": 3,
+      "outgoing": 1,
+      "joinedIncoming": true,
+      "joinedOutgoing": false,
+      "size": [
+        40,
+        40
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "drawOffsetPixels": [
+        -4,
+        -4
+      ],
+      "tileBounds": [
+        4,
+        4,
+        32,
+        32
+      ],
+      "body": "bridges/r3-join10.png",
+      "flowKey": "w-e--connected",
+      "flowOffsetPixels": [
+        4,
+        4
+      ]
+    },
+    "r3-join11": {
+      "incoming": 3,
+      "outgoing": 1,
+      "joinedIncoming": true,
+      "joinedOutgoing": true,
+      "size": [
+        40,
+        40
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "drawOffsetPixels": [
+        -4,
+        -4
+      ],
+      "tileBounds": [
+        4,
+        4,
+        32,
+        32
+      ],
+      "body": "bridges/r3-join11.png",
+      "flowKey": "w-e--connected",
+      "flowOffsetPixels": [
+        4,
+        4
+      ]
+    }
+  },
+  "markers": {
+    "socket": {
+      "size": [
+        16,
+        16
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "rotations": [
+        "markers/socket-r0.png",
+        "markers/socket-r1.png",
+        "markers/socket-r2.png",
+        "markers/socket-r3.png"
+      ],
+      "baseFacing": null
+    },
+    "open-end": {
+      "size": [
+        8,
+        8
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "rotations": [
+        "markers/open-end-r0.png",
+        "markers/open-end-r1.png",
+        "markers/open-end-r2.png",
+        "markers/open-end-r3.png"
+      ],
+      "baseFacing": null
+    },
+    "direction": {
+      "size": [
+        8,
+        8
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "rotations": [
+        "markers/direction-r0.png",
+        "markers/direction-r1.png",
+        "markers/direction-r2.png",
+        "markers/direction-r3.png"
+      ],
+      "baseFacing": "E"
+    },
+    "end-roller": {
+      "size": [
+        24,
+        24
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "rotations": [
+        "markers/end-roller-r0.png",
+        "markers/end-roller-r1.png",
+        "markers/end-roller-r2.png",
+        "markers/end-roller-r3.png"
+      ],
+      "baseFacing": null
+    }
+  }
+}

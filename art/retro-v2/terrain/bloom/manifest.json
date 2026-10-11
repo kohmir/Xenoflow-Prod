@@ -1,0 +1,164 @@
+{
+  "version": 2,
+  "stage": "integrated",
+  "pixelsPerTile": 32,
+  "size": [
+    256,
+    256
+  ],
+  "patchTiles": [
+    8,
+    8
+  ],
+  "sampling": "nearest",
+  "terrainIntegration": true,
+  "water": false,
+  "note": "Dry-land terraforming textures; periodic palette-preserving edge repair, three detail levels; renderer maps seeded elevation/accent fields into bounded cached ground chunks.",
+  "planets": {
+    "desert": {
+      "day": "desert-day.png",
+      "night": "desert-night.png",
+      "levels": {
+        "near": {
+          "pixelsPerTile": 32,
+          "day": "desert-day.png",
+          "night": "desert-night.png"
+        },
+        "medium": {
+          "pixelsPerTile": 16,
+          "day": "desert-day-medium.png",
+          "night": "desert-night-medium.png"
+        },
+        "far": {
+          "pixelsPerTile": 8,
+          "day": "desert-day-far.png",
+          "night": "desert-night-far.png"
+        }
+      },
+      "master": "art-source/terraform-v1/masters/desert.png",
+      "colors": 24,
+      "repeatEdgeMeanRGBDifference": {
+        "horizontal": 0,
+        "vertical": 0,
+        "interior": 17.149560866013033
+      },
+      "seamlessValidated": true
+    },
+    "ice": {
+      "day": "ice-day.png",
+      "night": "ice-night.png",
+      "levels": {
+        "near": {
+          "pixelsPerTile": 32,
+          "day": "ice-day.png",
+          "night": "ice-night.png"
+        },
+        "medium": {
+          "pixelsPerTile": 16,
+          "day": "ice-day-medium.png",
+          "night": "ice-night-medium.png"
+        },
+        "far": {
+          "pixelsPerTile": 8,
+          "day": "ice-day-far.png",
+          "night": "ice-night-far.png"
+        }
+      },
+      "master": "art-source/terraform-v1/masters/ice.png",
+      "colors": 24,
+      "repeatEdgeMeanRGBDifference": {
+        "horizontal": 0,
+        "vertical": 0,
+        "interior": 27.555688316990988
+      },
+      "seamlessValidated": true
+    },
+    "marsh": {
+      "day": "marsh-day.png",
+      "night": "marsh-night.png",
+      "levels": {
+        "near": {
+          "pixelsPerTile": 32,
+          "day": "marsh-day.png",
+          "night": "marsh-night.png"
+        },
+        "medium": {
+          "pixelsPerTile": 16,
+          "day": "marsh-day-medium.png",
+          "night": "marsh-night-medium.png"
+        },
+        "far": {
+          "pixelsPerTile": 8,
+          "day": "marsh-day-far.png",
+          "night": "marsh-night-far.png"
+        }
+      },
+      "master": "art-source/terraform-v1/masters/marsh.png",
+      "colors": 24,
+      "repeatEdgeMeanRGBDifference": {
+        "horizontal": 0,
+        "vertical": 0,
+        "interior": 15.965890522875629
+      },
+      "seamlessValidated": true
+    },
+    "rocky": {
+      "day": "rocky-day.png",
+      "night": "rocky-night.png",
+      "levels": {
+        "near": {
+          "pixelsPerTile": 32,
+          "day": "rocky-day.png",
+          "night": "rocky-night.png"
+        },
+        "medium": {
+          "pixelsPerTile": 16,
+          "day": "rocky-day-medium.png",
+          "night": "rocky-night-medium.png"
+        },
+        "far": {
+          "pixelsPerTile": 8,
+          "day": "rocky-day-far.png",
+          "night": "rocky-night-far.png"
+        }
+      },
+      "master": "art-source/terraform-v1/masters/rocky.png",
+      "colors": 23,
+      "repeatEdgeMeanRGBDifference": {
+        "horizontal": 0,
+        "vertical": 0,
+        "interior": 22.574458741830075
+      },
+      "seamlessValidated": true
+    },
+    "volcanic": {
+      "day": "volcanic-day.png",
+      "night": "volcanic-night.png",
+      "levels": {
+        "near": {
+          "pixelsPerTile": 32,
+          "day": "volcanic-day.png",
+          "night": "volcanic-night.png"
+        },
+        "medium": {
+          "pixelsPerTile": 16,
+          "day": "volcanic-day-medium.png",
+          "night": "volcanic-night-medium.png"
+        },
+        "far": {
+          "pixelsPerTile": 8,
+          "day": "volcanic-day-far.png",
+          "night": "volcanic-night-far.png"
+        }
+      },
+      "master": "art-source/terraform-v1/masters/volcanic.png",
+      "colors": 24,
+      "repeatEdgeMeanRGBDifference": {
+        "horizontal": 0,
+        "vertical": 0,
+        "interior": 12.846813725489973
+      },
+      "seamlessValidated": true
+    }
+  }
+}

@@ -1,0 +1,2013 @@
+{
+  "version": 2,
+  "stage": "integrated",
+  "integrated": true,
+  "planets": [
+    "desert",
+    "ice",
+    "marsh",
+    "rocky",
+    "volcanic"
+  ],
+  "extractors": {
+    "kryptex_ore": "Ore Extractor",
+    "ferrite_ore": "Ore Extractor",
+    "voltaic_gas": "Gas Siphon",
+    "nebula_gas": "Gas Siphon",
+    "silicate_dust": "Dust Harvester",
+    "bio_sap": "Fluid Pump",
+    "abyssal_brine": "Fluid Pump",
+    "prism_particle": "Dust Harvester"
+  },
+  "footprint": [
+    2,
+    2
+  ],
+  "anchor": [
+    0,
+    0
+  ],
+  "pixelsPerTile": 32,
+  "variantSelection": "positiveMod(floor(deposit.seed),3)",
+  "sampling": "nearest",
+  "levels": {
+    "near": 32,
+    "medium": 16,
+    "far": 8
+  },
+  "animation": {
+    "frames": 8,
+    "frameMilliseconds": 300,
+    "clock": "simulation",
+    "reducedMotionFrame": 0
+  },
+  "deposits": {
+    "kryptex_ore": {
+      "name": "Kryptex Ore",
+      "family": "ore",
+      "color": "#35B2C2",
+      "variants": [
+        {
+          "source": "art-source/deposits-v1/sheets/deposits-01.png",
+          "day": {
+            "near": {
+              "file": "kryptex_ore/0-day-near.png",
+              "atlas": "atlas-day-near.png",
+              "rect": [
+                0,
+                0,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "kryptex_ore/0-day-medium.png",
+              "atlas": "atlas-day-medium.png",
+              "rect": [
+                0,
+                0,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "kryptex_ore/0-day-far.png",
+              "atlas": "atlas-day-far.png",
+              "rect": [
+                0,
+                0,
+                16,
+                16
+              ]
+            }
+          },
+          "night": {
+            "near": {
+              "file": "kryptex_ore/0-night-near.png",
+              "atlas": "atlas-night-near.png",
+              "rect": [
+                0,
+                0,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "kryptex_ore/0-night-medium.png",
+              "atlas": "atlas-night-medium.png",
+              "rect": [
+                0,
+                0,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "kryptex_ore/0-night-far.png",
+              "atlas": "atlas-night-far.png",
+              "rect": [
+                0,
+                0,
+                16,
+                16
+              ]
+            }
+          },
+          "emission": null
+        },
+        {
+          "source": "art-source/deposits-v1/sheets/deposits-02.png",
+          "day": {
+            "near": {
+              "file": "kryptex_ore/1-day-near.png",
+              "atlas": "atlas-day-near.png",
+              "rect": [
+                0,
+                64,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "kryptex_ore/1-day-medium.png",
+              "atlas": "atlas-day-medium.png",
+              "rect": [
+                0,
+                32,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "kryptex_ore/1-day-far.png",
+              "atlas": "atlas-day-far.png",
+              "rect": [
+                0,
+                16,
+                16,
+                16
+              ]
+            }
+          },
+          "night": {
+            "near": {
+              "file": "kryptex_ore/1-night-near.png",
+              "atlas": "atlas-night-near.png",
+              "rect": [
+                0,
+                64,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "kryptex_ore/1-night-medium.png",
+              "atlas": "atlas-night-medium.png",
+              "rect": [
+                0,
+                32,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "kryptex_ore/1-night-far.png",
+              "atlas": "atlas-night-far.png",
+              "rect": [
+                0,
+                16,
+                16,
+                16
+              ]
+            }
+          },
+          "emission": null
+        },
+        {
+          "source": "art-source/deposits-v1/sheets/deposits-03.png",
+          "day": {
+            "near": {
+              "file": "kryptex_ore/2-day-near.png",
+              "atlas": "atlas-day-near.png",
+              "rect": [
+                0,
+                128,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "kryptex_ore/2-day-medium.png",
+              "atlas": "atlas-day-medium.png",
+              "rect": [
+                0,
+                64,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "kryptex_ore/2-day-far.png",
+              "atlas": "atlas-day-far.png",
+              "rect": [
+                0,
+                32,
+                16,
+                16
+              ]
+            }
+          },
+          "night": {
+            "near": {
+              "file": "kryptex_ore/2-night-near.png",
+              "atlas": "atlas-night-near.png",
+              "rect": [
+                0,
+                128,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "kryptex_ore/2-night-medium.png",
+              "atlas": "atlas-night-medium.png",
+              "rect": [
+                0,
+                64,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "kryptex_ore/2-night-far.png",
+              "atlas": "atlas-night-far.png",
+              "rect": [
+                0,
+                32,
+                16,
+                16
+              ]
+            }
+          },
+          "emission": null
+        }
+      ]
+    },
+    "ferrite_ore": {
+      "name": "Ferrite Ore",
+      "family": "ore",
+      "color": "#E2684C",
+      "variants": [
+        {
+          "source": "art-source/deposits-v1/sheets/deposits-01.png",
+          "day": {
+            "near": {
+              "file": "ferrite_ore/0-day-near.png",
+              "atlas": "atlas-day-near.png",
+              "rect": [
+                64,
+                0,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "ferrite_ore/0-day-medium.png",
+              "atlas": "atlas-day-medium.png",
+              "rect": [
+                32,
+                0,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "ferrite_ore/0-day-far.png",
+              "atlas": "atlas-day-far.png",
+              "rect": [
+                16,
+                0,
+                16,
+                16
+              ]
+            }
+          },
+          "night": {
+            "near": {
+              "file": "ferrite_ore/0-night-near.png",
+              "atlas": "atlas-night-near.png",
+              "rect": [
+                64,
+                0,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "ferrite_ore/0-night-medium.png",
+              "atlas": "atlas-night-medium.png",
+              "rect": [
+                32,
+                0,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "ferrite_ore/0-night-far.png",
+              "atlas": "atlas-night-far.png",
+              "rect": [
+                16,
+                0,
+                16,
+                16
+              ]
+            }
+          },
+          "emission": null
+        },
+        {
+          "source": "art-source/deposits-v1/sheets/deposits-02.png",
+          "day": {
+            "near": {
+              "file": "ferrite_ore/1-day-near.png",
+              "atlas": "atlas-day-near.png",
+              "rect": [
+                64,
+                64,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "ferrite_ore/1-day-medium.png",
+              "atlas": "atlas-day-medium.png",
+              "rect": [
+                32,
+                32,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "ferrite_ore/1-day-far.png",
+              "atlas": "atlas-day-far.png",
+              "rect": [
+                16,
+                16,
+                16,
+                16
+              ]
+            }
+          },
+          "night": {
+            "near": {
+              "file": "ferrite_ore/1-night-near.png",
+              "atlas": "atlas-night-near.png",
+              "rect": [
+                64,
+                64,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "ferrite_ore/1-night-medium.png",
+              "atlas": "atlas-night-medium.png",
+              "rect": [
+                32,
+                32,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "ferrite_ore/1-night-far.png",
+              "atlas": "atlas-night-far.png",
+              "rect": [
+                16,
+                16,
+                16,
+                16
+              ]
+            }
+          },
+          "emission": null
+        },
+        {
+          "source": "art-source/deposits-v1/sheets/deposits-03.png",
+          "day": {
+            "near": {
+              "file": "ferrite_ore/2-day-near.png",
+              "atlas": "atlas-day-near.png",
+              "rect": [
+                64,
+                128,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "ferrite_ore/2-day-medium.png",
+              "atlas": "atlas-day-medium.png",
+              "rect": [
+                32,
+                64,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "ferrite_ore/2-day-far.png",
+              "atlas": "atlas-day-far.png",
+              "rect": [
+                16,
+                32,
+                16,
+                16
+              ]
+            }
+          },
+          "night": {
+            "near": {
+              "file": "ferrite_ore/2-night-near.png",
+              "atlas": "atlas-night-near.png",
+              "rect": [
+                64,
+                128,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "ferrite_ore/2-night-medium.png",
+              "atlas": "atlas-night-medium.png",
+              "rect": [
+                32,
+                64,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "ferrite_ore/2-night-far.png",
+              "atlas": "atlas-night-far.png",
+              "rect": [
+                16,
+                32,
+                16,
+                16
+              ]
+            }
+          },
+          "emission": null
+        }
+      ]
+    },
+    "voltaic_gas": {
+      "name": "Voltaic Gas",
+      "family": "gas",
+      "color": "#F3B53A",
+      "variants": [
+        {
+          "source": "art-source/deposits-v1/sheets/deposits-01.png",
+          "day": {
+            "near": {
+              "file": "voltaic_gas/0-day-near.png",
+              "atlas": "atlas-day-near.png",
+              "rect": [
+                128,
+                0,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "voltaic_gas/0-day-medium.png",
+              "atlas": "atlas-day-medium.png",
+              "rect": [
+                64,
+                0,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "voltaic_gas/0-day-far.png",
+              "atlas": "atlas-day-far.png",
+              "rect": [
+                32,
+                0,
+                16,
+                16
+              ]
+            }
+          },
+          "night": {
+            "near": {
+              "file": "voltaic_gas/0-night-near.png",
+              "atlas": "atlas-night-near.png",
+              "rect": [
+                128,
+                0,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "voltaic_gas/0-night-medium.png",
+              "atlas": "atlas-night-medium.png",
+              "rect": [
+                64,
+                0,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "voltaic_gas/0-night-far.png",
+              "atlas": "atlas-night-far.png",
+              "rect": [
+                32,
+                0,
+                16,
+                16
+              ]
+            }
+          },
+          "emission": {
+            "near": {
+              "file": "voltaic_gas/0-emission-near.png",
+              "atlas": "atlas-emission-near.png",
+              "rect": [
+                128,
+                0,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "voltaic_gas/0-emission-medium.png",
+              "atlas": "atlas-emission-medium.png",
+              "rect": [
+                64,
+                0,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "voltaic_gas/0-emission-far.png",
+              "atlas": "atlas-emission-far.png",
+              "rect": [
+                32,
+                0,
+                16,
+                16
+              ]
+            }
+          }
+        },
+        {
+          "source": "art-source/deposits-v1/sheets/deposits-02.png",
+          "day": {
+            "near": {
+              "file": "voltaic_gas/1-day-near.png",
+              "atlas": "atlas-day-near.png",
+              "rect": [
+                128,
+                64,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "voltaic_gas/1-day-medium.png",
+              "atlas": "atlas-day-medium.png",
+              "rect": [
+                64,
+                32,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "voltaic_gas/1-day-far.png",
+              "atlas": "atlas-day-far.png",
+              "rect": [
+                32,
+                16,
+                16,
+                16
+              ]
+            }
+          },
+          "night": {
+            "near": {
+              "file": "voltaic_gas/1-night-near.png",
+              "atlas": "atlas-night-near.png",
+              "rect": [
+                128,
+                64,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "voltaic_gas/1-night-medium.png",
+              "atlas": "atlas-night-medium.png",
+              "rect": [
+                64,
+                32,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "voltaic_gas/1-night-far.png",
+              "atlas": "atlas-night-far.png",
+              "rect": [
+                32,
+                16,
+                16,
+                16
+              ]
+            }
+          },
+          "emission": {
+            "near": {
+              "file": "voltaic_gas/1-emission-near.png",
+              "atlas": "atlas-emission-near.png",
+              "rect": [
+                128,
+                64,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "voltaic_gas/1-emission-medium.png",
+              "atlas": "atlas-emission-medium.png",
+              "rect": [
+                64,
+                32,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "voltaic_gas/1-emission-far.png",
+              "atlas": "atlas-emission-far.png",
+              "rect": [
+                32,
+                16,
+                16,
+                16
+              ]
+            }
+          }
+        },
+        {
+          "source": "art-source/deposits-v1/sheets/deposits-03.png",
+          "day": {
+            "near": {
+              "file": "voltaic_gas/2-day-near.png",
+              "atlas": "atlas-day-near.png",
+              "rect": [
+                128,
+                128,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "voltaic_gas/2-day-medium.png",
+              "atlas": "atlas-day-medium.png",
+              "rect": [
+                64,
+                64,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "voltaic_gas/2-day-far.png",
+              "atlas": "atlas-day-far.png",
+              "rect": [
+                32,
+                32,
+                16,
+                16
+              ]
+            }
+          },
+          "night": {
+            "near": {
+              "file": "voltaic_gas/2-night-near.png",
+              "atlas": "atlas-night-near.png",
+              "rect": [
+                128,
+                128,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "voltaic_gas/2-night-medium.png",
+              "atlas": "atlas-night-medium.png",
+              "rect": [
+                64,
+                64,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "voltaic_gas/2-night-far.png",
+              "atlas": "atlas-night-far.png",
+              "rect": [
+                32,
+                32,
+                16,
+                16
+              ]
+            }
+          },
+          "emission": {
+            "near": {
+              "file": "voltaic_gas/2-emission-near.png",
+              "atlas": "atlas-emission-near.png",
+              "rect": [
+                128,
+                128,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "voltaic_gas/2-emission-medium.png",
+              "atlas": "atlas-emission-medium.png",
+              "rect": [
+                64,
+                64,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "voltaic_gas/2-emission-far.png",
+              "atlas": "atlas-emission-far.png",
+              "rect": [
+                32,
+                32,
+                16,
+                16
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "nebula_gas": {
+      "name": "Nebula Gas",
+      "family": "gas",
+      "color": "#9B83E0",
+      "variants": [
+        {
+          "source": "art-source/deposits-v1/sheets/deposits-01.png",
+          "day": {
+            "near": {
+              "file": "nebula_gas/0-day-near.png",
+              "atlas": "atlas-day-near.png",
+              "rect": [
+                192,
+                0,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "nebula_gas/0-day-medium.png",
+              "atlas": "atlas-day-medium.png",
+              "rect": [
+                96,
+                0,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "nebula_gas/0-day-far.png",
+              "atlas": "atlas-day-far.png",
+              "rect": [
+                48,
+                0,
+                16,
+                16
+              ]
+            }
+          },
+          "night": {
+            "near": {
+              "file": "nebula_gas/0-night-near.png",
+              "atlas": "atlas-night-near.png",
+              "rect": [
+                192,
+                0,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "nebula_gas/0-night-medium.png",
+              "atlas": "atlas-night-medium.png",
+              "rect": [
+                96,
+                0,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "nebula_gas/0-night-far.png",
+              "atlas": "atlas-night-far.png",
+              "rect": [
+                48,
+                0,
+                16,
+                16
+              ]
+            }
+          },
+          "emission": {
+            "near": {
+              "file": "nebula_gas/0-emission-near.png",
+              "atlas": "atlas-emission-near.png",
+              "rect": [
+                192,
+                0,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "nebula_gas/0-emission-medium.png",
+              "atlas": "atlas-emission-medium.png",
+              "rect": [
+                96,
+                0,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "nebula_gas/0-emission-far.png",
+              "atlas": "atlas-emission-far.png",
+              "rect": [
+                48,
+                0,
+                16,
+                16
+              ]
+            }
+          }
+        },
+        {
+          "source": "art-source/deposits-v1/sheets/deposits-02.png",
+          "day": {
+            "near": {
+              "file": "nebula_gas/1-day-near.png",
+              "atlas": "atlas-day-near.png",
+              "rect": [
+                192,
+                64,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "nebula_gas/1-day-medium.png",
+              "atlas": "atlas-day-medium.png",
+              "rect": [
+                96,
+                32,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "nebula_gas/1-day-far.png",
+              "atlas": "atlas-day-far.png",
+              "rect": [
+                48,
+                16,
+                16,
+                16
+              ]
+            }
+          },
+          "night": {
+            "near": {
+              "file": "nebula_gas/1-night-near.png",
+              "atlas": "atlas-night-near.png",
+              "rect": [
+                192,
+                64,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "nebula_gas/1-night-medium.png",
+              "atlas": "atlas-night-medium.png",
+              "rect": [
+                96,
+                32,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "nebula_gas/1-night-far.png",
+              "atlas": "atlas-night-far.png",
+              "rect": [
+                48,
+                16,
+                16,
+                16
+              ]
+            }
+          },
+          "emission": {
+            "near": {
+              "file": "nebula_gas/1-emission-near.png",
+              "atlas": "atlas-emission-near.png",
+              "rect": [
+                192,
+                64,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "nebula_gas/1-emission-medium.png",
+              "atlas": "atlas-emission-medium.png",
+              "rect": [
+                96,
+                32,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "nebula_gas/1-emission-far.png",
+              "atlas": "atlas-emission-far.png",
+              "rect": [
+                48,
+                16,
+                16,
+                16
+              ]
+            }
+          }
+        },
+        {
+          "source": "art-source/deposits-v1/sheets/deposits-03.png",
+          "day": {
+            "near": {
+              "file": "nebula_gas/2-day-near.png",
+              "atlas": "atlas-day-near.png",
+              "rect": [
+                192,
+                128,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "nebula_gas/2-day-medium.png",
+              "atlas": "atlas-day-medium.png",
+              "rect": [
+                96,
+                64,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "nebula_gas/2-day-far.png",
+              "atlas": "atlas-day-far.png",
+              "rect": [
+                48,
+                32,
+                16,
+                16
+              ]
+            }
+          },
+          "night": {
+            "near": {
+              "file": "nebula_gas/2-night-near.png",
+              "atlas": "atlas-night-near.png",
+              "rect": [
+                192,
+                128,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "nebula_gas/2-night-medium.png",
+              "atlas": "atlas-night-medium.png",
+              "rect": [
+                96,
+                64,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "nebula_gas/2-night-far.png",
+              "atlas": "atlas-night-far.png",
+              "rect": [
+                48,
+                32,
+                16,
+                16
+              ]
+            }
+          },
+          "emission": {
+            "near": {
+              "file": "nebula_gas/2-emission-near.png",
+              "atlas": "atlas-emission-near.png",
+              "rect": [
+                192,
+                128,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "nebula_gas/2-emission-medium.png",
+              "atlas": "atlas-emission-medium.png",
+              "rect": [
+                96,
+                64,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "nebula_gas/2-emission-far.png",
+              "atlas": "atlas-emission-far.png",
+              "rect": [
+                48,
+                32,
+                16,
+                16
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "silicate_dust": {
+      "name": "Silicate Dust",
+      "family": "dust",
+      "color": "#F5ECDB",
+      "variants": [
+        {
+          "source": "art-source/deposits-v1/sheets/deposits-01.png",
+          "day": {
+            "near": {
+              "file": "silicate_dust/0-day-near.png",
+              "atlas": "atlas-day-near.png",
+              "rect": [
+                256,
+                0,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "silicate_dust/0-day-medium.png",
+              "atlas": "atlas-day-medium.png",
+              "rect": [
+                128,
+                0,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "silicate_dust/0-day-far.png",
+              "atlas": "atlas-day-far.png",
+              "rect": [
+                64,
+                0,
+                16,
+                16
+              ]
+            }
+          },
+          "night": {
+            "near": {
+              "file": "silicate_dust/0-night-near.png",
+              "atlas": "atlas-night-near.png",
+              "rect": [
+                256,
+                0,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "silicate_dust/0-night-medium.png",
+              "atlas": "atlas-night-medium.png",
+              "rect": [
+                128,
+                0,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "silicate_dust/0-night-far.png",
+              "atlas": "atlas-night-far.png",
+              "rect": [
+                64,
+                0,
+                16,
+                16
+              ]
+            }
+          },
+          "emission": null
+        },
+        {
+          "source": "art-source/deposits-v1/sheets/deposits-02.png",
+          "day": {
+            "near": {
+              "file": "silicate_dust/1-day-near.png",
+              "atlas": "atlas-day-near.png",
+              "rect": [
+                256,
+                64,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "silicate_dust/1-day-medium.png",
+              "atlas": "atlas-day-medium.png",
+              "rect": [
+                128,
+                32,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "silicate_dust/1-day-far.png",
+              "atlas": "atlas-day-far.png",
+              "rect": [
+                64,
+                16,
+                16,
+                16
+              ]
+            }
+          },
+          "night": {
+            "near": {
+              "file": "silicate_dust/1-night-near.png",
+              "atlas": "atlas-night-near.png",
+              "rect": [
+                256,
+                64,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "silicate_dust/1-night-medium.png",
+              "atlas": "atlas-night-medium.png",
+              "rect": [
+                128,
+                32,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "silicate_dust/1-night-far.png",
+              "atlas": "atlas-night-far.png",
+              "rect": [
+                64,
+                16,
+                16,
+                16
+              ]
+            }
+          },
+          "emission": null
+        },
+        {
+          "source": "art-source/deposits-v1/sheets/deposits-03.png",
+          "day": {
+            "near": {
+              "file": "silicate_dust/2-day-near.png",
+              "atlas": "atlas-day-near.png",
+              "rect": [
+                256,
+                128,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "silicate_dust/2-day-medium.png",
+              "atlas": "atlas-day-medium.png",
+              "rect": [
+                128,
+                64,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "silicate_dust/2-day-far.png",
+              "atlas": "atlas-day-far.png",
+              "rect": [
+                64,
+                32,
+                16,
+                16
+              ]
+            }
+          },
+          "night": {
+            "near": {
+              "file": "silicate_dust/2-night-near.png",
+              "atlas": "atlas-night-near.png",
+              "rect": [
+                256,
+                128,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "silicate_dust/2-night-medium.png",
+              "atlas": "atlas-night-medium.png",
+              "rect": [
+                128,
+                64,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "silicate_dust/2-night-far.png",
+              "atlas": "atlas-night-far.png",
+              "rect": [
+                64,
+                32,
+                16,
+                16
+              ]
+            }
+          },
+          "emission": null
+        }
+      ]
+    },
+    "bio_sap": {
+      "name": "Bio Sap",
+      "family": "sap",
+      "color": "#5AC288",
+      "variants": [
+        {
+          "source": "art-source/deposits-v1/sheets/deposits-01.png",
+          "day": {
+            "near": {
+              "file": "bio_sap/0-day-near.png",
+              "atlas": "atlas-day-near.png",
+              "rect": [
+                320,
+                0,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "bio_sap/0-day-medium.png",
+              "atlas": "atlas-day-medium.png",
+              "rect": [
+                160,
+                0,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "bio_sap/0-day-far.png",
+              "atlas": "atlas-day-far.png",
+              "rect": [
+                80,
+                0,
+                16,
+                16
+              ]
+            }
+          },
+          "night": {
+            "near": {
+              "file": "bio_sap/0-night-near.png",
+              "atlas": "atlas-night-near.png",
+              "rect": [
+                320,
+                0,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "bio_sap/0-night-medium.png",
+              "atlas": "atlas-night-medium.png",
+              "rect": [
+                160,
+                0,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "bio_sap/0-night-far.png",
+              "atlas": "atlas-night-far.png",
+              "rect": [
+                80,
+                0,
+                16,
+                16
+              ]
+            }
+          },
+          "emission": null
+        },
+        {
+          "source": "art-source/deposits-v1/sheets/deposits-02.png",
+          "day": {
+            "near": {
+              "file": "bio_sap/1-day-near.png",
+              "atlas": "atlas-day-near.png",
+              "rect": [
+                320,
+                64,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "bio_sap/1-day-medium.png",
+              "atlas": "atlas-day-medium.png",
+              "rect": [
+                160,
+                32,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "bio_sap/1-day-far.png",
+              "atlas": "atlas-day-far.png",
+              "rect": [
+                80,
+                16,
+                16,
+                16
+              ]
+            }
+          },
+          "night": {
+            "near": {
+              "file": "bio_sap/1-night-near.png",
+              "atlas": "atlas-night-near.png",
+              "rect": [
+                320,
+                64,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "bio_sap/1-night-medium.png",
+              "atlas": "atlas-night-medium.png",
+              "rect": [
+                160,
+                32,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "bio_sap/1-night-far.png",
+              "atlas": "atlas-night-far.png",
+              "rect": [
+                80,
+                16,
+                16,
+                16
+              ]
+            }
+          },
+          "emission": null
+        },
+        {
+          "source": "art-source/deposits-v1/sheets/deposits-03.png",
+          "day": {
+            "near": {
+              "file": "bio_sap/2-day-near.png",
+              "atlas": "atlas-day-near.png",
+              "rect": [
+                320,
+                128,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "bio_sap/2-day-medium.png",
+              "atlas": "atlas-day-medium.png",
+              "rect": [
+                160,
+                64,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "bio_sap/2-day-far.png",
+              "atlas": "atlas-day-far.png",
+              "rect": [
+                80,
+                32,
+                16,
+                16
+              ]
+            }
+          },
+          "night": {
+            "near": {
+              "file": "bio_sap/2-night-near.png",
+              "atlas": "atlas-night-near.png",
+              "rect": [
+                320,
+                128,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "bio_sap/2-night-medium.png",
+              "atlas": "atlas-night-medium.png",
+              "rect": [
+                160,
+                64,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "bio_sap/2-night-far.png",
+              "atlas": "atlas-night-far.png",
+              "rect": [
+                80,
+                32,
+                16,
+                16
+              ]
+            }
+          },
+          "emission": null
+        }
+      ]
+    },
+    "abyssal_brine": {
+      "name": "Abyssal Brine",
+      "family": "brine",
+      "color": "#3F86D6",
+      "variants": [
+        {
+          "source": "art-source/deposits-v1/sheets/deposits-01.png",
+          "day": {
+            "near": {
+              "file": "abyssal_brine/0-day-near.png",
+              "atlas": "atlas-day-near.png",
+              "rect": [
+                384,
+                0,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "abyssal_brine/0-day-medium.png",
+              "atlas": "atlas-day-medium.png",
+              "rect": [
+                192,
+                0,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "abyssal_brine/0-day-far.png",
+              "atlas": "atlas-day-far.png",
+              "rect": [
+                96,
+                0,
+                16,
+                16
+              ]
+            }
+          },
+          "night": {
+            "near": {
+              "file": "abyssal_brine/0-night-near.png",
+              "atlas": "atlas-night-near.png",
+              "rect": [
+                384,
+                0,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "abyssal_brine/0-night-medium.png",
+              "atlas": "atlas-night-medium.png",
+              "rect": [
+                192,
+                0,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "abyssal_brine/0-night-far.png",
+              "atlas": "atlas-night-far.png",
+              "rect": [
+                96,
+                0,
+                16,
+                16
+              ]
+            }
+          },
+          "emission": null
+        },
+        {
+          "source": "art-source/deposits-v1/sheets/deposits-02.png",
+          "day": {
+            "near": {
+              "file": "abyssal_brine/1-day-near.png",
+              "atlas": "atlas-day-near.png",
+              "rect": [
+                384,
+                64,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "abyssal_brine/1-day-medium.png",
+              "atlas": "atlas-day-medium.png",
+              "rect": [
+                192,
+                32,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "abyssal_brine/1-day-far.png",
+              "atlas": "atlas-day-far.png",
+              "rect": [
+                96,
+                16,
+                16,
+                16
+              ]
+            }
+          },
+          "night": {
+            "near": {
+              "file": "abyssal_brine/1-night-near.png",
+              "atlas": "atlas-night-near.png",
+              "rect": [
+                384,
+                64,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "abyssal_brine/1-night-medium.png",
+              "atlas": "atlas-night-medium.png",
+              "rect": [
+                192,
+                32,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "abyssal_brine/1-night-far.png",
+              "atlas": "atlas-night-far.png",
+              "rect": [
+                96,
+                16,
+                16,
+                16
+              ]
+            }
+          },
+          "emission": null
+        },
+        {
+          "source": "art-source/deposits-v1/sheets/deposits-03.png",
+          "day": {
+            "near": {
+              "file": "abyssal_brine/2-day-near.png",
+              "atlas": "atlas-day-near.png",
+              "rect": [
+                384,
+                128,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "abyssal_brine/2-day-medium.png",
+              "atlas": "atlas-day-medium.png",
+              "rect": [
+                192,
+                64,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "abyssal_brine/2-day-far.png",
+              "atlas": "atlas-day-far.png",
+              "rect": [
+                96,
+                32,
+                16,
+                16
+              ]
+            }
+          },
+          "night": {
+            "near": {
+              "file": "abyssal_brine/2-night-near.png",
+              "atlas": "atlas-night-near.png",
+              "rect": [
+                384,
+                128,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "abyssal_brine/2-night-medium.png",
+              "atlas": "atlas-night-medium.png",
+              "rect": [
+                192,
+                64,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "abyssal_brine/2-night-far.png",
+              "atlas": "atlas-night-far.png",
+              "rect": [
+                96,
+                32,
+                16,
+                16
+              ]
+            }
+          },
+          "emission": null
+        }
+      ]
+    },
+    "prism_particle": {
+      "name": "Prism Particles",
+      "family": "particle",
+      "color": "#E46AAE",
+      "variants": [
+        {
+          "source": "art-source/deposits-v1/sheets/deposits-01.png",
+          "day": {
+            "near": {
+              "file": "prism_particle/0-day-near.png",
+              "atlas": "atlas-day-near.png",
+              "rect": [
+                448,
+                0,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "prism_particle/0-day-medium.png",
+              "atlas": "atlas-day-medium.png",
+              "rect": [
+                224,
+                0,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "prism_particle/0-day-far.png",
+              "atlas": "atlas-day-far.png",
+              "rect": [
+                112,
+                0,
+                16,
+                16
+              ]
+            }
+          },
+          "night": {
+            "near": {
+              "file": "prism_particle/0-night-near.png",
+              "atlas": "atlas-night-near.png",
+              "rect": [
+                448,
+                0,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "prism_particle/0-night-medium.png",
+              "atlas": "atlas-night-medium.png",
+              "rect": [
+                224,
+                0,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "prism_particle/0-night-far.png",
+              "atlas": "atlas-night-far.png",
+              "rect": [
+                112,
+                0,
+                16,
+                16
+              ]
+            }
+          },
+          "emission": {
+            "near": {
+              "file": "prism_particle/0-emission-near.png",
+              "atlas": "atlas-emission-near.png",
+              "rect": [
+                448,
+                0,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "prism_particle/0-emission-medium.png",
+              "atlas": "atlas-emission-medium.png",
+              "rect": [
+                224,
+                0,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "prism_particle/0-emission-far.png",
+              "atlas": "atlas-emission-far.png",
+              "rect": [
+                112,
+                0,
+                16,
+                16
+              ]
+            }
+          }
+        },
+        {
+          "source": "art-source/deposits-v1/sheets/deposits-02.png",
+          "day": {
+            "near": {
+              "file": "prism_particle/1-day-near.png",
+              "atlas": "atlas-day-near.png",
+              "rect": [
+                448,
+                64,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "prism_particle/1-day-medium.png",
+              "atlas": "atlas-day-medium.png",
+              "rect": [
+                224,
+                32,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "prism_particle/1-day-far.png",
+              "atlas": "atlas-day-far.png",
+              "rect": [
+                112,
+                16,
+                16,
+                16
+              ]
+            }
+          },
+          "night": {
+            "near": {
+              "file": "prism_particle/1-night-near.png",
+              "atlas": "atlas-night-near.png",
+              "rect": [
+                448,
+                64,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "prism_particle/1-night-medium.png",
+              "atlas": "atlas-night-medium.png",
+              "rect": [
+                224,
+                32,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "prism_particle/1-night-far.png",
+              "atlas": "atlas-night-far.png",
+              "rect": [
+                112,
+                16,
+                16,
+                16
+              ]
+            }
+          },
+          "emission": {
+            "near": {
+              "file": "prism_particle/1-emission-near.png",
+              "atlas": "atlas-emission-near.png",
+              "rect": [
+                448,
+                64,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "prism_particle/1-emission-medium.png",
+              "atlas": "atlas-emission-medium.png",
+              "rect": [
+                224,
+                32,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "prism_particle/1-emission-far.png",
+              "atlas": "atlas-emission-far.png",
+              "rect": [
+                112,
+                16,
+                16,
+                16
+              ]
+            }
+          }
+        },
+        {
+          "source": "art-source/deposits-v1/sheets/deposits-03.png",
+          "day": {
+            "near": {
+              "file": "prism_particle/2-day-near.png",
+              "atlas": "atlas-day-near.png",
+              "rect": [
+                448,
+                128,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "prism_particle/2-day-medium.png",
+              "atlas": "atlas-day-medium.png",
+              "rect": [
+                224,
+                64,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "prism_particle/2-day-far.png",
+              "atlas": "atlas-day-far.png",
+              "rect": [
+                112,
+                32,
+                16,
+                16
+              ]
+            }
+          },
+          "night": {
+            "near": {
+              "file": "prism_particle/2-night-near.png",
+              "atlas": "atlas-night-near.png",
+              "rect": [
+                448,
+                128,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "prism_particle/2-night-medium.png",
+              "atlas": "atlas-night-medium.png",
+              "rect": [
+                224,
+                64,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "prism_particle/2-night-far.png",
+              "atlas": "atlas-night-far.png",
+              "rect": [
+                112,
+                32,
+                16,
+                16
+              ]
+            }
+          },
+          "emission": {
+            "near": {
+              "file": "prism_particle/2-emission-near.png",
+              "atlas": "atlas-emission-near.png",
+              "rect": [
+                448,
+                128,
+                64,
+                64
+              ]
+            },
+            "medium": {
+              "file": "prism_particle/2-emission-medium.png",
+              "atlas": "atlas-emission-medium.png",
+              "rect": [
+                224,
+                64,
+                32,
+                32
+              ]
+            },
+            "far": {
+              "file": "prism_particle/2-emission-far.png",
+              "atlas": "atlas-emission-far.png",
+              "rect": [
+                112,
+                32,
+                16,
+                16
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

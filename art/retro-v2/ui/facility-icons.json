@@ -1,0 +1,487 @@
+{
+  "version": 1,
+  "sizes": [
+    16,
+    24,
+    32,
+    64
+  ],
+  "sprites": {
+    "facilities/ore-extractor--menu.png": {
+      "16": "ui/facilities/facilities-ore-extractor--menu-16.png",
+      "24": "ui/facilities/facilities-ore-extractor--menu-24.png",
+      "32": "ui/facilities/facilities-ore-extractor--menu-32.png",
+      "64": "ui/facilities/facilities-ore-extractor--menu-64.png",
+      "build32": "ui/facilities/facilities-ore-extractor--menu-build-32.png"
+    },
+    "facilities/ore-extractor--neutral.png": {
+      "16": "ui/facilities/facilities-ore-extractor--neutral-16.png",
+      "24": "ui/facilities/facilities-ore-extractor--neutral-24.png",
+      "32": "ui/facilities/facilities-ore-extractor--neutral-32.png",
+      "64": "ui/facilities/facilities-ore-extractor--neutral-64.png",
+      "build32": "ui/facilities/facilities-ore-extractor--neutral-build-32.png"
+    },
+    "facilities/ore-extractor--kryptex_ore.png": {
+      "16": "ui/facilities/facilities-ore-extractor--kryptex_ore-16.png",
+      "24": "ui/facilities/facilities-ore-extractor--kryptex_ore-24.png",
+      "32": "ui/facilities/facilities-ore-extractor--kryptex_ore-32.png",
+      "64": "ui/facilities/facilities-ore-extractor--kryptex_ore-64.png",
+      "build32": "ui/facilities/facilities-ore-extractor--kryptex_ore-build-32.png"
+    },
+    "facilities/ore-extractor--ferrite_ore.png": {
+      "16": "ui/facilities/facilities-ore-extractor--ferrite_ore-16.png",
+      "24": "ui/facilities/facilities-ore-extractor--ferrite_ore-24.png",
+      "32": "ui/facilities/facilities-ore-extractor--ferrite_ore-32.png",
+      "64": "ui/facilities/facilities-ore-extractor--ferrite_ore-64.png",
+      "build32": "ui/facilities/facilities-ore-extractor--ferrite_ore-build-32.png"
+    },
+    "facilities/gas-siphon--menu.png": {
+      "16": "ui/facilities/facilities-gas-siphon--menu-16.png",
+      "24": "ui/facilities/facilities-gas-siphon--menu-24.png",
+      "32": "ui/facilities/facilities-gas-siphon--menu-32.png",
+      "64": "ui/facilities/facilities-gas-siphon--menu-64.png",
+      "build32": "ui/facilities/facilities-gas-siphon--menu-build-32.png"
+    },
+    "facilities/gas-siphon--neutral.png": {
+      "16": "ui/facilities/facilities-gas-siphon--neutral-16.png",
+      "24": "ui/facilities/facilities-gas-siphon--neutral-24.png",
+      "32": "ui/facilities/facilities-gas-siphon--neutral-32.png",
+      "64": "ui/facilities/facilities-gas-siphon--neutral-64.png",
+      "build32": "ui/facilities/facilities-gas-siphon--neutral-build-32.png"
+    },
+    "facilities/gas-siphon--voltaic_gas.png": {
+      "16": "ui/facilities/facilities-gas-siphon--voltaic_gas-16.png",
+      "24": "ui/facilities/facilities-gas-siphon--voltaic_gas-24.png",
+      "32": "ui/facilities/facilities-gas-siphon--voltaic_gas-32.png",
+      "64": "ui/facilities/facilities-gas-siphon--voltaic_gas-64.png",
+      "build32": "ui/facilities/facilities-gas-siphon--voltaic_gas-build-32.png"
+    },
+    "facilities/gas-siphon--nebula_gas.png": {
+      "16": "ui/facilities/facilities-gas-siphon--nebula_gas-16.png",
+      "24": "ui/facilities/facilities-gas-siphon--nebula_gas-24.png",
+      "32": "ui/facilities/facilities-gas-siphon--nebula_gas-32.png",
+      "64": "ui/facilities/facilities-gas-siphon--nebula_gas-64.png",
+      "build32": "ui/facilities/facilities-gas-siphon--nebula_gas-build-32.png"
+    },
+    "facilities/dust-harvester--menu.png": {
+      "16": "ui/facilities/facilities-dust-harvester--menu-16.png",
+      "24": "ui/facilities/facilities-dust-harvester--menu-24.png",
+      "32": "ui/facilities/facilities-dust-harvester--menu-32.png",
+      "64": "ui/facilities/facilities-dust-harvester--menu-64.png",
+      "build32": "ui/facilities/facilities-dust-harvester--menu-build-32.png"
+    },
+    "facilities/dust-harvester--neutral.png": {
+      "16": "ui/facilities/facilities-dust-harvester--neutral-16.png",
+      "24": "ui/facilities/facilities-dust-harvester--neutral-24.png",
+      "32": "ui/facilities/facilities-dust-harvester--neutral-32.png",
+      "64": "ui/facilities/facilities-dust-harvester--neutral-64.png",
+      "build32": "ui/facilities/facilities-dust-harvester--neutral-build-32.png"
+    },
+    "facilities/dust-harvester--silicate_dust.png": {
+      "16": "ui/facilities/facilities-dust-harvester--silicate_dust-16.png",
+      "24": "ui/facilities/facilities-dust-harvester--silicate_dust-24.png",
+      "32": "ui/facilities/facilities-dust-harvester--silicate_dust-32.png",
+      "64": "ui/facilities/facilities-dust-harvester--silicate_dust-64.png",
+      "build32": "ui/facilities/facilities-dust-harvester--silicate_dust-build-32.png"
+    },
+    "facilities/dust-harvester--prism_particle.png": {
+      "16": "ui/facilities/facilities-dust-harvester--prism_particle-16.png",
+      "24": "ui/facilities/facilities-dust-harvester--prism_particle-24.png",
+      "32": "ui/facilities/facilities-dust-harvester--prism_particle-32.png",
+      "64": "ui/facilities/facilities-dust-harvester--prism_particle-64.png",
+      "build32": "ui/facilities/facilities-dust-harvester--prism_particle-build-32.png"
+    },
+    "facilities/fluid-pump--menu.png": {
+      "16": "ui/facilities/facilities-fluid-pump--menu-16.png",
+      "24": "ui/facilities/facilities-fluid-pump--menu-24.png",
+      "32": "ui/facilities/facilities-fluid-pump--menu-32.png",
+      "64": "ui/facilities/facilities-fluid-pump--menu-64.png",
+      "build32": "ui/facilities/facilities-fluid-pump--menu-build-32.png"
+    },
+    "facilities/fluid-pump--neutral.png": {
+      "16": "ui/facilities/facilities-fluid-pump--neutral-16.png",
+      "24": "ui/facilities/facilities-fluid-pump--neutral-24.png",
+      "32": "ui/facilities/facilities-fluid-pump--neutral-32.png",
+      "64": "ui/facilities/facilities-fluid-pump--neutral-64.png",
+      "build32": "ui/facilities/facilities-fluid-pump--neutral-build-32.png"
+    },
+    "facilities/fluid-pump--bio_sap.png": {
+      "16": "ui/facilities/facilities-fluid-pump--bio_sap-16.png",
+      "24": "ui/facilities/facilities-fluid-pump--bio_sap-24.png",
+      "32": "ui/facilities/facilities-fluid-pump--bio_sap-32.png",
+      "64": "ui/facilities/facilities-fluid-pump--bio_sap-64.png",
+      "build32": "ui/facilities/facilities-fluid-pump--bio_sap-build-32.png"
+    },
+    "facilities/fluid-pump--abyssal_brine.png": {
+      "16": "ui/facilities/facilities-fluid-pump--abyssal_brine-16.png",
+      "24": "ui/facilities/facilities-fluid-pump--abyssal_brine-24.png",
+      "32": "ui/facilities/facilities-fluid-pump--abyssal_brine-32.png",
+      "64": "ui/facilities/facilities-fluid-pump--abyssal_brine-64.png",
+      "build32": "ui/facilities/facilities-fluid-pump--abyssal_brine-build-32.png"
+    },
+    "facilities/ore-refinery--menu.png": {
+      "16": "ui/facilities/facilities-ore-refinery--menu-16.png",
+      "24": "ui/facilities/facilities-ore-refinery--menu-24.png",
+      "32": "ui/facilities/facilities-ore-refinery--menu-32.png",
+      "64": "ui/facilities/facilities-ore-refinery--menu-64.png",
+      "build32": "ui/facilities/facilities-ore-refinery--menu-build-32.png"
+    },
+    "facilities/ore-refinery--neutral.png": {
+      "16": "ui/facilities/facilities-ore-refinery--neutral-16.png",
+      "24": "ui/facilities/facilities-ore-refinery--neutral-24.png",
+      "32": "ui/facilities/facilities-ore-refinery--neutral-32.png",
+      "64": "ui/facilities/facilities-ore-refinery--neutral-64.png",
+      "build32": "ui/facilities/facilities-ore-refinery--neutral-build-32.png"
+    },
+    "facilities/ore-refinery--kryptex_ingot.png": {
+      "16": "ui/facilities/facilities-ore-refinery--kryptex_ingot-16.png",
+      "24": "ui/facilities/facilities-ore-refinery--kryptex_ingot-24.png",
+      "32": "ui/facilities/facilities-ore-refinery--kryptex_ingot-32.png",
+      "64": "ui/facilities/facilities-ore-refinery--kryptex_ingot-64.png",
+      "build32": "ui/facilities/facilities-ore-refinery--kryptex_ingot-build-32.png"
+    },
+    "facilities/ore-refinery--ferrite_ingot.png": {
+      "16": "ui/facilities/facilities-ore-refinery--ferrite_ingot-16.png",
+      "24": "ui/facilities/facilities-ore-refinery--ferrite_ingot-24.png",
+      "32": "ui/facilities/facilities-ore-refinery--ferrite_ingot-32.png",
+      "64": "ui/facilities/facilities-ore-refinery--ferrite_ingot-64.png",
+      "build32": "ui/facilities/facilities-ore-refinery--ferrite_ingot-build-32.png"
+    },
+    "facilities/gas-ionizer--menu.png": {
+      "16": "ui/facilities/facilities-gas-ionizer--menu-16.png",
+      "24": "ui/facilities/facilities-gas-ionizer--menu-24.png",
+      "32": "ui/facilities/facilities-gas-ionizer--menu-32.png",
+      "64": "ui/facilities/facilities-gas-ionizer--menu-64.png",
+      "build32": "ui/facilities/facilities-gas-ionizer--menu-build-32.png"
+    },
+    "facilities/gas-ionizer--neutral.png": {
+      "16": "ui/facilities/facilities-gas-ionizer--neutral-16.png",
+      "24": "ui/facilities/facilities-gas-ionizer--neutral-24.png",
+      "32": "ui/facilities/facilities-gas-ionizer--neutral-32.png",
+      "64": "ui/facilities/facilities-gas-ionizer--neutral-64.png",
+      "build32": "ui/facilities/facilities-gas-ionizer--neutral-build-32.png"
+    },
+    "facilities/gas-ionizer--ionized_voltaic.png": {
+      "16": "ui/facilities/facilities-gas-ionizer--ionized_voltaic-16.png",
+      "24": "ui/facilities/facilities-gas-ionizer--ionized_voltaic-24.png",
+      "32": "ui/facilities/facilities-gas-ionizer--ionized_voltaic-32.png",
+      "64": "ui/facilities/facilities-gas-ionizer--ionized_voltaic-64.png",
+      "build32": "ui/facilities/facilities-gas-ionizer--ionized_voltaic-build-32.png"
+    },
+    "facilities/gas-ionizer--condensed_nebula.png": {
+      "16": "ui/facilities/facilities-gas-ionizer--condensed_nebula-16.png",
+      "24": "ui/facilities/facilities-gas-ionizer--condensed_nebula-24.png",
+      "32": "ui/facilities/facilities-gas-ionizer--condensed_nebula-32.png",
+      "64": "ui/facilities/facilities-gas-ionizer--condensed_nebula-64.png",
+      "build32": "ui/facilities/facilities-gas-ionizer--condensed_nebula-build-32.png"
+    },
+    "facilities/wire-extruder--menu.png": {
+      "16": "ui/facilities/facilities-wire-extruder--menu-16.png",
+      "24": "ui/facilities/facilities-wire-extruder--menu-24.png",
+      "32": "ui/facilities/facilities-wire-extruder--menu-32.png",
+      "64": "ui/facilities/facilities-wire-extruder--menu-64.png",
+      "build32": "ui/facilities/facilities-wire-extruder--menu-build-32.png"
+    },
+    "facilities/wire-extruder--neutral.png": {
+      "16": "ui/facilities/facilities-wire-extruder--neutral-16.png",
+      "24": "ui/facilities/facilities-wire-extruder--neutral-24.png",
+      "32": "ui/facilities/facilities-wire-extruder--neutral-32.png",
+      "64": "ui/facilities/facilities-wire-extruder--neutral-64.png",
+      "build32": "ui/facilities/facilities-wire-extruder--neutral-build-32.png"
+    },
+    "facilities/wire-extruder--silicate_wiring.png": {
+      "16": "ui/facilities/facilities-wire-extruder--silicate_wiring-16.png",
+      "24": "ui/facilities/facilities-wire-extruder--silicate_wiring-24.png",
+      "32": "ui/facilities/facilities-wire-extruder--silicate_wiring-32.png",
+      "64": "ui/facilities/facilities-wire-extruder--silicate_wiring-64.png",
+      "build32": "ui/facilities/facilities-wire-extruder--silicate_wiring-build-32.png"
+    },
+    "facilities/wire-extruder--prism_filament.png": {
+      "16": "ui/facilities/facilities-wire-extruder--prism_filament-16.png",
+      "24": "ui/facilities/facilities-wire-extruder--prism_filament-24.png",
+      "32": "ui/facilities/facilities-wire-extruder--prism_filament-32.png",
+      "64": "ui/facilities/facilities-wire-extruder--prism_filament-64.png",
+      "build32": "ui/facilities/facilities-wire-extruder--prism_filament-build-32.png"
+    },
+    "facilities/sap-purifier--menu.png": {
+      "16": "ui/facilities/facilities-sap-purifier--menu-16.png",
+      "24": "ui/facilities/facilities-sap-purifier--menu-24.png",
+      "32": "ui/facilities/facilities-sap-purifier--menu-32.png",
+      "64": "ui/facilities/facilities-sap-purifier--menu-64.png",
+      "build32": "ui/facilities/facilities-sap-purifier--menu-build-32.png"
+    },
+    "facilities/sap-purifier--neutral.png": {
+      "16": "ui/facilities/facilities-sap-purifier--neutral-16.png",
+      "24": "ui/facilities/facilities-sap-purifier--neutral-24.png",
+      "32": "ui/facilities/facilities-sap-purifier--neutral-32.png",
+      "64": "ui/facilities/facilities-sap-purifier--neutral-64.png",
+      "build32": "ui/facilities/facilities-sap-purifier--neutral-build-32.png"
+    },
+    "facilities/sap-purifier--lucent_syrup.png": {
+      "16": "ui/facilities/facilities-sap-purifier--lucent_syrup-16.png",
+      "24": "ui/facilities/facilities-sap-purifier--lucent_syrup-24.png",
+      "32": "ui/facilities/facilities-sap-purifier--lucent_syrup-32.png",
+      "64": "ui/facilities/facilities-sap-purifier--lucent_syrup-64.png",
+      "build32": "ui/facilities/facilities-sap-purifier--lucent_syrup-build-32.png"
+    },
+    "facilities/sap-purifier--abyssal_salt.png": {
+      "16": "ui/facilities/facilities-sap-purifier--abyssal_salt-16.png",
+      "24": "ui/facilities/facilities-sap-purifier--abyssal_salt-24.png",
+      "32": "ui/facilities/facilities-sap-purifier--abyssal_salt-32.png",
+      "64": "ui/facilities/facilities-sap-purifier--abyssal_salt-64.png",
+      "build32": "ui/facilities/facilities-sap-purifier--abyssal_salt-build-32.png"
+    },
+    "facilities/alloy-foundry.png": {
+      "16": "ui/facilities/facilities-alloy-foundry-16.png",
+      "24": "ui/facilities/facilities-alloy-foundry-24.png",
+      "32": "ui/facilities/facilities-alloy-foundry-32.png",
+      "64": "ui/facilities/facilities-alloy-foundry-64.png",
+      "build32": "ui/facilities/facilities-alloy-foundry-build-32.png"
+    },
+    "facilities/circuit-weaver.png": {
+      "16": "ui/facilities/facilities-circuit-weaver-16.png",
+      "24": "ui/facilities/facilities-circuit-weaver-24.png",
+      "32": "ui/facilities/facilities-circuit-weaver-32.png",
+      "64": "ui/facilities/facilities-circuit-weaver-64.png",
+      "build32": "ui/facilities/facilities-circuit-weaver-build-32.png"
+    },
+    "facilities/fluid-mixer.png": {
+      "16": "ui/facilities/facilities-fluid-mixer-16.png",
+      "24": "ui/facilities/facilities-fluid-mixer-24.png",
+      "32": "ui/facilities/facilities-fluid-mixer-32.png",
+      "64": "ui/facilities/facilities-fluid-mixer-64.png",
+      "build32": "ui/facilities/facilities-fluid-mixer-build-32.png"
+    },
+    "facilities/crystal-kiln.png": {
+      "16": "ui/facilities/facilities-crystal-kiln-16.png",
+      "24": "ui/facilities/facilities-crystal-kiln-24.png",
+      "32": "ui/facilities/facilities-crystal-kiln-32.png",
+      "64": "ui/facilities/facilities-crystal-kiln-64.png",
+      "build32": "ui/facilities/facilities-crystal-kiln-build-32.png"
+    },
+    "facilities/void-smelter.png": {
+      "16": "ui/facilities/facilities-void-smelter-16.png",
+      "24": "ui/facilities/facilities-void-smelter-24.png",
+      "32": "ui/facilities/facilities-void-smelter-32.png",
+      "64": "ui/facilities/facilities-void-smelter-64.png",
+      "build32": "ui/facilities/facilities-void-smelter-build-32.png"
+    },
+    "facilities/magnetic-lathe.png": {
+      "16": "ui/facilities/facilities-magnetic-lathe-16.png",
+      "24": "ui/facilities/facilities-magnetic-lathe-24.png",
+      "32": "ui/facilities/facilities-magnetic-lathe-32.png",
+      "64": "ui/facilities/facilities-magnetic-lathe-64.png",
+      "build32": "ui/facilities/facilities-magnetic-lathe-build-32.png"
+    },
+    "facilities/precision-assembler.png": {
+      "16": "ui/facilities/facilities-precision-assembler-16.png",
+      "24": "ui/facilities/facilities-precision-assembler-24.png",
+      "32": "ui/facilities/facilities-precision-assembler-32.png",
+      "64": "ui/facilities/facilities-precision-assembler-64.png",
+      "build32": "ui/facilities/facilities-precision-assembler-build-32.png"
+    },
+    "facilities/cryo-chamber.png": {
+      "16": "ui/facilities/facilities-cryo-chamber-16.png",
+      "24": "ui/facilities/facilities-cryo-chamber-24.png",
+      "32": "ui/facilities/facilities-cryo-chamber-32.png",
+      "64": "ui/facilities/facilities-cryo-chamber-64.png",
+      "build32": "ui/facilities/facilities-cryo-chamber-build-32.png"
+    },
+    "facilities/lens-grinder.png": {
+      "16": "ui/facilities/facilities-lens-grinder-16.png",
+      "24": "ui/facilities/facilities-lens-grinder-24.png",
+      "32": "ui/facilities/facilities-lens-grinder-32.png",
+      "64": "ui/facilities/facilities-lens-grinder-64.png",
+      "build32": "ui/facilities/facilities-lens-grinder-build-32.png"
+    },
+    "facilities/drive-assembler.png": {
+      "16": "ui/facilities/facilities-drive-assembler-16.png",
+      "24": "ui/facilities/facilities-drive-assembler-24.png",
+      "32": "ui/facilities/facilities-drive-assembler-32.png",
+      "64": "ui/facilities/facilities-drive-assembler-64.png",
+      "build32": "ui/facilities/facilities-drive-assembler-build-32.png"
+    },
+    "facilities/photon-weaver.png": {
+      "16": "ui/facilities/facilities-photon-weaver-16.png",
+      "24": "ui/facilities/facilities-photon-weaver-24.png",
+      "32": "ui/facilities/facilities-photon-weaver-32.png",
+      "64": "ui/facilities/facilities-photon-weaver-64.png",
+      "build32": "ui/facilities/facilities-photon-weaver-build-32.png"
+    },
+    "facilities/thermal-forge.png": {
+      "16": "ui/facilities/facilities-thermal-forge-16.png",
+      "24": "ui/facilities/facilities-thermal-forge-24.png",
+      "32": "ui/facilities/facilities-thermal-forge-32.png",
+      "64": "ui/facilities/facilities-thermal-forge-64.png",
+      "build32": "ui/facilities/facilities-thermal-forge-build-32.png"
+    },
+    "facilities/stasis-forge.png": {
+      "16": "ui/facilities/facilities-stasis-forge-16.png",
+      "24": "ui/facilities/facilities-stasis-forge-24.png",
+      "32": "ui/facilities/facilities-stasis-forge-32.png",
+      "64": "ui/facilities/facilities-stasis-forge-64.png",
+      "build32": "ui/facilities/facilities-stasis-forge-build-32.png"
+    },
+    "facilities/engine-fabricator.png": {
+      "16": "ui/facilities/facilities-engine-fabricator-16.png",
+      "24": "ui/facilities/facilities-engine-fabricator-24.png",
+      "32": "ui/facilities/facilities-engine-fabricator-32.png",
+      "64": "ui/facilities/facilities-engine-fabricator-64.png",
+      "build32": "ui/facilities/facilities-engine-fabricator-build-32.png"
+    },
+    "facilities/plasma-matrix.png": {
+      "16": "ui/facilities/facilities-plasma-matrix-16.png",
+      "24": "ui/facilities/facilities-plasma-matrix-24.png",
+      "32": "ui/facilities/facilities-plasma-matrix-32.png",
+      "64": "ui/facilities/facilities-plasma-matrix-64.png",
+      "build32": "ui/facilities/facilities-plasma-matrix-build-32.png"
+    },
+    "facilities/chrono-assembler.png": {
+      "16": "ui/facilities/facilities-chrono-assembler-16.png",
+      "24": "ui/facilities/facilities-chrono-assembler-24.png",
+      "32": "ui/facilities/facilities-chrono-assembler-32.png",
+      "64": "ui/facilities/facilities-chrono-assembler-64.png",
+      "build32": "ui/facilities/facilities-chrono-assembler-build-32.png"
+    },
+    "facilities/quantum-collider.png": {
+      "16": "ui/facilities/facilities-quantum-collider-16.png",
+      "24": "ui/facilities/facilities-quantum-collider-24.png",
+      "32": "ui/facilities/facilities-quantum-collider-32.png",
+      "64": "ui/facilities/facilities-quantum-collider-64.png",
+      "build32": "ui/facilities/facilities-quantum-collider-build-32.png"
+    },
+    "facilities/hyper-lathe.png": {
+      "16": "ui/facilities/facilities-hyper-lathe-16.png",
+      "24": "ui/facilities/facilities-hyper-lathe-24.png",
+      "32": "ui/facilities/facilities-hyper-lathe-32.png",
+      "64": "ui/facilities/facilities-hyper-lathe-64.png",
+      "build32": "ui/facilities/facilities-hyper-lathe-build-32.png"
+    },
+    "facilities/tesseract-loom.png": {
+      "16": "ui/facilities/facilities-tesseract-loom-16.png",
+      "24": "ui/facilities/facilities-tesseract-loom-24.png",
+      "32": "ui/facilities/facilities-tesseract-loom-32.png",
+      "64": "ui/facilities/facilities-tesseract-loom-64.png",
+      "build32": "ui/facilities/facilities-tesseract-loom-build-32.png"
+    },
+    "facilities/beacon-gantry.png": {
+      "16": "ui/facilities/facilities-beacon-gantry-16.png",
+      "24": "ui/facilities/facilities-beacon-gantry-24.png",
+      "32": "ui/facilities/facilities-beacon-gantry-32.png",
+      "64": "ui/facilities/facilities-beacon-gantry-64.png",
+      "build32": "ui/facilities/facilities-beacon-gantry-build-32.png"
+    },
+    "facilities/planetary-cannon.png": {
+      "16": "ui/facilities/facilities-planetary-cannon-16.png",
+      "24": "ui/facilities/facilities-planetary-cannon-24.png",
+      "32": "ui/facilities/facilities-planetary-cannon-32.png",
+      "64": "ui/facilities/facilities-planetary-cannon-64.png",
+      "build32": "ui/facilities/facilities-planetary-cannon-build-32.png"
+    },
+    "facilities/ark-shipyard.png": {
+      "16": "ui/facilities/facilities-ark-shipyard-16.png",
+      "24": "ui/facilities/facilities-ark-shipyard-24.png",
+      "32": "ui/facilities/facilities-ark-shipyard-32.png",
+      "64": "ui/facilities/facilities-ark-shipyard-64.png",
+      "build32": "ui/facilities/facilities-ark-shipyard-build-32.png"
+    },
+    "facilities/antimatter-trap.png": {
+      "16": "ui/facilities/facilities-antimatter-trap-16.png",
+      "24": "ui/facilities/facilities-antimatter-trap-24.png",
+      "32": "ui/facilities/facilities-antimatter-trap-32.png",
+      "64": "ui/facilities/facilities-antimatter-trap-64.png",
+      "build32": "ui/facilities/facilities-antimatter-trap-build-32.png"
+    },
+    "facilities/worldforge.png": {
+      "16": "ui/facilities/facilities-worldforge-16.png",
+      "24": "ui/facilities/facilities-worldforge-24.png",
+      "32": "ui/facilities/facilities-worldforge-32.png",
+      "64": "ui/facilities/facilities-worldforge-64.png",
+      "build32": "ui/facilities/facilities-worldforge-build-32.png"
+    },
+    "facilities/scrap-recycler.png": {
+      "16": "ui/facilities/facilities-scrap-recycler-16.png",
+      "24": "ui/facilities/facilities-scrap-recycler-24.png",
+      "32": "ui/facilities/facilities-scrap-recycler-32.png",
+      "64": "ui/facilities/facilities-scrap-recycler-64.png",
+      "build32": "ui/facilities/facilities-scrap-recycler-build-32.png"
+    },
+    "facilities/slag-vent.png": {
+      "16": "ui/facilities/facilities-slag-vent-16.png",
+      "24": "ui/facilities/facilities-slag-vent-24.png",
+      "32": "ui/facilities/facilities-slag-vent-32.png",
+      "64": "ui/facilities/facilities-slag-vent-64.png",
+      "build32": "ui/facilities/facilities-slag-vent-build-32.png"
+    },
+    "facilities/biomass-burner.png": {
+      "16": "ui/facilities/facilities-biomass-burner-16.png",
+      "24": "ui/facilities/facilities-biomass-burner-24.png",
+      "32": "ui/facilities/facilities-biomass-burner-32.png",
+      "64": "ui/facilities/facilities-biomass-burner-64.png",
+      "build32": "ui/facilities/facilities-biomass-burner-build-32.png"
+    },
+    "facilities/combustion-turbine.png": {
+      "16": "ui/facilities/facilities-combustion-turbine-16.png",
+      "24": "ui/facilities/facilities-combustion-turbine-24.png",
+      "32": "ui/facilities/facilities-combustion-turbine-32.png",
+      "64": "ui/facilities/facilities-combustion-turbine-64.png",
+      "build32": "ui/facilities/facilities-combustion-turbine-build-32.png"
+    },
+    "facilities/aether-reactor.png": {
+      "16": "ui/facilities/facilities-aether-reactor-16.png",
+      "24": "ui/facilities/facilities-aether-reactor-24.png",
+      "32": "ui/facilities/facilities-aether-reactor-32.png",
+      "64": "ui/facilities/facilities-aether-reactor-64.png",
+      "build32": "ui/facilities/facilities-aether-reactor-build-32.png"
+    },
+    "facilities/plasma-chamber.png": {
+      "16": "ui/facilities/facilities-plasma-chamber-16.png",
+      "24": "ui/facilities/facilities-plasma-chamber-24.png",
+      "32": "ui/facilities/facilities-plasma-chamber-32.png",
+      "64": "ui/facilities/facilities-plasma-chamber-64.png",
+      "build32": "ui/facilities/facilities-plasma-chamber-build-32.png"
+    },
+    "facilities/colony-pod.png": {
+      "16": "ui/facilities/facilities-colony-pod-16.png",
+      "24": "ui/facilities/facilities-colony-pod-24.png",
+      "32": "ui/facilities/facilities-colony-pod-32.png",
+      "64": "ui/facilities/facilities-colony-pod-64.png",
+      "build32": "ui/facilities/facilities-colony-pod-build-32.png"
+    },
+    "logistics/buildings/splitter-r0.png": {
+      "16": "ui/facilities/logistics-buildings-splitter-r0-16.png",
+      "24": "ui/facilities/logistics-buildings-splitter-r0-24.png",
+      "32": "ui/facilities/logistics-buildings-splitter-r0-32.png",
+      "64": "ui/facilities/logistics-buildings-splitter-r0-64.png",
+      "build32": "ui/facilities/logistics-buildings-splitter-r0-build-32.png"
+    },
+    "logistics/buildings/converger-r0.png": {
+      "16": "ui/facilities/logistics-buildings-converger-r0-16.png",
+      "24": "ui/facilities/logistics-buildings-converger-r0-24.png",
+      "32": "ui/facilities/logistics-buildings-converger-r0-32.png",
+      "64": "ui/facilities/logistics-buildings-converger-r0-64.png",
+      "build32": "ui/facilities/logistics-buildings-converger-r0-build-32.png"
+    },
+    "logistics/buildings/terminal-r0.png": {
+      "16": "ui/facilities/logistics-buildings-terminal-r0-16.png",
+      "24": "ui/facilities/logistics-buildings-terminal-r0-24.png",
+      "32": "ui/facilities/logistics-buildings-terminal-r0-32.png",
+      "64": "ui/facilities/logistics-buildings-terminal-r0-64.png",
+      "build32": "ui/facilities/logistics-buildings-terminal-r0-build-32.png"
+    },
+    "logistics/buildings/depot-r0.png": {
+      "16": "ui/facilities/logistics-buildings-depot-r0-16.png",
+      "24": "ui/facilities/logistics-buildings-depot-r0-24.png",
+      "32": "ui/facilities/logistics-buildings-depot-r0-32.png",
+      "64": "ui/facilities/logistics-buildings-depot-r0-64.png",
+      "build32": "ui/facilities/logistics-buildings-depot-r0-build-32.png"
+    },
+    "logistics/buildings/crossover-menu.png": {
+      "16": "ui/facilities/logistics-buildings-crossover-menu-16.png",
+      "24": "ui/facilities/logistics-buildings-crossover-menu-24.png",
+      "32": "ui/facilities/logistics-buildings-crossover-menu-32.png",
+      "64": "ui/facilities/logistics-buildings-crossover-menu-64.png",
+      "build32": "ui/facilities/logistics-buildings-crossover-menu-build-32.png"
+    }
+  }
+}

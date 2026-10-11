@@ -1,0 +1,263 @@
+{
+  "version": 3,
+  "stage": "integrated",
+  "pixelsPerTile": 32,
+  "size": [
+    256,
+    256
+  ],
+  "patchTiles": [
+    8,
+    8
+  ],
+  "sampling": "nearest",
+  "terrainIntegration": true,
+  "note": "Eight generated interiors per planet, shared palette and compatible edges/corners; seeded region-biased selection; three detail levels with matching day/night layouts.",
+  "planets": {
+    "desert": {
+      "day": "desert-day.png",
+      "night": "desert-night.png",
+      "levels": {
+        "near": {
+          "pixelsPerTile": 32,
+          "day": "desert-day.png",
+          "night": "desert-night.png",
+          "patches": {
+            "count": 8,
+            "columns": 4,
+            "day": "patches/desert-day-near.png",
+            "night": "patches/desert-night-near.png"
+          }
+        },
+        "medium": {
+          "pixelsPerTile": 16,
+          "day": "desert-day-medium.png",
+          "night": "desert-night-medium.png",
+          "patches": {
+            "count": 8,
+            "columns": 4,
+            "day": "patches/desert-day-medium.png",
+            "night": "patches/desert-night-medium.png"
+          }
+        },
+        "far": {
+          "pixelsPerTile": 8,
+          "day": "desert-day-far.png",
+          "night": "desert-night-far.png",
+          "patches": {
+            "count": 8,
+            "columns": 4,
+            "day": "patches/desert-day-far.png",
+            "night": "patches/desert-night-far.png"
+          }
+        }
+      },
+      "master": "art-source/terrain-v1/masters/desert.png",
+      "colors": 24,
+      "repeatEdgeMeanRGBDifference": {
+        "horizontal": 0,
+        "vertical": 0,
+        "interior": 5.918423202614702
+      },
+      "seamlessValidated": true,
+      "patchMaster": "art-source/terrain-v2/masters/desert.png"
+    },
+    "ice": {
+      "day": "ice-day.png",
+      "night": "ice-night.png",
+      "levels": {
+        "near": {
+          "pixelsPerTile": 32,
+          "day": "ice-day.png",
+          "night": "ice-night.png",
+          "patches": {
+            "count": 8,
+            "columns": 4,
+            "day": "patches/ice-day-near.png",
+            "night": "patches/ice-night-near.png"
+          }
+        },
+        "medium": {
+          "pixelsPerTile": 16,
+          "day": "ice-day-medium.png",
+          "night": "ice-night-medium.png",
+          "patches": {
+            "count": 8,
+            "columns": 4,
+            "day": "patches/ice-day-medium.png",
+            "night": "patches/ice-night-medium.png"
+          }
+        },
+        "far": {
+          "pixelsPerTile": 8,
+          "day": "ice-day-far.png",
+          "night": "ice-night-far.png",
+          "patches": {
+            "count": 8,
+            "columns": 4,
+            "day": "patches/ice-day-far.png",
+            "night": "patches/ice-night-far.png"
+          }
+        }
+      },
+      "master": "art-source/terrain-v1/masters/ice.png",
+      "colors": 23,
+      "repeatEdgeMeanRGBDifference": {
+        "horizontal": 0,
+        "vertical": 0,
+        "interior": 9.064869281045993
+      },
+      "seamlessValidated": true,
+      "patchMaster": "art-source/terrain-v2/masters/ice.png"
+    },
+    "marsh": {
+      "day": "marsh-day.png",
+      "night": "marsh-night.png",
+      "levels": {
+        "near": {
+          "pixelsPerTile": 32,
+          "day": "marsh-day.png",
+          "night": "marsh-night.png",
+          "patches": {
+            "count": 8,
+            "columns": 4,
+            "day": "patches/marsh-day-near.png",
+            "night": "patches/marsh-night-near.png"
+          }
+        },
+        "medium": {
+          "pixelsPerTile": 16,
+          "day": "marsh-day-medium.png",
+          "night": "marsh-night-medium.png",
+          "patches": {
+            "count": 8,
+            "columns": 4,
+            "day": "patches/marsh-day-medium.png",
+            "night": "patches/marsh-night-medium.png"
+          }
+        },
+        "far": {
+          "pixelsPerTile": 8,
+          "day": "marsh-day-far.png",
+          "night": "marsh-night-far.png",
+          "patches": {
+            "count": 8,
+            "columns": 4,
+            "day": "patches/marsh-day-far.png",
+            "night": "patches/marsh-night-far.png"
+          }
+        }
+      },
+      "master": "art-source/terrain-v1/masters/marsh.png",
+      "colors": 24,
+      "repeatEdgeMeanRGBDifference": {
+        "horizontal": 0,
+        "vertical": 0,
+        "interior": 14.38827614379076
+      },
+      "seamlessValidated": true,
+      "patchMaster": "art-source/terrain-v2/masters/marsh.png"
+    },
+    "rocky": {
+      "day": "rocky-day.png",
+      "night": "rocky-night.png",
+      "levels": {
+        "near": {
+          "pixelsPerTile": 32,
+          "day": "rocky-day.png",
+          "night": "rocky-night.png",
+          "patches": {
+            "count": 8,
+            "columns": 4,
+            "day": "patches/rocky-day-near.png",
+            "night": "patches/rocky-night-near.png"
+          }
+        },
+        "medium": {
+          "pixelsPerTile": 16,
+          "day": "rocky-day-medium.png",
+          "night": "rocky-night-medium.png",
+          "patches": {
+            "count": 8,
+            "columns": 4,
+            "day": "patches/rocky-day-medium.png",
+            "night": "patches/rocky-night-medium.png"
+          }
+        },
+        "far": {
+          "pixelsPerTile": 8,
+          "day": "rocky-day-far.png",
+          "night": "rocky-night-far.png",
+          "patches": {
+            "count": 8,
+            "columns": 4,
+            "day": "patches/rocky-day-far.png",
+            "night": "patches/rocky-night-far.png"
+          }
+        }
+      },
+      "master": "art-source/terrain-v1/masters/rocky.png",
+      "colors": 20,
+      "repeatEdgeMeanRGBDifference": {
+        "horizontal": 0,
+        "vertical": 0,
+        "interior": 8.93742851307184
+      },
+      "seamlessValidated": true,
+      "patchMaster": "art-source/terrain-v2/masters/rocky.png"
+    },
+    "volcanic": {
+      "day": "volcanic-day.png",
+      "night": "volcanic-night.png",
+      "levels": {
+        "near": {
+          "pixelsPerTile": 32,
+          "day": "volcanic-day.png",
+          "night": "volcanic-night.png",
+          "patches": {
+            "count": 8,
+            "columns": 4,
+            "day": "patches/volcanic-day-near.png",
+            "night": "patches/volcanic-night-near.png"
+          }
+        },
+        "medium": {
+          "pixelsPerTile": 16,
+          "day": "volcanic-day-medium.png",
+          "night": "volcanic-night-medium.png",
+          "patches": {
+            "count": 8,
+            "columns": 4,
+            "day": "patches/volcanic-day-medium.png",
+            "night": "patches/volcanic-night-medium.png"
+          }
+        },
+        "far": {
+          "pixelsPerTile": 8,
+          "day": "volcanic-day-far.png",
+          "night": "volcanic-night-far.png",
+          "patches": {
+            "count": 8,
+            "columns": 4,
+            "day": "patches/volcanic-day-far.png",
+            "night": "patches/volcanic-night-far.png"
+          }
+        }
+      },
+      "master": "art-source/terrain-v1/masters/volcanic.png",
+      "colors": 24,
+      "repeatEdgeMeanRGBDifference": {
+        "horizontal": 0,
+        "vertical": 0,
+        "interior": 9.385957924836399
+      },
+      "seamlessValidated": true,
+      "patchMaster": "art-source/terrain-v2/masters/volcanic.png"
+    }
+  },
+  "patchCount": 8,
+  "patchLayout": [
+    4,
+    2
+  ]
+}

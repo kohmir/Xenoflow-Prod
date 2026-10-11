@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <title>Xenoflow</title>
+    <style>
+      body{margin:0;background:#211c35}
+      .scene-loading{position:fixed;inset:0;z-index:100000;display:grid;place-items:center;background:#211c35;color:#f4edda;padding:24px;font:16px system-ui,sans-serif}
+      #root .scene-loading[role="dialog"]{box-shadow:none!important;background:#211c35!important}
+      #root .scene-loading::before{content:none!important}
+      .scene-loading-card{box-sizing:border-box;width:min(320px,100%);padding:24px;border:3px solid #71667f;box-shadow:5px 5px 0 #100f1f;background:#29223c;text-align:center;font-family:system-ui,sans-serif}
+      .scene-loading-card p{margin:12px 0 0;font:13px system-ui,sans-serif;color:#b6adc8}
+      .scene-loading-card button{margin-top:16px;padding:10px 20px;border:2px solid #65d8bc;background:#39304e;color:#f4edda;font:16px system-ui,sans-serif;cursor:pointer}
+      .scene-loading-track{height:8px;background:#171326;margin-top:20px}
+      .scene-loading-track>div{height:100%;background:#65d8bc}
+    </style>
+    <link rel="icon" href="/favicon.ico?v=4955a316" sizes="16x16 32x32 64x64" />
+    <link rel="icon" href="/favicon-16.png?v=4955a316" type="image/png" sizes="16x16" />
+    <link rel="icon" href="/favicon-32.png?v=4955a316" type="image/png" sizes="32x32" />
+    <link rel="icon" href="/favicon-64.png?v=4955a316" type="image/png" sizes="64x64" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=4955a316" />
+    <meta name="theme-color" content="#211c35" />
+    <meta name="description" content="An automation and factory building simulation game set on an alien planet." />
+    <meta property="og:title" content="Xenoflow" />
+    <meta property="og:description" content="An automation and factory building simulation game set on an alien planet." />
+    <script>
+      window.addEventListener('unhandledrejection', function (e) {
+        if (e && e.reason && (
+          e.reason.message === 'Failed to start the audio device' ||
+          (e.reason.name === 'DOMException' && String(e.reason).includes('audio device')) ||
+          String(e.reason).includes('audio device')
+        )) {
+          e.preventDefault();
+        }
+      });
+      window.addEventListener('error', function (e) {
+        if (e && e.message && e.message.includes('Failed to start the audio device')) {
+          e.preventDefault();
+        }
+      });
+    </script>
+    <script type="module" crossorigin src="/assets/index-DYWLyDsj.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BLXEVP3I.css">
+  </head>
+  <body>
+    <div id="root"><div class="scene-loading" role="status" aria-live="polite"><div class="scene-loading-card">Loading Xenoflow…<p>Preparing your view…</p></div></div></div>
+  </body>
+</html>

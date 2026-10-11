@@ -1,0 +1,1941 @@
+{
+  "version": 2,
+  "stage": "facility-and-material-assets-only",
+  "pixelsPerTile": 32,
+  "materialSize": 32,
+  "animation": "static masters; no animation frames in this asset pack",
+  "deferredFacilities": [
+    "Splitter",
+    "Converger",
+    "Crossover",
+    "Terminal",
+    "Depot"
+  ],
+  "facilities": {
+    "Ore Extractor": {
+      "size": [
+        64,
+        64
+      ],
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-01",
+      "cell": 0,
+      "paintMask": "art-source/retro-v2/masters/ore-extractor-paint-mask.png",
+      "variants": {
+        "kryptex_ore": "facilities/ore-extractor--kryptex_ore.png",
+        "ferrite_ore": "facilities/ore-extractor--ferrite_ore.png"
+      },
+      "palettes": {
+        "kryptex_ore": [
+          [
+            32,
+            64,
+            83
+          ],
+          [
+            39,
+            99,
+            117
+          ],
+          [
+            45,
+            137,
+            154
+          ],
+          [
+            53,
+            178,
+            194
+          ],
+          [
+            104,
+            196,
+            203
+          ],
+          [
+            154,
+            214,
+            212
+          ],
+          [
+            205,
+            232,
+            220
+          ]
+        ],
+        "ferrite_ore": [
+          [
+            81,
+            44,
+            50
+          ],
+          [
+            125,
+            62,
+            58
+          ],
+          [
+            173,
+            82,
+            67
+          ],
+          [
+            226,
+            104,
+            76
+          ],
+          [
+            233,
+            141,
+            114
+          ],
+          [
+            241,
+            177,
+            153
+          ],
+          [
+            248,
+            214,
+            191
+          ]
+        ]
+      },
+      "neutral": "facilities/ore-extractor--neutral.png",
+      "menu": "facilities/ore-extractor--menu.png",
+      "default": "facilities/ore-extractor--neutral.png",
+      "paintPixelCount": 1316
+    },
+    "Gas Siphon": {
+      "size": [
+        64,
+        64
+      ],
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-01",
+      "cell": 1,
+      "paintMask": "art-source/retro-v2/masters/gas-siphon-paint-mask.png",
+      "variants": {
+        "voltaic_gas": "facilities/gas-siphon--voltaic_gas.png",
+        "nebula_gas": "facilities/gas-siphon--nebula_gas.png"
+      },
+      "palettes": {
+        "voltaic_gas": [
+          [
+            85,
+            65,
+            45
+          ],
+          [
+            134,
+            101,
+            49
+          ],
+          [
+            186,
+            139,
+            53
+          ],
+          [
+            243,
+            181,
+            58
+          ],
+          [
+            246,
+            198,
+            101
+          ],
+          [
+            249,
+            216,
+            144
+          ],
+          [
+            252,
+            233,
+            186
+          ]
+        ],
+        "nebula_gas": [
+          [
+            61,
+            51,
+            92
+          ],
+          [
+            90,
+            76,
+            132
+          ],
+          [
+            121,
+            102,
+            176
+          ],
+          [
+            155,
+            131,
+            224
+          ],
+          [
+            180,
+            161,
+            225
+          ],
+          [
+            205,
+            191,
+            227
+          ],
+          [
+            230,
+            220,
+            228
+          ]
+        ]
+      },
+      "neutral": "facilities/gas-siphon--neutral.png",
+      "menu": "facilities/gas-siphon--menu.png",
+      "default": "facilities/gas-siphon--neutral.png",
+      "paintPixelCount": 1276
+    },
+    "Dust Harvester": {
+      "size": [
+        64,
+        64
+      ],
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-01",
+      "cell": 2,
+      "paintMask": "art-source/retro-v2/masters/dust-harvester-paint-mask.png",
+      "variants": {
+        "silicate_dust": "facilities/dust-harvester--silicate_dust.png",
+        "prism_particle": "facilities/dust-harvester--prism_particle.png"
+      },
+      "palettes": {
+        "silicate_dust": [
+          [
+            86,
+            80,
+            90
+          ],
+          [
+            135,
+            128,
+            130
+          ],
+          [
+            188,
+            180,
+            172
+          ],
+          [
+            245,
+            236,
+            219
+          ],
+          [
+            248,
+            240,
+            222
+          ],
+          [
+            250,
+            243,
+            224
+          ],
+          [
+            253,
+            247,
+            227
+          ]
+        ],
+        "prism_particle": [
+          [
+            81,
+            44,
+            78
+          ],
+          [
+            126,
+            63,
+            107
+          ],
+          [
+            175,
+            84,
+            139
+          ],
+          [
+            228,
+            106,
+            174
+          ],
+          [
+            235,
+            142,
+            188
+          ],
+          [
+            242,
+            178,
+            202
+          ],
+          [
+            248,
+            214,
+            215
+          ]
+        ]
+      },
+      "neutral": "facilities/dust-harvester--neutral.png",
+      "menu": "facilities/dust-harvester--menu.png",
+      "default": "facilities/dust-harvester--neutral.png",
+      "paintPixelCount": 1228
+    },
+    "Fluid Pump": {
+      "size": [
+        64,
+        64
+      ],
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-01",
+      "cell": 3,
+      "paintMask": "art-source/retro-v2/masters/fluid-pump-paint-mask.png",
+      "variants": {
+        "bio_sap": "facilities/fluid-pump--bio_sap.png",
+        "abyssal_brine": "facilities/fluid-pump--abyssal_brine.png"
+      },
+      "palettes": {
+        "bio_sap": [
+          [
+            42,
+            69,
+            67
+          ],
+          [
+            57,
+            107,
+            88
+          ],
+          [
+            73,
+            149,
+            111
+          ],
+          [
+            90,
+            194,
+            136
+          ],
+          [
+            131,
+            208,
+            159
+          ],
+          [
+            173,
+            222,
+            183
+          ],
+          [
+            214,
+            236,
+            206
+          ]
+        ],
+        "abyssal_brine": [
+          [
+            35,
+            52,
+            89
+          ],
+          [
+            44,
+            77,
+            127
+          ],
+          [
+            53,
+            104,
+            169
+          ],
+          [
+            63,
+            134,
+            214
+          ],
+          [
+            111,
+            163,
+            218
+          ],
+          [
+            159,
+            192,
+            222
+          ],
+          [
+            207,
+            221,
+            225
+          ]
+        ]
+      },
+      "neutral": "facilities/fluid-pump--neutral.png",
+      "menu": "facilities/fluid-pump--menu.png",
+      "default": "facilities/fluid-pump--neutral.png",
+      "paintPixelCount": 1420
+    },
+    "Ore Refinery": {
+      "size": [
+        64,
+        64
+      ],
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-01",
+      "cell": 4,
+      "paintMask": "art-source/retro-v2/masters/ore-refinery-paint-mask.png",
+      "variants": {
+        "kryptex_ingot": "facilities/ore-refinery--kryptex_ingot.png",
+        "ferrite_ingot": "facilities/ore-refinery--ferrite_ingot.png"
+      },
+      "palettes": {
+        "kryptex_ingot": [
+          [
+            32,
+            64,
+            83
+          ],
+          [
+            39,
+            99,
+            117
+          ],
+          [
+            45,
+            137,
+            154
+          ],
+          [
+            53,
+            178,
+            194
+          ],
+          [
+            104,
+            196,
+            203
+          ],
+          [
+            154,
+            214,
+            212
+          ],
+          [
+            205,
+            232,
+            220
+          ]
+        ],
+        "ferrite_ingot": [
+          [
+            81,
+            44,
+            50
+          ],
+          [
+            125,
+            62,
+            58
+          ],
+          [
+            173,
+            82,
+            67
+          ],
+          [
+            226,
+            104,
+            76
+          ],
+          [
+            233,
+            141,
+            114
+          ],
+          [
+            241,
+            177,
+            153
+          ],
+          [
+            248,
+            214,
+            191
+          ]
+        ]
+      },
+      "neutral": "facilities/ore-refinery--neutral.png",
+      "menu": "facilities/ore-refinery--menu.png",
+      "default": "facilities/ore-refinery--neutral.png",
+      "paintPixelCount": 1234
+    },
+    "Gas Ionizer": {
+      "size": [
+        64,
+        64
+      ],
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-01",
+      "cell": 5,
+      "paintMask": "art-source/retro-v2/masters/gas-ionizer-paint-mask.png",
+      "variants": {
+        "ionized_voltaic": "facilities/gas-ionizer--ionized_voltaic.png",
+        "condensed_nebula": "facilities/gas-ionizer--condensed_nebula.png"
+      },
+      "palettes": {
+        "ionized_voltaic": [
+          [
+            85,
+            65,
+            45
+          ],
+          [
+            134,
+            101,
+            49
+          ],
+          [
+            186,
+            139,
+            53
+          ],
+          [
+            243,
+            181,
+            58
+          ],
+          [
+            246,
+            198,
+            101
+          ],
+          [
+            249,
+            216,
+            144
+          ],
+          [
+            252,
+            233,
+            186
+          ]
+        ],
+        "condensed_nebula": [
+          [
+            61,
+            51,
+            92
+          ],
+          [
+            90,
+            76,
+            132
+          ],
+          [
+            121,
+            102,
+            176
+          ],
+          [
+            155,
+            131,
+            224
+          ],
+          [
+            180,
+            161,
+            225
+          ],
+          [
+            205,
+            191,
+            227
+          ],
+          [
+            230,
+            220,
+            228
+          ]
+        ]
+      },
+      "neutral": "facilities/gas-ionizer--neutral.png",
+      "menu": "facilities/gas-ionizer--menu.png",
+      "default": "facilities/gas-ionizer--neutral.png",
+      "paintPixelCount": 1321
+    },
+    "Wire Extruder": {
+      "size": [
+        64,
+        64
+      ],
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-01",
+      "cell": 6,
+      "paintMask": "art-source/retro-v2/masters/wire-extruder-paint-mask.png",
+      "variants": {
+        "silicate_wiring": "facilities/wire-extruder--silicate_wiring.png",
+        "prism_filament": "facilities/wire-extruder--prism_filament.png"
+      },
+      "palettes": {
+        "silicate_wiring": [
+          [
+            86,
+            80,
+            90
+          ],
+          [
+            135,
+            128,
+            130
+          ],
+          [
+            188,
+            180,
+            172
+          ],
+          [
+            245,
+            236,
+            219
+          ],
+          [
+            248,
+            240,
+            222
+          ],
+          [
+            250,
+            243,
+            224
+          ],
+          [
+            253,
+            247,
+            227
+          ]
+        ],
+        "prism_filament": [
+          [
+            81,
+            44,
+            78
+          ],
+          [
+            126,
+            63,
+            107
+          ],
+          [
+            175,
+            84,
+            139
+          ],
+          [
+            228,
+            106,
+            174
+          ],
+          [
+            235,
+            142,
+            188
+          ],
+          [
+            242,
+            178,
+            202
+          ],
+          [
+            248,
+            214,
+            215
+          ]
+        ]
+      },
+      "neutral": "facilities/wire-extruder--neutral.png",
+      "menu": "facilities/wire-extruder--menu.png",
+      "default": "facilities/wire-extruder--neutral.png",
+      "paintPixelCount": 1307
+    },
+    "Sap Purifier": {
+      "size": [
+        64,
+        64
+      ],
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-01",
+      "cell": 7,
+      "paintMask": "art-source/retro-v2/masters/sap-purifier-paint-mask.png",
+      "variants": {
+        "lucent_syrup": "facilities/sap-purifier--lucent_syrup.png",
+        "abyssal_salt": "facilities/sap-purifier--abyssal_salt.png"
+      },
+      "palettes": {
+        "lucent_syrup": [
+          [
+            42,
+            69,
+            67
+          ],
+          [
+            57,
+            107,
+            88
+          ],
+          [
+            73,
+            149,
+            111
+          ],
+          [
+            90,
+            194,
+            136
+          ],
+          [
+            131,
+            208,
+            159
+          ],
+          [
+            173,
+            222,
+            183
+          ],
+          [
+            214,
+            236,
+            206
+          ]
+        ],
+        "abyssal_salt": [
+          [
+            35,
+            52,
+            89
+          ],
+          [
+            44,
+            77,
+            127
+          ],
+          [
+            53,
+            104,
+            169
+          ],
+          [
+            63,
+            134,
+            214
+          ],
+          [
+            111,
+            163,
+            218
+          ],
+          [
+            159,
+            192,
+            222
+          ],
+          [
+            207,
+            221,
+            225
+          ]
+        ]
+      },
+      "neutral": "facilities/sap-purifier--neutral.png",
+      "menu": "facilities/sap-purifier--menu.png",
+      "default": "facilities/sap-purifier--neutral.png",
+      "paintPixelCount": 1195
+    },
+    "Alloy Foundry": {
+      "size": [
+        64,
+        64
+      ],
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-02",
+      "cell": 0,
+      "default": "facilities/alloy-foundry.png"
+    },
+    "Circuit Weaver": {
+      "size": [
+        64,
+        64
+      ],
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-02",
+      "cell": 1,
+      "default": "facilities/circuit-weaver.png"
+    },
+    "Fluid Mixer": {
+      "size": [
+        64,
+        64
+      ],
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-02",
+      "cell": 2,
+      "default": "facilities/fluid-mixer.png"
+    },
+    "Crystal Kiln": {
+      "size": [
+        64,
+        64
+      ],
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-02",
+      "cell": 3,
+      "default": "facilities/crystal-kiln.png"
+    },
+    "Void Smelter": {
+      "size": [
+        64,
+        64
+      ],
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-02",
+      "cell": 4,
+      "default": "facilities/void-smelter.png"
+    },
+    "Magnetic Lathe": {
+      "size": [
+        64,
+        64
+      ],
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-02",
+      "cell": 5,
+      "default": "facilities/magnetic-lathe.png"
+    },
+    "Precision Assembler": {
+      "size": [
+        64,
+        64
+      ],
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-02",
+      "cell": 6,
+      "default": "facilities/precision-assembler.png"
+    },
+    "Cryo-Chamber": {
+      "size": [
+        64,
+        64
+      ],
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-02",
+      "cell": 7,
+      "default": "facilities/cryo-chamber.png"
+    },
+    "Lens Grinder": {
+      "size": [
+        64,
+        64
+      ],
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-03",
+      "cell": 0,
+      "default": "facilities/lens-grinder.png"
+    },
+    "Drive Assembler": {
+      "size": [
+        96,
+        96
+      ],
+      "footprint": [
+        3,
+        3
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-03",
+      "cell": 1,
+      "default": "facilities/drive-assembler.png"
+    },
+    "Photon Weaver": {
+      "size": [
+        96,
+        96
+      ],
+      "footprint": [
+        3,
+        3
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-03",
+      "cell": 2,
+      "default": "facilities/photon-weaver.png"
+    },
+    "Thermal Forge": {
+      "size": [
+        96,
+        96
+      ],
+      "footprint": [
+        3,
+        3
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-03",
+      "cell": 3,
+      "default": "facilities/thermal-forge.png"
+    },
+    "Stasis Forge": {
+      "size": [
+        96,
+        96
+      ],
+      "footprint": [
+        3,
+        3
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-03",
+      "cell": 4,
+      "default": "facilities/stasis-forge.png"
+    },
+    "Engine Fabricator": {
+      "size": [
+        96,
+        96
+      ],
+      "footprint": [
+        3,
+        3
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-03",
+      "cell": 5,
+      "default": "facilities/engine-fabricator.png"
+    },
+    "Plasma Matrix": {
+      "size": [
+        96,
+        96
+      ],
+      "footprint": [
+        3,
+        3
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-03",
+      "cell": 6,
+      "default": "facilities/plasma-matrix.png"
+    },
+    "Chrono Assembler": {
+      "size": [
+        96,
+        96
+      ],
+      "footprint": [
+        3,
+        3
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-03",
+      "cell": 7,
+      "default": "facilities/chrono-assembler.png"
+    },
+    "Quantum Collider": {
+      "size": [
+        96,
+        96
+      ],
+      "footprint": [
+        3,
+        3
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-04",
+      "cell": 0,
+      "default": "facilities/quantum-collider.png"
+    },
+    "Hyper-Lathe": {
+      "size": [
+        96,
+        96
+      ],
+      "footprint": [
+        3,
+        3
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-04",
+      "cell": 1,
+      "default": "facilities/hyper-lathe.png"
+    },
+    "Tesseract Loom": {
+      "size": [
+        96,
+        96
+      ],
+      "footprint": [
+        3,
+        3
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-04",
+      "cell": 2,
+      "default": "facilities/tesseract-loom.png"
+    },
+    "Beacon Gantry": {
+      "size": [
+        96,
+        96
+      ],
+      "footprint": [
+        3,
+        3
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-04",
+      "cell": 3,
+      "default": "facilities/beacon-gantry.png"
+    },
+    "Planetary Cannon": {
+      "size": [
+        96,
+        96
+      ],
+      "footprint": [
+        3,
+        3
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-04",
+      "cell": 4,
+      "default": "facilities/planetary-cannon.png"
+    },
+    "Ark Shipyard": {
+      "size": [
+        96,
+        96
+      ],
+      "footprint": [
+        3,
+        3
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-04",
+      "cell": 5,
+      "default": "facilities/ark-shipyard.png"
+    },
+    "Antimatter Trap": {
+      "size": [
+        96,
+        96
+      ],
+      "footprint": [
+        3,
+        3
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-04",
+      "cell": 6,
+      "default": "facilities/antimatter-trap.png"
+    },
+    "Worldforge": {
+      "size": [
+        96,
+        96
+      ],
+      "footprint": [
+        3,
+        3
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-04",
+      "cell": 7,
+      "default": "facilities/worldforge.png"
+    },
+    "Scrap Recycler": {
+      "size": [
+        32,
+        32
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-05",
+      "cell": 0,
+      "default": "facilities/scrap-recycler.png"
+    },
+    "Slag Vent": {
+      "size": [
+        32,
+        32
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-05",
+      "cell": 1,
+      "default": "facilities/slag-vent.png"
+    },
+    "Biomass Burner": {
+      "size": [
+        64,
+        64
+      ],
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-05",
+      "cell": 2,
+      "default": "facilities/biomass-burner.png"
+    },
+    "Combustion Turbine": {
+      "size": [
+        64,
+        64
+      ],
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-05",
+      "cell": 3,
+      "default": "facilities/combustion-turbine.png"
+    },
+    "Aether Reactor": {
+      "size": [
+        64,
+        64
+      ],
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-05",
+      "cell": 4,
+      "default": "facilities/aether-reactor.png"
+    },
+    "Plasma Chamber": {
+      "size": [
+        64,
+        64
+      ],
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-05",
+      "cell": 5,
+      "default": "facilities/plasma-chamber.png"
+    },
+    "Colony Pod": {
+      "size": [
+        96,
+        96
+      ],
+      "footprint": [
+        3,
+        3
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "facilities-05",
+      "cell": 6,
+      "default": "facilities/colony-pod.png"
+    }
+  },
+  "materials": {
+    "kryptex_ore": {
+      "name": "Kryptex Ore",
+      "file": "materials/kryptex_ore.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-01",
+      "cell": 0
+    },
+    "ferrite_ore": {
+      "name": "Ferrite Ore",
+      "file": "materials/ferrite_ore.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-01",
+      "cell": 1
+    },
+    "voltaic_gas": {
+      "name": "Voltaic Gas",
+      "file": "materials/voltaic_gas.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-01",
+      "cell": 2
+    },
+    "nebula_gas": {
+      "name": "Nebula Gas",
+      "file": "materials/nebula_gas.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-01",
+      "cell": 3
+    },
+    "silicate_dust": {
+      "name": "Silicate Dust",
+      "file": "materials/silicate_dust.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-01",
+      "cell": 4
+    },
+    "bio_sap": {
+      "name": "Bio Sap",
+      "file": "materials/bio_sap.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-01",
+      "cell": 5
+    },
+    "abyssal_brine": {
+      "name": "Abyssal Brine",
+      "file": "materials/abyssal_brine.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-01",
+      "cell": 6
+    },
+    "prism_particle": {
+      "name": "Prism Particles",
+      "file": "materials/prism_particle.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-01",
+      "cell": 7
+    },
+    "kryptex_ingot": {
+      "name": "Kryptex Ingot",
+      "file": "materials/kryptex_ingot.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-01",
+      "cell": 8
+    },
+    "ferrite_ingot": {
+      "name": "Ferrite Ingot",
+      "file": "materials/ferrite_ingot.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-01",
+      "cell": 9
+    },
+    "ionized_voltaic": {
+      "name": "Ionized Voltaic",
+      "file": "materials/ionized_voltaic.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-01",
+      "cell": 10
+    },
+    "condensed_nebula": {
+      "name": "Condensed Nebula",
+      "file": "materials/condensed_nebula.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-01",
+      "cell": 11
+    },
+    "silicate_wiring": {
+      "name": "Silicate Wiring",
+      "file": "materials/silicate_wiring.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-01",
+      "cell": 12
+    },
+    "lucent_syrup": {
+      "name": "Lucent Syrup",
+      "file": "materials/lucent_syrup.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-01",
+      "cell": 13
+    },
+    "prism_filament": {
+      "name": "Prism Filament",
+      "file": "materials/prism_filament.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-01",
+      "cell": 14
+    },
+    "abyssal_salt": {
+      "name": "Abyssal Salt",
+      "file": "materials/abyssal_salt.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-01",
+      "cell": 15
+    },
+    "krypt_ion_casing": {
+      "name": "Krypt-Ion Casing",
+      "file": "materials/krypt_ion_casing.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-02",
+      "cell": 0
+    },
+    "logic_board": {
+      "name": "Logic Board",
+      "file": "materials/logic_board.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-02",
+      "cell": 1
+    },
+    "aether_fluid": {
+      "name": "Aether Fluid",
+      "file": "materials/aether_fluid.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-02",
+      "cell": 2
+    },
+    "resonant_crystal": {
+      "name": "Resonant Crystal",
+      "file": "materials/resonant_crystal.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-02",
+      "cell": 3
+    },
+    "void_steel": {
+      "name": "Void Steel",
+      "file": "materials/void_steel.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-02",
+      "cell": 4
+    },
+    "magnetic_stator": {
+      "name": "Magnetic Stator",
+      "file": "materials/magnetic_stator.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-02",
+      "cell": 5
+    },
+    "micro_controller": {
+      "name": "Micro-Controller",
+      "file": "materials/micro_controller.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-02",
+      "cell": 6
+    },
+    "cryo_cooler": {
+      "name": "Cryo Cooler",
+      "file": "materials/cryo_cooler.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-02",
+      "cell": 7
+    },
+    "phase_lens": {
+      "name": "Phase Lens",
+      "file": "materials/phase_lens.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-02",
+      "cell": 8
+    },
+    "levitation_drive": {
+      "name": "Levitation Drive",
+      "file": "materials/levitation_drive.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-02",
+      "cell": 9
+    },
+    "photon_emitter": {
+      "name": "Photon Emitter",
+      "file": "materials/photon_emitter.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-02",
+      "cell": 10
+    },
+    "thermal_plating": {
+      "name": "Thermal Plating",
+      "file": "materials/thermal_plating.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-02",
+      "cell": 11
+    },
+    "stasis_cell": {
+      "name": "Stasis Cell",
+      "file": "materials/stasis_cell.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-02",
+      "cell": 12
+    },
+    "anti_grav_engine": {
+      "name": "Anti-Grav Engine",
+      "file": "materials/anti_grav_engine.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-02",
+      "cell": 13
+    },
+    "plasma_core": {
+      "name": "Plasma Core",
+      "file": "materials/plasma_core.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-02",
+      "cell": 14
+    },
+    "chrono_engine": {
+      "name": "Chrono Engine",
+      "file": "materials/chrono_engine.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-02",
+      "cell": 15
+    },
+    "singularity_core": {
+      "name": "Singularity Core",
+      "file": "materials/singularity_core.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-03",
+      "cell": 0
+    },
+    "warp_manifold": {
+      "name": "Warp Manifold",
+      "file": "materials/warp_manifold.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-03",
+      "cell": 1
+    },
+    "tesseract_frame": {
+      "name": "Tesseract Frame",
+      "file": "materials/tesseract_frame.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-03",
+      "cell": 2
+    },
+    "interstellar_beacon": {
+      "name": "Interstellar Beacon",
+      "file": "materials/interstellar_beacon.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-03",
+      "cell": 3
+    },
+    "orbital_relay": {
+      "name": "Orbital Relay",
+      "file": "materials/orbital_relay.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-03",
+      "cell": 4
+    },
+    "genesis_ark": {
+      "name": "Genesis Ark",
+      "file": "materials/genesis_ark.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-03",
+      "cell": 5
+    },
+    "anti_matter": {
+      "name": "Anti-Matter",
+      "file": "materials/anti_matter.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-03",
+      "cell": 6
+    },
+    "terraformer": {
+      "name": "Terraformer",
+      "file": "materials/terraformer.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-03",
+      "cell": 7
+    },
+    "scrap": {
+      "name": "Scrap",
+      "file": "materials/scrap.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-03",
+      "cell": 8
+    },
+    "slag": {
+      "name": "Slag",
+      "file": "materials/slag.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source": "materials-03",
+      "cell": 9
+    }
+  }
+}

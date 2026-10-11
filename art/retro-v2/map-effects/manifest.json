@@ -1,0 +1,283 @@
+{
+  "version": 1,
+  "rocks": {
+    "desert": [
+      {
+        "near": {
+          "day": "desert-0-day-near.png",
+          "night": "desert-0-night-near.png"
+        },
+        "medium": {
+          "day": "desert-0-day-medium.png",
+          "night": "desert-0-night-medium.png"
+        },
+        "far": {
+          "day": "desert-0-day-far.png",
+          "night": "desert-0-night-far.png"
+        }
+      },
+      {
+        "near": {
+          "day": "desert-1-day-near.png",
+          "night": "desert-1-night-near.png"
+        },
+        "medium": {
+          "day": "desert-1-day-medium.png",
+          "night": "desert-1-night-medium.png"
+        },
+        "far": {
+          "day": "desert-1-day-far.png",
+          "night": "desert-1-night-far.png"
+        }
+      },
+      {
+        "near": {
+          "day": "desert-2-day-near.png",
+          "night": "desert-2-night-near.png"
+        },
+        "medium": {
+          "day": "desert-2-day-medium.png",
+          "night": "desert-2-night-medium.png"
+        },
+        "far": {
+          "day": "desert-2-day-far.png",
+          "night": "desert-2-night-far.png"
+        }
+      }
+    ],
+    "ice": [
+      {
+        "near": {
+          "day": "ice-0-day-near.png",
+          "night": "ice-0-night-near.png"
+        },
+        "medium": {
+          "day": "ice-0-day-medium.png",
+          "night": "ice-0-night-medium.png"
+        },
+        "far": {
+          "day": "ice-0-day-far.png",
+          "night": "ice-0-night-far.png"
+        }
+      },
+      {
+        "near": {
+          "day": "ice-1-day-near.png",
+          "night": "ice-1-night-near.png"
+        },
+        "medium": {
+          "day": "ice-1-day-medium.png",
+          "night": "ice-1-night-medium.png"
+        },
+        "far": {
+          "day": "ice-1-day-far.png",
+          "night": "ice-1-night-far.png"
+        }
+      },
+      {
+        "near": {
+          "day": "ice-2-day-near.png",
+          "night": "ice-2-night-near.png"
+        },
+        "medium": {
+          "day": "ice-2-day-medium.png",
+          "night": "ice-2-night-medium.png"
+        },
+        "far": {
+          "day": "ice-2-day-far.png",
+          "night": "ice-2-night-far.png"
+        }
+      }
+    ],
+    "marsh": [
+      {
+        "near": {
+          "day": "marsh-0-day-near.png",
+          "night": "marsh-0-night-near.png"
+        },
+        "medium": {
+          "day": "marsh-0-day-medium.png",
+          "night": "marsh-0-night-medium.png"
+        },
+        "far": {
+          "day": "marsh-0-day-far.png",
+          "night": "marsh-0-night-far.png"
+        }
+      },
+      {
+        "near": {
+          "day": "marsh-1-day-near.png",
+          "night": "marsh-1-night-near.png"
+        },
+        "medium": {
+          "day": "marsh-1-day-medium.png",
+          "night": "marsh-1-night-medium.png"
+        },
+        "far": {
+          "day": "marsh-1-day-far.png",
+          "night": "marsh-1-night-far.png"
+        }
+      },
+      {
+        "near": {
+          "day": "marsh-2-day-near.png",
+          "night": "marsh-2-night-near.png"
+        },
+        "medium": {
+          "day": "marsh-2-day-medium.png",
+          "night": "marsh-2-night-medium.png"
+        },
+        "far": {
+          "day": "marsh-2-day-far.png",
+          "night": "marsh-2-night-far.png"
+        }
+      }
+    ],
+    "rocky": [
+      {
+        "near": {
+          "day": "rocky-0-day-near.png",
+          "night": "rocky-0-night-near.png"
+        },
+        "medium": {
+          "day": "rocky-0-day-medium.png",
+          "night": "rocky-0-night-medium.png"
+        },
+        "far": {
+          "day": "rocky-0-day-far.png",
+          "night": "rocky-0-night-far.png"
+        }
+      },
+      {
+        "near": {
+          "day": "rocky-1-day-near.png",
+          "night": "rocky-1-night-near.png"
+        },
+        "medium": {
+          "day": "rocky-1-day-medium.png",
+          "night": "rocky-1-night-medium.png"
+        },
+        "far": {
+          "day": "rocky-1-day-far.png",
+          "night": "rocky-1-night-far.png"
+        }
+      },
+      {
+        "near": {
+          "day": "rocky-2-day-near.png",
+          "night": "rocky-2-night-near.png"
+        },
+        "medium": {
+          "day": "rocky-2-day-medium.png",
+          "night": "rocky-2-night-medium.png"
+        },
+        "far": {
+          "day": "rocky-2-day-far.png",
+          "night": "rocky-2-night-far.png"
+        }
+      }
+    ],
+    "volcanic": [
+      {
+        "near": {
+          "day": "volcanic-0-day-near.png",
+          "night": "volcanic-0-night-near.png"
+        },
+        "medium": {
+          "day": "volcanic-0-day-medium.png",
+          "night": "volcanic-0-night-medium.png"
+        },
+        "far": {
+          "day": "volcanic-0-day-far.png",
+          "night": "volcanic-0-night-far.png"
+        }
+      },
+      {
+        "near": {
+          "day": "volcanic-1-day-near.png",
+          "night": "volcanic-1-night-near.png"
+        },
+        "medium": {
+          "day": "volcanic-1-day-medium.png",
+          "night": "volcanic-1-night-medium.png"
+        },
+        "far": {
+          "day": "volcanic-1-day-far.png",
+          "night": "volcanic-1-night-far.png"
+        }
+      },
+      {
+        "near": {
+          "day": "volcanic-2-day-near.png",
+          "night": "volcanic-2-night-near.png"
+        },
+        "medium": {
+          "day": "volcanic-2-day-medium.png",
+          "night": "volcanic-2-night-medium.png"
+        },
+        "far": {
+          "day": "volcanic-2-day-far.png",
+          "night": "volcanic-2-night-far.png"
+        }
+      }
+    ]
+  },
+  "rotations": {
+    "idle": [
+      "rotate-idle-0.png",
+      "rotate-idle-1.png",
+      "rotate-idle-2.png",
+      "rotate-idle-3.png"
+    ],
+    "active": [
+      "rotate-active-0.png",
+      "rotate-active-1.png",
+      "rotate-active-2.png",
+      "rotate-active-3.png"
+    ],
+    "pressed": [
+      "rotate-pressed-0.png",
+      "rotate-pressed-1.png",
+      "rotate-pressed-2.png",
+      "rotate-pressed-3.png"
+    ]
+  },
+  "rings": [
+    "ring-0.png",
+    "ring-1.png",
+    "ring-2.png",
+    "ring-3.png",
+    "ring-4.png",
+    "ring-5.png",
+    "ring-6.png",
+    "ring-7.png"
+  ],
+  "confetti": [
+    "sparkle-0.png",
+    "sparkle-1.png",
+    "sparkle-2.png",
+    "sparkle-3.png",
+    "sparkle-4.png"
+  ],
+  "rockSizes": {
+    "near": 32,
+    "medium": 16,
+    "far": 8
+  },
+  "sampling": "nearest",
+  "shadow": "baked down-right",
+  "portGuides": {
+    "outputs": [
+      "port-output-0.png",
+      "port-output-1.png",
+      "port-output-2.png",
+      "port-output-3.png"
+    ],
+    "inputs": [
+      "port-input-0.png",
+      "port-input-1.png",
+      "port-input-2.png",
+      "port-input-3.png"
+    ]
+  }
+}

@@ -1,0 +1,3407 @@
+{
+  "version": 1,
+  "stage": "layer-and-animation-assets-only",
+  "pixelsPerTile": 32,
+  "sampling": {
+    "filter": "nearest",
+    "binaryAlpha": true,
+    "integerFrameRectangles": true,
+    "rotateAtRuntime": false
+  },
+  "drawOrder": [
+    "base",
+    "motion",
+    "foreground",
+    "progress",
+    "night-dim",
+    "lights",
+    "particles",
+    "status"
+  ],
+  "clocks": {
+    "machine": "b.anim: advances only while working, already includes brownout speed",
+    "generator": "simulation time gated by b.genOn; freeze when paused",
+    "progress": "actual interpolated recipe progress, never the animation frame index",
+    "event": "existing completion/delivery event; do not emit continuously",
+    "reducedMotion": "retain working-machine motion and night emissions; suppress decorative camera motion, particles and celebrations"
+  },
+  "facilities": {
+    "Ore Extractor": {
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "rotor",
+          "frames": [
+            "ore-extractor/motion-0-00.png",
+            "ore-extractor/motion-0-01.png",
+            "ore-extractor/motion-0-02.png",
+            "ore-extractor/motion-0-03.png",
+            "ore-extractor/motion-0-04.png",
+            "ore-extractor/motion-0-05.png",
+            "ore-extractor/motion-0-06.png",
+            "ore-extractor/motion-0-07.png",
+            "ore-extractor/motion-0-08.png",
+            "ore-extractor/motion-0-09.png",
+            "ore-extractor/motion-0-10.png",
+            "ore-extractor/motion-0-11.png",
+            "ore-extractor/motion-0-12.png",
+            "ore-extractor/motion-0-13.png",
+            "ore-extractor/motion-0-14.png",
+            "ore-extractor/motion-0-15.png"
+          ],
+          "emissionFrames": [],
+          "frameCount": 16,
+          "cyclesPerSimulationSecond": 0.5,
+          "pivot": [
+            27,
+            33
+          ],
+          "direction": 1,
+          "mask": "ore-extractor/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "freeze-frame-0",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "ore-extractor/foreground.png",
+      "lights": "ore-extractor/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {
+        "kryptex_ore": {
+          "base": "ore-extractor/base--kryptex_ore.png"
+        },
+        "ferrite_ore": {
+          "base": "ore-extractor/base--ferrite_ore.png"
+        },
+        "neutral": {
+          "base": "ore-extractor/base--neutral.png"
+        }
+      },
+      "progress": {
+        "frames": "shared/progress-64",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "smoke",
+          "anchor": [
+            10,
+            51
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        }
+      },
+      "base": "ore-extractor/base--neutral.png",
+      "paintMask": "art-source/chassis-v1/masks/ore-extractor-paint.png"
+    },
+    "Gas Siphon": {
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "rotor",
+          "frames": [
+            "gas-siphon/motion-0-00.png",
+            "gas-siphon/motion-0-01.png",
+            "gas-siphon/motion-0-02.png",
+            "gas-siphon/motion-0-03.png",
+            "gas-siphon/motion-0-04.png",
+            "gas-siphon/motion-0-05.png",
+            "gas-siphon/motion-0-06.png",
+            "gas-siphon/motion-0-07.png",
+            "gas-siphon/motion-0-08.png",
+            "gas-siphon/motion-0-09.png",
+            "gas-siphon/motion-0-10.png",
+            "gas-siphon/motion-0-11.png",
+            "gas-siphon/motion-0-12.png",
+            "gas-siphon/motion-0-13.png",
+            "gas-siphon/motion-0-14.png",
+            "gas-siphon/motion-0-15.png"
+          ],
+          "emissionFrames": [],
+          "frameCount": 16,
+          "cyclesPerSimulationSecond": 0.8,
+          "pivot": [
+            27,
+            33
+          ],
+          "direction": 1,
+          "mask": "gas-siphon/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "freeze-frame-0",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "gas-siphon/foreground.png",
+      "lights": "gas-siphon/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {
+        "voltaic_gas": {
+          "base": "gas-siphon/base--voltaic_gas.png"
+        },
+        "nebula_gas": {
+          "base": "gas-siphon/base--nebula_gas.png"
+        },
+        "neutral": {
+          "base": "gas-siphon/base--neutral.png"
+        }
+      },
+      "progress": {
+        "frames": "shared/progress-64",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "smoke",
+          "anchor": [
+            10,
+            51
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        }
+      },
+      "base": "gas-siphon/base--neutral.png",
+      "paintMask": "art-source/chassis-v1/masks/gas-siphon-paint.png"
+    },
+    "Dust Harvester": {
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "rotor",
+          "frames": [
+            "dust-harvester/motion-0-00.png",
+            "dust-harvester/motion-0-01.png",
+            "dust-harvester/motion-0-02.png",
+            "dust-harvester/motion-0-03.png",
+            "dust-harvester/motion-0-04.png",
+            "dust-harvester/motion-0-05.png",
+            "dust-harvester/motion-0-06.png",
+            "dust-harvester/motion-0-07.png",
+            "dust-harvester/motion-0-08.png",
+            "dust-harvester/motion-0-09.png",
+            "dust-harvester/motion-0-10.png",
+            "dust-harvester/motion-0-11.png",
+            "dust-harvester/motion-0-12.png",
+            "dust-harvester/motion-0-13.png",
+            "dust-harvester/motion-0-14.png",
+            "dust-harvester/motion-0-15.png"
+          ],
+          "emissionFrames": [],
+          "frameCount": 16,
+          "cyclesPerSimulationSecond": 1.1,
+          "pivot": [
+            27,
+            33
+          ],
+          "direction": 1,
+          "mask": "dust-harvester/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "freeze-frame-0",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "dust-harvester/foreground.png",
+      "lights": "dust-harvester/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {
+        "silicate_dust": {
+          "base": "dust-harvester/base--silicate_dust.png"
+        },
+        "prism_particle": {
+          "base": "dust-harvester/base--prism_particle.png"
+        },
+        "neutral": {
+          "base": "dust-harvester/base--neutral.png"
+        }
+      },
+      "progress": {
+        "frames": "shared/progress-64",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "smoke",
+          "anchor": [
+            10,
+            51
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        }
+      },
+      "base": "dust-harvester/base--neutral.png",
+      "paintMask": "art-source/chassis-v1/masks/dust-harvester-paint.png"
+    },
+    "Fluid Pump": {
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "liquid",
+          "frames": [
+            "fluid-pump/motion-0-00.png",
+            "fluid-pump/motion-0-01.png",
+            "fluid-pump/motion-0-02.png",
+            "fluid-pump/motion-0-03.png",
+            "fluid-pump/motion-0-04.png",
+            "fluid-pump/motion-0-05.png",
+            "fluid-pump/motion-0-06.png",
+            "fluid-pump/motion-0-07.png"
+          ],
+          "emissionFrames": [
+            "fluid-pump/emission-0-00.png",
+            "fluid-pump/emission-0-01.png",
+            "fluid-pump/emission-0-02.png",
+            "fluid-pump/emission-0-03.png",
+            "fluid-pump/emission-0-04.png",
+            "fluid-pump/emission-0-05.png",
+            "fluid-pump/emission-0-06.png",
+            "fluid-pump/emission-0-07.png"
+          ],
+          "frameCount": 8,
+          "cyclesPerSimulationSecond": 0.3,
+          "pivot": [
+            32,
+            29
+          ],
+          "direction": 1,
+          "mask": "fluid-pump/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "hidden",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "fluid-pump/foreground.png",
+      "lights": "fluid-pump/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {
+        "bio_sap": {
+          "base": "fluid-pump/base--bio_sap.png"
+        },
+        "abyssal_brine": {
+          "base": "fluid-pump/base--abyssal_brine.png"
+        },
+        "neutral": {
+          "base": "fluid-pump/base--neutral.png"
+        }
+      },
+      "progress": {
+        "frames": "shared/progress-64",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "smoke",
+          "anchor": [
+            10,
+            51
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        }
+      },
+      "base": "fluid-pump/base--neutral.png",
+      "paintMask": "art-source/chassis-v1/masks/fluid-pump-paint.png"
+    },
+    "Ore Refinery": {
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "fire",
+          "frames": [
+            "ore-refinery/motion-0-00.png",
+            "ore-refinery/motion-0-01.png",
+            "ore-refinery/motion-0-02.png",
+            "ore-refinery/motion-0-03.png",
+            "ore-refinery/motion-0-04.png",
+            "ore-refinery/motion-0-05.png",
+            "ore-refinery/motion-0-06.png",
+            "ore-refinery/motion-0-07.png"
+          ],
+          "emissionFrames": [
+            "ore-refinery/emission-0-00.png",
+            "ore-refinery/emission-0-01.png",
+            "ore-refinery/emission-0-02.png",
+            "ore-refinery/emission-0-03.png",
+            "ore-refinery/emission-0-04.png",
+            "ore-refinery/emission-0-05.png",
+            "ore-refinery/emission-0-06.png",
+            "ore-refinery/emission-0-07.png"
+          ],
+          "frameCount": 8,
+          "cyclesPerSimulationSecond": 1,
+          "pivot": [
+            28,
+            35
+          ],
+          "direction": 1,
+          "mask": "ore-refinery/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "hidden",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "ore-refinery/foreground.png",
+      "lights": "ore-refinery/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {
+        "kryptex_ingot": {
+          "base": "ore-refinery/base--kryptex_ingot.png"
+        },
+        "ferrite_ingot": {
+          "base": "ore-refinery/base--ferrite_ingot.png"
+        },
+        "neutral": {
+          "base": "ore-refinery/base--neutral.png"
+        }
+      },
+      "progress": {
+        "frames": "shared/progress-64",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "smoke",
+          "anchor": [
+            10,
+            51
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        },
+        "exhaust": {
+          "effect": "smoke",
+          "anchor": [
+            49,
+            14
+          ],
+          "trigger": "working simulation time",
+          "intervalSeconds": 1.2
+        }
+      },
+      "base": "ore-refinery/base--neutral.png",
+      "paintMask": "art-source/chassis-v1/masks/ore-refinery-paint.png"
+    },
+    "Gas Ionizer": {
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "energy",
+          "frames": [
+            "gas-ionizer/motion-0-00.png",
+            "gas-ionizer/motion-0-01.png",
+            "gas-ionizer/motion-0-02.png",
+            "gas-ionizer/motion-0-03.png",
+            "gas-ionizer/motion-0-04.png",
+            "gas-ionizer/motion-0-05.png",
+            "gas-ionizer/motion-0-06.png",
+            "gas-ionizer/motion-0-07.png"
+          ],
+          "emissionFrames": [
+            "gas-ionizer/emission-0-00.png",
+            "gas-ionizer/emission-0-01.png",
+            "gas-ionizer/emission-0-02.png",
+            "gas-ionizer/emission-0-03.png",
+            "gas-ionizer/emission-0-04.png",
+            "gas-ionizer/emission-0-05.png",
+            "gas-ionizer/emission-0-06.png",
+            "gas-ionizer/emission-0-07.png"
+          ],
+          "frameCount": 8,
+          "cyclesPerSimulationSecond": 0.3,
+          "pivot": [
+            29,
+            35
+          ],
+          "direction": 1,
+          "mask": "gas-ionizer/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "hidden",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "gas-ionizer/foreground.png",
+      "lights": "gas-ionizer/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {
+        "ionized_voltaic": {
+          "base": "gas-ionizer/base--ionized_voltaic.png"
+        },
+        "condensed_nebula": {
+          "base": "gas-ionizer/base--condensed_nebula.png"
+        },
+        "neutral": {
+          "base": "gas-ionizer/base--neutral.png"
+        }
+      },
+      "progress": {
+        "frames": "shared/progress-64",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "smoke",
+          "anchor": [
+            10,
+            51
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        }
+      },
+      "base": "gas-ionizer/base--neutral.png",
+      "paintMask": "art-source/chassis-v1/masks/gas-ionizer-paint.png"
+    },
+    "Wire Extruder": {
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "roller",
+          "frames": [
+            "wire-extruder/motion-0-00.png",
+            "wire-extruder/motion-0-01.png",
+            "wire-extruder/motion-0-02.png",
+            "wire-extruder/motion-0-03.png",
+            "wire-extruder/motion-0-04.png",
+            "wire-extruder/motion-0-05.png",
+            "wire-extruder/motion-0-06.png",
+            "wire-extruder/motion-0-07.png"
+          ],
+          "emissionFrames": [],
+          "frameCount": 8,
+          "cyclesPerSimulationSecond": 0.6,
+          "pivot": [
+            29,
+            33
+          ],
+          "direction": 1,
+          "mask": "wire-extruder/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "freeze-frame-0",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "wire-extruder/foreground.png",
+      "lights": "wire-extruder/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {
+        "silicate_wiring": {
+          "base": "wire-extruder/base--silicate_wiring.png"
+        },
+        "prism_filament": {
+          "base": "wire-extruder/base--prism_filament.png"
+        },
+        "neutral": {
+          "base": "wire-extruder/base--neutral.png"
+        }
+      },
+      "progress": {
+        "frames": "shared/progress-64",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "smoke",
+          "anchor": [
+            10,
+            51
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        }
+      },
+      "base": "wire-extruder/base--neutral.png",
+      "paintMask": "art-source/chassis-v1/masks/wire-extruder-paint.png"
+    },
+    "Sap Purifier": {
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "liquid",
+          "frames": [
+            "sap-purifier/motion-0-00.png",
+            "sap-purifier/motion-0-01.png",
+            "sap-purifier/motion-0-02.png",
+            "sap-purifier/motion-0-03.png",
+            "sap-purifier/motion-0-04.png",
+            "sap-purifier/motion-0-05.png",
+            "sap-purifier/motion-0-06.png",
+            "sap-purifier/motion-0-07.png"
+          ],
+          "emissionFrames": [
+            "sap-purifier/emission-0-00.png",
+            "sap-purifier/emission-0-01.png",
+            "sap-purifier/emission-0-02.png",
+            "sap-purifier/emission-0-03.png",
+            "sap-purifier/emission-0-04.png",
+            "sap-purifier/emission-0-05.png",
+            "sap-purifier/emission-0-06.png",
+            "sap-purifier/emission-0-07.png"
+          ],
+          "frameCount": 8,
+          "cyclesPerSimulationSecond": 0.3,
+          "pivot": [
+            26,
+            38
+          ],
+          "direction": 1,
+          "mask": "sap-purifier/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "hidden",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "sap-purifier/foreground.png",
+      "lights": "sap-purifier/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {
+        "lucent_syrup": {
+          "base": "sap-purifier/base--lucent_syrup.png"
+        },
+        "abyssal_salt": {
+          "base": "sap-purifier/base--abyssal_salt.png"
+        },
+        "neutral": {
+          "base": "sap-purifier/base--neutral.png"
+        }
+      },
+      "progress": {
+        "frames": "shared/progress-64",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "smoke",
+          "anchor": [
+            10,
+            51
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        }
+      },
+      "base": "sap-purifier/base--neutral.png",
+      "paintMask": "art-source/chassis-v1/masks/sap-purifier-paint.png"
+    },
+    "Alloy Foundry": {
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "heat",
+          "frames": [
+            "alloy-foundry/motion-0-00.png",
+            "alloy-foundry/motion-0-01.png",
+            "alloy-foundry/motion-0-02.png",
+            "alloy-foundry/motion-0-03.png",
+            "alloy-foundry/motion-0-04.png",
+            "alloy-foundry/motion-0-05.png",
+            "alloy-foundry/motion-0-06.png",
+            "alloy-foundry/motion-0-07.png"
+          ],
+          "emissionFrames": [
+            "alloy-foundry/emission-0-00.png",
+            "alloy-foundry/emission-0-01.png",
+            "alloy-foundry/emission-0-02.png",
+            "alloy-foundry/emission-0-03.png",
+            "alloy-foundry/emission-0-04.png",
+            "alloy-foundry/emission-0-05.png",
+            "alloy-foundry/emission-0-06.png",
+            "alloy-foundry/emission-0-07.png"
+          ],
+          "frameCount": 8,
+          "cyclesPerSimulationSecond": 0.3,
+          "pivot": [
+            32,
+            33
+          ],
+          "direction": 1,
+          "mask": "alloy-foundry/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "hidden",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "alloy-foundry/foreground.png",
+      "lights": "alloy-foundry/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {},
+      "progress": {
+        "frames": "shared/progress-64",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "smoke",
+          "anchor": [
+            10,
+            51
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        },
+        "exhaust": {
+          "effect": "smoke",
+          "anchor": [
+            49,
+            14
+          ],
+          "trigger": "working simulation time",
+          "intervalSeconds": 1.2
+        }
+      },
+      "base": "alloy-foundry/base.png"
+    },
+    "Circuit Weaver": {
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "arms",
+          "frames": [
+            "circuit-weaver/motion-0-00.png",
+            "circuit-weaver/motion-0-01.png",
+            "circuit-weaver/motion-0-02.png",
+            "circuit-weaver/motion-0-03.png",
+            "circuit-weaver/motion-0-04.png",
+            "circuit-weaver/motion-0-05.png",
+            "circuit-weaver/motion-0-06.png",
+            "circuit-weaver/motion-0-07.png"
+          ],
+          "emissionFrames": [],
+          "frameCount": 8,
+          "cyclesPerSimulationSecond": 0.35,
+          "pivot": [
+            32,
+            31
+          ],
+          "direction": 1,
+          "mask": "circuit-weaver/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "freeze-frame-0",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "circuit-weaver/foreground.png",
+      "lights": "circuit-weaver/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {},
+      "progress": {
+        "frames": "shared/progress-64",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "smoke",
+          "anchor": [
+            10,
+            51
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        }
+      },
+      "base": "circuit-weaver/base.png"
+    },
+    "Fluid Mixer": {
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "liquid",
+          "frames": [
+            "fluid-mixer/motion-0-00.png",
+            "fluid-mixer/motion-0-01.png",
+            "fluid-mixer/motion-0-02.png",
+            "fluid-mixer/motion-0-03.png",
+            "fluid-mixer/motion-0-04.png",
+            "fluid-mixer/motion-0-05.png",
+            "fluid-mixer/motion-0-06.png",
+            "fluid-mixer/motion-0-07.png"
+          ],
+          "emissionFrames": [
+            "fluid-mixer/emission-0-00.png",
+            "fluid-mixer/emission-0-01.png",
+            "fluid-mixer/emission-0-02.png",
+            "fluid-mixer/emission-0-03.png",
+            "fluid-mixer/emission-0-04.png",
+            "fluid-mixer/emission-0-05.png",
+            "fluid-mixer/emission-0-06.png",
+            "fluid-mixer/emission-0-07.png"
+          ],
+          "frameCount": 8,
+          "cyclesPerSimulationSecond": 0.3,
+          "pivot": [
+            20,
+            36
+          ],
+          "direction": 1,
+          "mask": "fluid-mixer/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "hidden",
+          "reducedMotionFrame": 0
+        },
+        {
+          "kind": "liquid",
+          "frames": [
+            "fluid-mixer/motion-1-00.png",
+            "fluid-mixer/motion-1-01.png",
+            "fluid-mixer/motion-1-02.png",
+            "fluid-mixer/motion-1-03.png",
+            "fluid-mixer/motion-1-04.png",
+            "fluid-mixer/motion-1-05.png",
+            "fluid-mixer/motion-1-06.png",
+            "fluid-mixer/motion-1-07.png"
+          ],
+          "emissionFrames": [
+            "fluid-mixer/emission-1-00.png",
+            "fluid-mixer/emission-1-01.png",
+            "fluid-mixer/emission-1-02.png",
+            "fluid-mixer/emission-1-03.png",
+            "fluid-mixer/emission-1-04.png",
+            "fluid-mixer/emission-1-05.png",
+            "fluid-mixer/emission-1-06.png",
+            "fluid-mixer/emission-1-07.png"
+          ],
+          "frameCount": 8,
+          "cyclesPerSimulationSecond": 0.3,
+          "pivot": [
+            44,
+            36
+          ],
+          "direction": 1,
+          "mask": "fluid-mixer/motion-1-mask.png",
+          "clock": "machine",
+          "idle": "hidden",
+          "reducedMotionFrame": 0
+        },
+        {
+          "kind": "rotor",
+          "frames": [
+            "fluid-mixer/motion-2-00.png",
+            "fluid-mixer/motion-2-01.png",
+            "fluid-mixer/motion-2-02.png",
+            "fluid-mixer/motion-2-03.png",
+            "fluid-mixer/motion-2-04.png",
+            "fluid-mixer/motion-2-05.png",
+            "fluid-mixer/motion-2-06.png",
+            "fluid-mixer/motion-2-07.png",
+            "fluid-mixer/motion-2-08.png",
+            "fluid-mixer/motion-2-09.png",
+            "fluid-mixer/motion-2-10.png",
+            "fluid-mixer/motion-2-11.png",
+            "fluid-mixer/motion-2-12.png",
+            "fluid-mixer/motion-2-13.png",
+            "fluid-mixer/motion-2-14.png",
+            "fluid-mixer/motion-2-15.png"
+          ],
+          "emissionFrames": [],
+          "frameCount": 16,
+          "cyclesPerSimulationSecond": 0.4,
+          "pivot": [
+            33,
+            35
+          ],
+          "direction": 1,
+          "mask": "fluid-mixer/motion-2-mask.png",
+          "clock": "machine",
+          "idle": "freeze-frame-0",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "fluid-mixer/foreground.png",
+      "lights": "fluid-mixer/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {},
+      "progress": {
+        "frames": "shared/progress-64",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "smoke",
+          "anchor": [
+            10,
+            51
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        }
+      },
+      "base": "fluid-mixer/base.png"
+    },
+    "Crystal Kiln": {
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "crystal",
+          "frames": [
+            "crystal-kiln/motion-0-00.png",
+            "crystal-kiln/motion-0-01.png",
+            "crystal-kiln/motion-0-02.png",
+            "crystal-kiln/motion-0-03.png",
+            "crystal-kiln/motion-0-04.png",
+            "crystal-kiln/motion-0-05.png",
+            "crystal-kiln/motion-0-06.png",
+            "crystal-kiln/motion-0-07.png"
+          ],
+          "emissionFrames": [
+            "crystal-kiln/emission-0-00.png",
+            "crystal-kiln/emission-0-01.png",
+            "crystal-kiln/emission-0-02.png",
+            "crystal-kiln/emission-0-03.png",
+            "crystal-kiln/emission-0-04.png",
+            "crystal-kiln/emission-0-05.png",
+            "crystal-kiln/emission-0-06.png",
+            "crystal-kiln/emission-0-07.png"
+          ],
+          "frameCount": 8,
+          "cyclesPerSimulationSecond": 0.3,
+          "pivot": [
+            32,
+            35
+          ],
+          "direction": 1,
+          "mask": "crystal-kiln/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "hidden",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "crystal-kiln/foreground.png",
+      "lights": "crystal-kiln/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {},
+      "progress": {
+        "frames": "shared/progress-64",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "sparks",
+          "anchor": [
+            10,
+            51
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        },
+        "exhaust": {
+          "effect": "sparks",
+          "anchor": [
+            49,
+            14
+          ],
+          "trigger": "working simulation time",
+          "intervalSeconds": 1.2
+        }
+      },
+      "base": "crystal-kiln/base.png"
+    },
+    "Void Smelter": {
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "energy",
+          "frames": [
+            "void-smelter/motion-0-00.png",
+            "void-smelter/motion-0-01.png",
+            "void-smelter/motion-0-02.png",
+            "void-smelter/motion-0-03.png",
+            "void-smelter/motion-0-04.png",
+            "void-smelter/motion-0-05.png",
+            "void-smelter/motion-0-06.png",
+            "void-smelter/motion-0-07.png"
+          ],
+          "emissionFrames": [
+            "void-smelter/emission-0-00.png",
+            "void-smelter/emission-0-01.png",
+            "void-smelter/emission-0-02.png",
+            "void-smelter/emission-0-03.png",
+            "void-smelter/emission-0-04.png",
+            "void-smelter/emission-0-05.png",
+            "void-smelter/emission-0-06.png",
+            "void-smelter/emission-0-07.png"
+          ],
+          "frameCount": 8,
+          "cyclesPerSimulationSecond": 0.6,
+          "pivot": [
+            33,
+            35
+          ],
+          "direction": -1,
+          "mask": "void-smelter/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "hidden",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "void-smelter/foreground.png",
+      "lights": "void-smelter/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {},
+      "progress": {
+        "frames": "shared/progress-64",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "smoke",
+          "anchor": [
+            10,
+            51
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        },
+        "exhaust": {
+          "effect": "smoke",
+          "anchor": [
+            49,
+            14
+          ],
+          "trigger": "working simulation time",
+          "intervalSeconds": 1.2
+        }
+      },
+      "base": "void-smelter/base.png"
+    },
+    "Magnetic Lathe": {
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "roller",
+          "frames": [
+            "magnetic-lathe/motion-0-00.png",
+            "magnetic-lathe/motion-0-01.png",
+            "magnetic-lathe/motion-0-02.png",
+            "magnetic-lathe/motion-0-03.png",
+            "magnetic-lathe/motion-0-04.png",
+            "magnetic-lathe/motion-0-05.png",
+            "magnetic-lathe/motion-0-06.png",
+            "magnetic-lathe/motion-0-07.png"
+          ],
+          "emissionFrames": [],
+          "frameCount": 8,
+          "cyclesPerSimulationSecond": 1,
+          "pivot": [
+            32,
+            34
+          ],
+          "direction": 1,
+          "mask": "magnetic-lathe/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "freeze-frame-0",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "magnetic-lathe/foreground.png",
+      "lights": "magnetic-lathe/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {},
+      "progress": {
+        "frames": "shared/progress-64",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "smoke",
+          "anchor": [
+            10,
+            51
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        }
+      },
+      "base": "magnetic-lathe/base.png"
+    },
+    "Precision Assembler": {
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "arms",
+          "frames": [
+            "precision-assembler/motion-0-00.png",
+            "precision-assembler/motion-0-01.png",
+            "precision-assembler/motion-0-02.png",
+            "precision-assembler/motion-0-03.png",
+            "precision-assembler/motion-0-04.png",
+            "precision-assembler/motion-0-05.png",
+            "precision-assembler/motion-0-06.png",
+            "precision-assembler/motion-0-07.png"
+          ],
+          "emissionFrames": [],
+          "frameCount": 8,
+          "cyclesPerSimulationSecond": 0.35,
+          "pivot": [
+            32,
+            32
+          ],
+          "direction": 1,
+          "mask": "precision-assembler/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "freeze-frame-0",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "precision-assembler/foreground.png",
+      "lights": "precision-assembler/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {},
+      "progress": {
+        "frames": "shared/progress-64",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "smoke",
+          "anchor": [
+            10,
+            51
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        }
+      },
+      "base": "precision-assembler/base.png"
+    },
+    "Cryo-Chamber": {
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "crystal",
+          "frames": [
+            "cryo-chamber/motion-0-00.png",
+            "cryo-chamber/motion-0-01.png",
+            "cryo-chamber/motion-0-02.png",
+            "cryo-chamber/motion-0-03.png",
+            "cryo-chamber/motion-0-04.png",
+            "cryo-chamber/motion-0-05.png",
+            "cryo-chamber/motion-0-06.png",
+            "cryo-chamber/motion-0-07.png"
+          ],
+          "emissionFrames": [
+            "cryo-chamber/emission-0-00.png",
+            "cryo-chamber/emission-0-01.png",
+            "cryo-chamber/emission-0-02.png",
+            "cryo-chamber/emission-0-03.png",
+            "cryo-chamber/emission-0-04.png",
+            "cryo-chamber/emission-0-05.png",
+            "cryo-chamber/emission-0-06.png",
+            "cryo-chamber/emission-0-07.png"
+          ],
+          "frameCount": 8,
+          "cyclesPerSimulationSecond": 0.3,
+          "pivot": [
+            33,
+            34
+          ],
+          "direction": 1,
+          "mask": "cryo-chamber/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "hidden",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "cryo-chamber/foreground.png",
+      "lights": "cryo-chamber/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {},
+      "progress": {
+        "frames": "shared/progress-64",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "smoke",
+          "anchor": [
+            10,
+            51
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        }
+      },
+      "base": "cryo-chamber/base.png"
+    },
+    "Lens Grinder": {
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "disc",
+          "frames": [
+            "lens-grinder/motion-0-00.png",
+            "lens-grinder/motion-0-01.png",
+            "lens-grinder/motion-0-02.png",
+            "lens-grinder/motion-0-03.png",
+            "lens-grinder/motion-0-04.png",
+            "lens-grinder/motion-0-05.png",
+            "lens-grinder/motion-0-06.png",
+            "lens-grinder/motion-0-07.png",
+            "lens-grinder/motion-0-08.png",
+            "lens-grinder/motion-0-09.png",
+            "lens-grinder/motion-0-10.png",
+            "lens-grinder/motion-0-11.png",
+            "lens-grinder/motion-0-12.png",
+            "lens-grinder/motion-0-13.png",
+            "lens-grinder/motion-0-14.png",
+            "lens-grinder/motion-0-15.png"
+          ],
+          "emissionFrames": [],
+          "frameCount": 16,
+          "cyclesPerSimulationSecond": 0.8,
+          "pivot": [
+            31,
+            36
+          ],
+          "direction": 1,
+          "mask": "lens-grinder/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "freeze-frame-0",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "lens-grinder/foreground.png",
+      "lights": "lens-grinder/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {},
+      "progress": {
+        "frames": "shared/progress-64",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "smoke",
+          "anchor": [
+            10,
+            51
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        }
+      },
+      "base": "lens-grinder/base.png"
+    },
+    "Drive Assembler": {
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "disc",
+          "frames": [
+            "drive-assembler/motion-0-00.png",
+            "drive-assembler/motion-0-01.png",
+            "drive-assembler/motion-0-02.png",
+            "drive-assembler/motion-0-03.png",
+            "drive-assembler/motion-0-04.png",
+            "drive-assembler/motion-0-05.png",
+            "drive-assembler/motion-0-06.png",
+            "drive-assembler/motion-0-07.png",
+            "drive-assembler/motion-0-08.png",
+            "drive-assembler/motion-0-09.png",
+            "drive-assembler/motion-0-10.png",
+            "drive-assembler/motion-0-11.png",
+            "drive-assembler/motion-0-12.png",
+            "drive-assembler/motion-0-13.png",
+            "drive-assembler/motion-0-14.png",
+            "drive-assembler/motion-0-15.png"
+          ],
+          "emissionFrames": [],
+          "frameCount": 16,
+          "cyclesPerSimulationSecond": 0.5,
+          "pivot": [
+            48,
+            51
+          ],
+          "direction": 1,
+          "mask": "drive-assembler/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "freeze-frame-0",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "drive-assembler/foreground.png",
+      "lights": "drive-assembler/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {},
+      "progress": {
+        "frames": "shared/progress-96",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "smoke",
+          "anchor": [
+            10,
+            83
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        }
+      },
+      "base": "drive-assembler/base.png"
+    },
+    "Photon Weaver": {
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "energy",
+          "frames": [
+            "photon-weaver/motion-0-00.png",
+            "photon-weaver/motion-0-01.png",
+            "photon-weaver/motion-0-02.png",
+            "photon-weaver/motion-0-03.png",
+            "photon-weaver/motion-0-04.png",
+            "photon-weaver/motion-0-05.png",
+            "photon-weaver/motion-0-06.png",
+            "photon-weaver/motion-0-07.png"
+          ],
+          "emissionFrames": [
+            "photon-weaver/emission-0-00.png",
+            "photon-weaver/emission-0-01.png",
+            "photon-weaver/emission-0-02.png",
+            "photon-weaver/emission-0-03.png",
+            "photon-weaver/emission-0-04.png",
+            "photon-weaver/emission-0-05.png",
+            "photon-weaver/emission-0-06.png",
+            "photon-weaver/emission-0-07.png"
+          ],
+          "frameCount": 8,
+          "cyclesPerSimulationSecond": 0.3,
+          "pivot": [
+            48,
+            51
+          ],
+          "direction": 1,
+          "mask": "photon-weaver/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "hidden",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "photon-weaver/foreground.png",
+      "lights": "photon-weaver/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {},
+      "progress": {
+        "frames": "shared/progress-96",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "smoke",
+          "anchor": [
+            10,
+            83
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        }
+      },
+      "base": "photon-weaver/base.png"
+    },
+    "Thermal Forge": {
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "heat",
+          "frames": [
+            "thermal-forge/motion-0-00.png",
+            "thermal-forge/motion-0-01.png",
+            "thermal-forge/motion-0-02.png",
+            "thermal-forge/motion-0-03.png",
+            "thermal-forge/motion-0-04.png",
+            "thermal-forge/motion-0-05.png",
+            "thermal-forge/motion-0-06.png",
+            "thermal-forge/motion-0-07.png"
+          ],
+          "emissionFrames": [
+            "thermal-forge/emission-0-00.png",
+            "thermal-forge/emission-0-01.png",
+            "thermal-forge/emission-0-02.png",
+            "thermal-forge/emission-0-03.png",
+            "thermal-forge/emission-0-04.png",
+            "thermal-forge/emission-0-05.png",
+            "thermal-forge/emission-0-06.png",
+            "thermal-forge/emission-0-07.png"
+          ],
+          "frameCount": 8,
+          "cyclesPerSimulationSecond": 0.3,
+          "pivot": [
+            48,
+            57
+          ],
+          "direction": 1,
+          "mask": "thermal-forge/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "hidden",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "thermal-forge/foreground.png",
+      "lights": "thermal-forge/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {},
+      "progress": {
+        "frames": "shared/progress-96",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "sparks",
+          "anchor": [
+            10,
+            83
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        },
+        "exhaust": {
+          "effect": "sparks",
+          "anchor": [
+            73,
+            21
+          ],
+          "trigger": "working simulation time",
+          "intervalSeconds": 1.2
+        }
+      },
+      "base": "thermal-forge/base.png"
+    },
+    "Stasis Forge": {
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "liquid",
+          "frames": [
+            "stasis-forge/motion-0-00.png",
+            "stasis-forge/motion-0-01.png",
+            "stasis-forge/motion-0-02.png",
+            "stasis-forge/motion-0-03.png",
+            "stasis-forge/motion-0-04.png",
+            "stasis-forge/motion-0-05.png",
+            "stasis-forge/motion-0-06.png",
+            "stasis-forge/motion-0-07.png"
+          ],
+          "emissionFrames": [
+            "stasis-forge/emission-0-00.png",
+            "stasis-forge/emission-0-01.png",
+            "stasis-forge/emission-0-02.png",
+            "stasis-forge/emission-0-03.png",
+            "stasis-forge/emission-0-04.png",
+            "stasis-forge/emission-0-05.png",
+            "stasis-forge/emission-0-06.png",
+            "stasis-forge/emission-0-07.png"
+          ],
+          "frameCount": 8,
+          "cyclesPerSimulationSecond": 0.22,
+          "pivot": [
+            48,
+            49
+          ],
+          "direction": 1,
+          "mask": "stasis-forge/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "hidden",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "stasis-forge/foreground.png",
+      "lights": "stasis-forge/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {},
+      "progress": {
+        "frames": "shared/progress-96",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "smoke",
+          "anchor": [
+            10,
+            83
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        }
+      },
+      "base": "stasis-forge/base.png"
+    },
+    "Engine Fabricator": {
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "fire",
+          "frames": [
+            "engine-fabricator/motion-0-00.png",
+            "engine-fabricator/motion-0-01.png",
+            "engine-fabricator/motion-0-02.png",
+            "engine-fabricator/motion-0-03.png",
+            "engine-fabricator/motion-0-04.png",
+            "engine-fabricator/motion-0-05.png",
+            "engine-fabricator/motion-0-06.png",
+            "engine-fabricator/motion-0-07.png"
+          ],
+          "emissionFrames": [
+            "engine-fabricator/emission-0-00.png",
+            "engine-fabricator/emission-0-01.png",
+            "engine-fabricator/emission-0-02.png",
+            "engine-fabricator/emission-0-03.png",
+            "engine-fabricator/emission-0-04.png",
+            "engine-fabricator/emission-0-05.png",
+            "engine-fabricator/emission-0-06.png",
+            "engine-fabricator/emission-0-07.png"
+          ],
+          "frameCount": 8,
+          "cyclesPerSimulationSecond": 1,
+          "pivot": [
+            33,
+            63
+          ],
+          "direction": 1,
+          "mask": "engine-fabricator/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "hidden",
+          "reducedMotionFrame": 0
+        },
+        {
+          "kind": "fire",
+          "frames": [
+            "engine-fabricator/motion-1-00.png",
+            "engine-fabricator/motion-1-01.png",
+            "engine-fabricator/motion-1-02.png",
+            "engine-fabricator/motion-1-03.png",
+            "engine-fabricator/motion-1-04.png",
+            "engine-fabricator/motion-1-05.png",
+            "engine-fabricator/motion-1-06.png",
+            "engine-fabricator/motion-1-07.png"
+          ],
+          "emissionFrames": [
+            "engine-fabricator/emission-1-00.png",
+            "engine-fabricator/emission-1-01.png",
+            "engine-fabricator/emission-1-02.png",
+            "engine-fabricator/emission-1-03.png",
+            "engine-fabricator/emission-1-04.png",
+            "engine-fabricator/emission-1-05.png",
+            "engine-fabricator/emission-1-06.png",
+            "engine-fabricator/emission-1-07.png"
+          ],
+          "frameCount": 8,
+          "cyclesPerSimulationSecond": 1,
+          "pivot": [
+            64,
+            63
+          ],
+          "direction": 1,
+          "mask": "engine-fabricator/motion-1-mask.png",
+          "clock": "machine",
+          "idle": "hidden",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "engine-fabricator/foreground.png",
+      "lights": "engine-fabricator/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {},
+      "progress": {
+        "frames": "shared/progress-96",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "sparks",
+          "anchor": [
+            10,
+            83
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        },
+        "exhaust": {
+          "effect": "sparks",
+          "anchor": [
+            73,
+            21
+          ],
+          "trigger": "working simulation time",
+          "intervalSeconds": 1.2
+        }
+      },
+      "base": "engine-fabricator/base.png"
+    },
+    "Plasma Matrix": {
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "energy",
+          "frames": [
+            "plasma-matrix/motion-0-00.png",
+            "plasma-matrix/motion-0-01.png",
+            "plasma-matrix/motion-0-02.png",
+            "plasma-matrix/motion-0-03.png",
+            "plasma-matrix/motion-0-04.png",
+            "plasma-matrix/motion-0-05.png",
+            "plasma-matrix/motion-0-06.png",
+            "plasma-matrix/motion-0-07.png"
+          ],
+          "emissionFrames": [
+            "plasma-matrix/emission-0-00.png",
+            "plasma-matrix/emission-0-01.png",
+            "plasma-matrix/emission-0-02.png",
+            "plasma-matrix/emission-0-03.png",
+            "plasma-matrix/emission-0-04.png",
+            "plasma-matrix/emission-0-05.png",
+            "plasma-matrix/emission-0-06.png",
+            "plasma-matrix/emission-0-07.png"
+          ],
+          "frameCount": 8,
+          "cyclesPerSimulationSecond": 0.35,
+          "pivot": [
+            48,
+            52
+          ],
+          "direction": 1,
+          "mask": "plasma-matrix/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "hidden",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "plasma-matrix/foreground.png",
+      "lights": "plasma-matrix/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {},
+      "progress": {
+        "frames": "shared/progress-96",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "smoke",
+          "anchor": [
+            10,
+            83
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        }
+      },
+      "base": "plasma-matrix/base.png"
+    },
+    "Chrono Assembler": {
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "rotor",
+          "frames": [
+            "chrono-assembler/motion-0-00.png",
+            "chrono-assembler/motion-0-01.png",
+            "chrono-assembler/motion-0-02.png",
+            "chrono-assembler/motion-0-03.png",
+            "chrono-assembler/motion-0-04.png",
+            "chrono-assembler/motion-0-05.png",
+            "chrono-assembler/motion-0-06.png",
+            "chrono-assembler/motion-0-07.png",
+            "chrono-assembler/motion-0-08.png",
+            "chrono-assembler/motion-0-09.png",
+            "chrono-assembler/motion-0-10.png",
+            "chrono-assembler/motion-0-11.png",
+            "chrono-assembler/motion-0-12.png",
+            "chrono-assembler/motion-0-13.png",
+            "chrono-assembler/motion-0-14.png",
+            "chrono-assembler/motion-0-15.png"
+          ],
+          "emissionFrames": [],
+          "frameCount": 16,
+          "cyclesPerSimulationSecond": 0.5,
+          "pivot": [
+            50,
+            51
+          ],
+          "direction": -1,
+          "mask": "chrono-assembler/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "freeze-frame-0",
+          "reducedMotionFrame": 0
+        },
+        {
+          "kind": "liquid",
+          "frames": [
+            "chrono-assembler/motion-1-00.png",
+            "chrono-assembler/motion-1-01.png",
+            "chrono-assembler/motion-1-02.png",
+            "chrono-assembler/motion-1-03.png",
+            "chrono-assembler/motion-1-04.png",
+            "chrono-assembler/motion-1-05.png",
+            "chrono-assembler/motion-1-06.png",
+            "chrono-assembler/motion-1-07.png"
+          ],
+          "emissionFrames": [
+            "chrono-assembler/emission-1-00.png",
+            "chrono-assembler/emission-1-01.png",
+            "chrono-assembler/emission-1-02.png",
+            "chrono-assembler/emission-1-03.png",
+            "chrono-assembler/emission-1-04.png",
+            "chrono-assembler/emission-1-05.png",
+            "chrono-assembler/emission-1-06.png",
+            "chrono-assembler/emission-1-07.png"
+          ],
+          "frameCount": 8,
+          "cyclesPerSimulationSecond": 0.3,
+          "pivot": [
+            50,
+            50
+          ],
+          "direction": 1,
+          "mask": "chrono-assembler/motion-1-mask.png",
+          "clock": "machine",
+          "idle": "hidden",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "chrono-assembler/foreground.png",
+      "lights": "chrono-assembler/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {},
+      "progress": {
+        "frames": "shared/progress-96",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "smoke",
+          "anchor": [
+            10,
+            83
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        }
+      },
+      "base": "chrono-assembler/base.png"
+    },
+    "Quantum Collider": {
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "orbit",
+          "frames": [
+            "quantum-collider/motion-0-00.png",
+            "quantum-collider/motion-0-01.png",
+            "quantum-collider/motion-0-02.png",
+            "quantum-collider/motion-0-03.png",
+            "quantum-collider/motion-0-04.png",
+            "quantum-collider/motion-0-05.png",
+            "quantum-collider/motion-0-06.png",
+            "quantum-collider/motion-0-07.png",
+            "quantum-collider/motion-0-08.png",
+            "quantum-collider/motion-0-09.png",
+            "quantum-collider/motion-0-10.png",
+            "quantum-collider/motion-0-11.png",
+            "quantum-collider/motion-0-12.png",
+            "quantum-collider/motion-0-13.png",
+            "quantum-collider/motion-0-14.png",
+            "quantum-collider/motion-0-15.png"
+          ],
+          "emissionFrames": [
+            "quantum-collider/emission-0-00.png",
+            "quantum-collider/emission-0-01.png",
+            "quantum-collider/emission-0-02.png",
+            "quantum-collider/emission-0-03.png",
+            "quantum-collider/emission-0-04.png",
+            "quantum-collider/emission-0-05.png",
+            "quantum-collider/emission-0-06.png",
+            "quantum-collider/emission-0-07.png",
+            "quantum-collider/emission-0-08.png",
+            "quantum-collider/emission-0-09.png",
+            "quantum-collider/emission-0-10.png",
+            "quantum-collider/emission-0-11.png",
+            "quantum-collider/emission-0-12.png",
+            "quantum-collider/emission-0-13.png",
+            "quantum-collider/emission-0-14.png",
+            "quantum-collider/emission-0-15.png"
+          ],
+          "frameCount": 16,
+          "cyclesPerSimulationSecond": 0.9,
+          "pivot": [
+            48,
+            51
+          ],
+          "direction": 1,
+          "mask": "quantum-collider/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "hidden",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "quantum-collider/foreground.png",
+      "lights": "quantum-collider/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {},
+      "progress": {
+        "frames": "shared/progress-96",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "smoke",
+          "anchor": [
+            10,
+            83
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        }
+      },
+      "base": "quantum-collider/base.png"
+    },
+    "Hyper-Lathe": {
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "spindle",
+          "frames": [
+            "hyper-lathe/motion-0-00.png",
+            "hyper-lathe/motion-0-01.png",
+            "hyper-lathe/motion-0-02.png",
+            "hyper-lathe/motion-0-03.png",
+            "hyper-lathe/motion-0-04.png",
+            "hyper-lathe/motion-0-05.png",
+            "hyper-lathe/motion-0-06.png",
+            "hyper-lathe/motion-0-07.png"
+          ],
+          "emissionFrames": [],
+          "frameCount": 8,
+          "cyclesPerSimulationSecond": 0.7,
+          "pivot": [
+            47,
+            51
+          ],
+          "direction": 1,
+          "mask": "hyper-lathe/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "freeze-frame-0",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "hyper-lathe/foreground.png",
+      "lights": "hyper-lathe/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {},
+      "progress": {
+        "frames": "shared/progress-96",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "smoke",
+          "anchor": [
+            10,
+            83
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        }
+      },
+      "base": "hyper-lathe/base.png"
+    },
+    "Tesseract Loom": {
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "energy",
+          "frames": [
+            "tesseract-loom/motion-0-00.png",
+            "tesseract-loom/motion-0-01.png",
+            "tesseract-loom/motion-0-02.png",
+            "tesseract-loom/motion-0-03.png",
+            "tesseract-loom/motion-0-04.png",
+            "tesseract-loom/motion-0-05.png",
+            "tesseract-loom/motion-0-06.png",
+            "tesseract-loom/motion-0-07.png"
+          ],
+          "emissionFrames": [
+            "tesseract-loom/emission-0-00.png",
+            "tesseract-loom/emission-0-01.png",
+            "tesseract-loom/emission-0-02.png",
+            "tesseract-loom/emission-0-03.png",
+            "tesseract-loom/emission-0-04.png",
+            "tesseract-loom/emission-0-05.png",
+            "tesseract-loom/emission-0-06.png",
+            "tesseract-loom/emission-0-07.png"
+          ],
+          "frameCount": 8,
+          "cyclesPerSimulationSecond": 0.18,
+          "pivot": [
+            48,
+            51
+          ],
+          "direction": 1,
+          "mask": "tesseract-loom/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "hidden",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "tesseract-loom/foreground.png",
+      "lights": "tesseract-loom/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {},
+      "progress": {
+        "frames": "shared/progress-96",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "smoke",
+          "anchor": [
+            10,
+            83
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        }
+      },
+      "base": "tesseract-loom/base.png"
+    },
+    "Beacon Gantry": {
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "energy",
+          "frames": [
+            "beacon-gantry/motion-0-00.png",
+            "beacon-gantry/motion-0-01.png",
+            "beacon-gantry/motion-0-02.png",
+            "beacon-gantry/motion-0-03.png",
+            "beacon-gantry/motion-0-04.png",
+            "beacon-gantry/motion-0-05.png",
+            "beacon-gantry/motion-0-06.png",
+            "beacon-gantry/motion-0-07.png"
+          ],
+          "emissionFrames": [
+            "beacon-gantry/emission-0-00.png",
+            "beacon-gantry/emission-0-01.png",
+            "beacon-gantry/emission-0-02.png",
+            "beacon-gantry/emission-0-03.png",
+            "beacon-gantry/emission-0-04.png",
+            "beacon-gantry/emission-0-05.png",
+            "beacon-gantry/emission-0-06.png",
+            "beacon-gantry/emission-0-07.png"
+          ],
+          "frameCount": 8,
+          "cyclesPerSimulationSecond": 0.22,
+          "pivot": [
+            48,
+            44
+          ],
+          "direction": 1,
+          "mask": "beacon-gantry/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "hidden",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "beacon-gantry/foreground.png",
+      "lights": "beacon-gantry/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {},
+      "progress": {
+        "frames": "shared/progress-96",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "smoke",
+          "anchor": [
+            10,
+            83
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        }
+      },
+      "base": "beacon-gantry/base.png"
+    },
+    "Planetary Cannon": {
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "energy",
+          "frames": [
+            "planetary-cannon/motion-0-00.png",
+            "planetary-cannon/motion-0-01.png",
+            "planetary-cannon/motion-0-02.png",
+            "planetary-cannon/motion-0-03.png",
+            "planetary-cannon/motion-0-04.png",
+            "planetary-cannon/motion-0-05.png",
+            "planetary-cannon/motion-0-06.png",
+            "planetary-cannon/motion-0-07.png"
+          ],
+          "emissionFrames": [
+            "planetary-cannon/emission-0-00.png",
+            "planetary-cannon/emission-0-01.png",
+            "planetary-cannon/emission-0-02.png",
+            "planetary-cannon/emission-0-03.png",
+            "planetary-cannon/emission-0-04.png",
+            "planetary-cannon/emission-0-05.png",
+            "planetary-cannon/emission-0-06.png",
+            "planetary-cannon/emission-0-07.png"
+          ],
+          "frameCount": 8,
+          "cyclesPerSimulationSecond": 0.45,
+          "pivot": [
+            48,
+            60
+          ],
+          "direction": 1,
+          "mask": "planetary-cannon/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "hidden",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "planetary-cannon/foreground.png",
+      "lights": "planetary-cannon/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {},
+      "progress": {
+        "frames": "shared/progress-96",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "smoke",
+          "anchor": [
+            10,
+            83
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        }
+      },
+      "base": "planetary-cannon/base.png"
+    },
+    "Ark Shipyard": {
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "status",
+          "frames": [
+            "ark-shipyard/motion-0-00.png",
+            "ark-shipyard/motion-0-01.png",
+            "ark-shipyard/motion-0-02.png",
+            "ark-shipyard/motion-0-03.png",
+            "ark-shipyard/motion-0-04.png",
+            "ark-shipyard/motion-0-05.png",
+            "ark-shipyard/motion-0-06.png",
+            "ark-shipyard/motion-0-07.png"
+          ],
+          "emissionFrames": [
+            "ark-shipyard/emission-0-00.png",
+            "ark-shipyard/emission-0-01.png",
+            "ark-shipyard/emission-0-02.png",
+            "ark-shipyard/emission-0-03.png",
+            "ark-shipyard/emission-0-04.png",
+            "ark-shipyard/emission-0-05.png",
+            "ark-shipyard/emission-0-06.png",
+            "ark-shipyard/emission-0-07.png"
+          ],
+          "frameCount": 8,
+          "cyclesPerSimulationSecond": 0.3,
+          "pivot": [
+            48,
+            47
+          ],
+          "direction": 1,
+          "mask": "ark-shipyard/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "hidden",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "ark-shipyard/foreground.png",
+      "lights": "ark-shipyard/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {},
+      "progress": {
+        "frames": "shared/progress-96",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "smoke",
+          "anchor": [
+            10,
+            83
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        }
+      },
+      "base": "ark-shipyard/base.png"
+    },
+    "Antimatter Trap": {
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "orbit",
+          "frames": [
+            "antimatter-trap/motion-0-00.png",
+            "antimatter-trap/motion-0-01.png",
+            "antimatter-trap/motion-0-02.png",
+            "antimatter-trap/motion-0-03.png",
+            "antimatter-trap/motion-0-04.png",
+            "antimatter-trap/motion-0-05.png",
+            "antimatter-trap/motion-0-06.png",
+            "antimatter-trap/motion-0-07.png",
+            "antimatter-trap/motion-0-08.png",
+            "antimatter-trap/motion-0-09.png",
+            "antimatter-trap/motion-0-10.png",
+            "antimatter-trap/motion-0-11.png",
+            "antimatter-trap/motion-0-12.png",
+            "antimatter-trap/motion-0-13.png",
+            "antimatter-trap/motion-0-14.png",
+            "antimatter-trap/motion-0-15.png"
+          ],
+          "emissionFrames": [
+            "antimatter-trap/emission-0-00.png",
+            "antimatter-trap/emission-0-01.png",
+            "antimatter-trap/emission-0-02.png",
+            "antimatter-trap/emission-0-03.png",
+            "antimatter-trap/emission-0-04.png",
+            "antimatter-trap/emission-0-05.png",
+            "antimatter-trap/emission-0-06.png",
+            "antimatter-trap/emission-0-07.png",
+            "antimatter-trap/emission-0-08.png",
+            "antimatter-trap/emission-0-09.png",
+            "antimatter-trap/emission-0-10.png",
+            "antimatter-trap/emission-0-11.png",
+            "antimatter-trap/emission-0-12.png",
+            "antimatter-trap/emission-0-13.png",
+            "antimatter-trap/emission-0-14.png",
+            "antimatter-trap/emission-0-15.png"
+          ],
+          "frameCount": 16,
+          "cyclesPerSimulationSecond": 0.3,
+          "pivot": [
+            48,
+            51
+          ],
+          "direction": 1,
+          "mask": "antimatter-trap/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "hidden",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "antimatter-trap/foreground.png",
+      "lights": "antimatter-trap/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {},
+      "progress": {
+        "frames": "shared/progress-96",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "smoke",
+          "anchor": [
+            10,
+            83
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        }
+      },
+      "base": "antimatter-trap/base.png"
+    },
+    "Worldforge": {
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "disc",
+          "frames": [
+            "worldforge/motion-0-00.png",
+            "worldforge/motion-0-01.png",
+            "worldforge/motion-0-02.png",
+            "worldforge/motion-0-03.png",
+            "worldforge/motion-0-04.png",
+            "worldforge/motion-0-05.png",
+            "worldforge/motion-0-06.png",
+            "worldforge/motion-0-07.png",
+            "worldforge/motion-0-08.png",
+            "worldforge/motion-0-09.png",
+            "worldforge/motion-0-10.png",
+            "worldforge/motion-0-11.png",
+            "worldforge/motion-0-12.png",
+            "worldforge/motion-0-13.png",
+            "worldforge/motion-0-14.png",
+            "worldforge/motion-0-15.png"
+          ],
+          "emissionFrames": [],
+          "frameCount": 16,
+          "cyclesPerSimulationSecond": 0.2,
+          "pivot": [
+            48,
+            51
+          ],
+          "direction": 1,
+          "mask": "worldforge/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "freeze-frame-0",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "worldforge/foreground.png",
+      "lights": "worldforge/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {},
+      "progress": {
+        "frames": "shared/progress-96",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "smoke",
+          "anchor": [
+            10,
+            83
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        }
+      },
+      "base": "worldforge/base.png"
+    },
+    "Scrap Recycler": {
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "roller",
+          "frames": [
+            "scrap-recycler/motion-0-00.png",
+            "scrap-recycler/motion-0-01.png",
+            "scrap-recycler/motion-0-02.png",
+            "scrap-recycler/motion-0-03.png",
+            "scrap-recycler/motion-0-04.png",
+            "scrap-recycler/motion-0-05.png",
+            "scrap-recycler/motion-0-06.png",
+            "scrap-recycler/motion-0-07.png"
+          ],
+          "emissionFrames": [],
+          "frameCount": 8,
+          "cyclesPerSimulationSecond": 0.45,
+          "pivot": [
+            16,
+            17
+          ],
+          "direction": 1,
+          "mask": "scrap-recycler/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "freeze-frame-0",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "scrap-recycler/foreground.png",
+      "lights": "scrap-recycler/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {},
+      "progress": {
+        "frames": "shared/progress-32",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "sparks",
+          "anchor": [
+            10,
+            19
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        },
+        "exhaust": {
+          "effect": "sparks",
+          "anchor": [
+            24,
+            7
+          ],
+          "trigger": "working simulation time",
+          "intervalSeconds": 1.2
+        }
+      },
+      "base": "scrap-recycler/base.png"
+    },
+    "Slag Vent": {
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "heat",
+          "frames": [
+            "slag-vent/motion-0-00.png",
+            "slag-vent/motion-0-01.png",
+            "slag-vent/motion-0-02.png",
+            "slag-vent/motion-0-03.png",
+            "slag-vent/motion-0-04.png",
+            "slag-vent/motion-0-05.png",
+            "slag-vent/motion-0-06.png",
+            "slag-vent/motion-0-07.png"
+          ],
+          "emissionFrames": [
+            "slag-vent/emission-0-00.png",
+            "slag-vent/emission-0-01.png",
+            "slag-vent/emission-0-02.png",
+            "slag-vent/emission-0-03.png",
+            "slag-vent/emission-0-04.png",
+            "slag-vent/emission-0-05.png",
+            "slag-vent/emission-0-06.png",
+            "slag-vent/emission-0-07.png"
+          ],
+          "frameCount": 8,
+          "cyclesPerSimulationSecond": 0.3,
+          "pivot": [
+            13,
+            17
+          ],
+          "direction": 1,
+          "mask": "slag-vent/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "hidden",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "slag-vent/foreground.png",
+      "lights": "slag-vent/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {},
+      "progress": {
+        "frames": "shared/progress-32",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "smoke",
+          "anchor": [
+            10,
+            19
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        },
+        "exhaust": {
+          "effect": "smoke",
+          "anchor": [
+            24,
+            7
+          ],
+          "trigger": "working simulation time",
+          "intervalSeconds": 1.2
+        }
+      },
+      "base": "slag-vent/base.png"
+    },
+    "Biomass Burner": {
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "fire",
+          "frames": [
+            "biomass-burner/motion-0-00.png",
+            "biomass-burner/motion-0-01.png",
+            "biomass-burner/motion-0-02.png",
+            "biomass-burner/motion-0-03.png",
+            "biomass-burner/motion-0-04.png",
+            "biomass-burner/motion-0-05.png",
+            "biomass-burner/motion-0-06.png",
+            "biomass-burner/motion-0-07.png"
+          ],
+          "emissionFrames": [
+            "biomass-burner/emission-0-00.png",
+            "biomass-burner/emission-0-01.png",
+            "biomass-burner/emission-0-02.png",
+            "biomass-burner/emission-0-03.png",
+            "biomass-burner/emission-0-04.png",
+            "biomass-burner/emission-0-05.png",
+            "biomass-burner/emission-0-06.png",
+            "biomass-burner/emission-0-07.png"
+          ],
+          "frameCount": 8,
+          "cyclesPerSimulationSecond": 1,
+          "pivot": [
+            27,
+            34
+          ],
+          "direction": 1,
+          "mask": "biomass-burner/motion-0-mask.png",
+          "clock": "generator",
+          "idle": "hidden",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "biomass-burner/foreground.png",
+      "lights": "biomass-burner/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {},
+      "progress": {
+        "frames": "shared/progress-64",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "smoke",
+          "anchor": [
+            10,
+            51
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        },
+        "exhaust": {
+          "effect": "smoke",
+          "anchor": [
+            49,
+            14
+          ],
+          "trigger": "working simulation time",
+          "intervalSeconds": 1.2
+        }
+      },
+      "base": "biomass-burner/base.png"
+    },
+    "Combustion Turbine": {
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "rotor",
+          "frames": [
+            "combustion-turbine/motion-0-00.png",
+            "combustion-turbine/motion-0-01.png",
+            "combustion-turbine/motion-0-02.png",
+            "combustion-turbine/motion-0-03.png",
+            "combustion-turbine/motion-0-04.png",
+            "combustion-turbine/motion-0-05.png",
+            "combustion-turbine/motion-0-06.png",
+            "combustion-turbine/motion-0-07.png",
+            "combustion-turbine/motion-0-08.png",
+            "combustion-turbine/motion-0-09.png",
+            "combustion-turbine/motion-0-10.png",
+            "combustion-turbine/motion-0-11.png",
+            "combustion-turbine/motion-0-12.png",
+            "combustion-turbine/motion-0-13.png",
+            "combustion-turbine/motion-0-14.png",
+            "combustion-turbine/motion-0-15.png"
+          ],
+          "emissionFrames": [],
+          "frameCount": 16,
+          "cyclesPerSimulationSecond": 1.6,
+          "pivot": [
+            28,
+            33
+          ],
+          "direction": 1,
+          "mask": "combustion-turbine/motion-0-mask.png",
+          "clock": "generator",
+          "idle": "freeze-frame-0",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "combustion-turbine/foreground.png",
+      "lights": "combustion-turbine/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {},
+      "progress": {
+        "frames": "shared/progress-64",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "smoke",
+          "anchor": [
+            10,
+            51
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        },
+        "exhaust": {
+          "effect": "smoke",
+          "anchor": [
+            49,
+            14
+          ],
+          "trigger": "working simulation time",
+          "intervalSeconds": 1.2
+        }
+      },
+      "base": "combustion-turbine/base.png"
+    },
+    "Aether Reactor": {
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "orbit",
+          "frames": [
+            "aether-reactor/motion-0-00.png",
+            "aether-reactor/motion-0-01.png",
+            "aether-reactor/motion-0-02.png",
+            "aether-reactor/motion-0-03.png",
+            "aether-reactor/motion-0-04.png",
+            "aether-reactor/motion-0-05.png",
+            "aether-reactor/motion-0-06.png",
+            "aether-reactor/motion-0-07.png",
+            "aether-reactor/motion-0-08.png",
+            "aether-reactor/motion-0-09.png",
+            "aether-reactor/motion-0-10.png",
+            "aether-reactor/motion-0-11.png",
+            "aether-reactor/motion-0-12.png",
+            "aether-reactor/motion-0-13.png",
+            "aether-reactor/motion-0-14.png",
+            "aether-reactor/motion-0-15.png"
+          ],
+          "emissionFrames": [
+            "aether-reactor/emission-0-00.png",
+            "aether-reactor/emission-0-01.png",
+            "aether-reactor/emission-0-02.png",
+            "aether-reactor/emission-0-03.png",
+            "aether-reactor/emission-0-04.png",
+            "aether-reactor/emission-0-05.png",
+            "aether-reactor/emission-0-06.png",
+            "aether-reactor/emission-0-07.png",
+            "aether-reactor/emission-0-08.png",
+            "aether-reactor/emission-0-09.png",
+            "aether-reactor/emission-0-10.png",
+            "aether-reactor/emission-0-11.png",
+            "aether-reactor/emission-0-12.png",
+            "aether-reactor/emission-0-13.png",
+            "aether-reactor/emission-0-14.png",
+            "aether-reactor/emission-0-15.png"
+          ],
+          "frameCount": 16,
+          "cyclesPerSimulationSecond": 0.45,
+          "pivot": [
+            31,
+            35
+          ],
+          "direction": 1,
+          "mask": "aether-reactor/motion-0-mask.png",
+          "clock": "generator",
+          "idle": "hidden",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "aether-reactor/foreground.png",
+      "lights": "aether-reactor/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {},
+      "progress": {
+        "frames": "shared/progress-64",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "smoke",
+          "anchor": [
+            10,
+            51
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        }
+      },
+      "base": "aether-reactor/base.png"
+    },
+    "Plasma Chamber": {
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "energy",
+          "frames": [
+            "plasma-chamber/motion-0-00.png",
+            "plasma-chamber/motion-0-01.png",
+            "plasma-chamber/motion-0-02.png",
+            "plasma-chamber/motion-0-03.png",
+            "plasma-chamber/motion-0-04.png",
+            "plasma-chamber/motion-0-05.png",
+            "plasma-chamber/motion-0-06.png",
+            "plasma-chamber/motion-0-07.png"
+          ],
+          "emissionFrames": [
+            "plasma-chamber/emission-0-00.png",
+            "plasma-chamber/emission-0-01.png",
+            "plasma-chamber/emission-0-02.png",
+            "plasma-chamber/emission-0-03.png",
+            "plasma-chamber/emission-0-04.png",
+            "plasma-chamber/emission-0-05.png",
+            "plasma-chamber/emission-0-06.png",
+            "plasma-chamber/emission-0-07.png"
+          ],
+          "frameCount": 8,
+          "cyclesPerSimulationSecond": 0.5,
+          "pivot": [
+            31,
+            35
+          ],
+          "direction": 1,
+          "mask": "plasma-chamber/motion-0-mask.png",
+          "clock": "generator",
+          "idle": "hidden",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "plasma-chamber/foreground.png",
+      "lights": "plasma-chamber/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {},
+      "progress": {
+        "frames": "shared/progress-64",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "smoke",
+          "anchor": [
+            10,
+            51
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        }
+      },
+      "base": "plasma-chamber/base.png"
+    },
+    "Colony Pod": {
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "motion": [
+        {
+          "kind": "heat",
+          "frames": [
+            "colony-pod/motion-0-00.png",
+            "colony-pod/motion-0-01.png",
+            "colony-pod/motion-0-02.png",
+            "colony-pod/motion-0-03.png",
+            "colony-pod/motion-0-04.png",
+            "colony-pod/motion-0-05.png",
+            "colony-pod/motion-0-06.png",
+            "colony-pod/motion-0-07.png"
+          ],
+          "emissionFrames": [
+            "colony-pod/emission-0-00.png",
+            "colony-pod/emission-0-01.png",
+            "colony-pod/emission-0-02.png",
+            "colony-pod/emission-0-03.png",
+            "colony-pod/emission-0-04.png",
+            "colony-pod/emission-0-05.png",
+            "colony-pod/emission-0-06.png",
+            "colony-pod/emission-0-07.png"
+          ],
+          "frameCount": 8,
+          "cyclesPerSimulationSecond": 0.3,
+          "pivot": [
+            49,
+            67
+          ],
+          "direction": 1,
+          "mask": "colony-pod/motion-0-mask.png",
+          "clock": "machine",
+          "idle": "hidden",
+          "reducedMotionFrame": 0
+        }
+      ],
+      "foreground": "colony-pod/foreground.png",
+      "lights": "colony-pod/lights.png",
+      "lightPolicy": {
+        "working": 1,
+        "idle": 0.25,
+        "blocked": 0,
+        "drawAfterNightDim": true
+      },
+      "variants": {},
+      "progress": {
+        "frames": "shared/progress-96",
+        "steps": 32,
+        "clock": "progress"
+      },
+      "particles": {
+        "done": {
+          "effect": "sparks",
+          "anchor": [
+            10,
+            83
+          ],
+          "trigger": "existing done event",
+          "count": 3
+        },
+        "exhaust": {
+          "effect": "sparks",
+          "anchor": [
+            73,
+            21
+          ],
+          "trigger": "working simulation time",
+          "intervalSeconds": 1.2
+        }
+      },
+      "base": "colony-pod/base.png"
+    },
+    "Splitter": {
+      "size": [
+        16,
+        16
+      ],
+      "rotations": [
+        "../logistics/buildings/splitter-r0.png",
+        "../logistics/buildings/splitter-r1.png",
+        "../logistics/buildings/splitter-r2.png",
+        "../logistics/buildings/splitter-r3.png"
+      ],
+      "base": "../logistics/buildings/splitter-r0.png",
+      "menu": "../logistics/buildings/splitter-r0.png",
+      "map": null,
+      "motion": [],
+      "foreground": null,
+      "lights": null,
+      "animation": "existing delivery/status event only; no invented moving mechanism",
+      "progress": null
+    },
+    "Converger": {
+      "size": [
+        16,
+        16
+      ],
+      "rotations": [
+        "../logistics/buildings/converger-r0.png",
+        "../logistics/buildings/converger-r1.png",
+        "../logistics/buildings/converger-r2.png",
+        "../logistics/buildings/converger-r3.png"
+      ],
+      "base": "../logistics/buildings/converger-r0.png",
+      "menu": "../logistics/buildings/converger-r0.png",
+      "map": null,
+      "motion": [],
+      "foreground": null,
+      "lights": null,
+      "animation": "existing delivery/status event only; no invented moving mechanism",
+      "progress": null
+    },
+    "Terminal": {
+      "size": [
+        64,
+        64
+      ],
+      "rotations": [
+        "../logistics/buildings/terminal-r0.png",
+        "../logistics/buildings/terminal-r1.png",
+        "../logistics/buildings/terminal-r2.png",
+        "../logistics/buildings/terminal-r3.png"
+      ],
+      "base": "../logistics/buildings/terminal-r0.png",
+      "menu": "../logistics/buildings/terminal-r0.png",
+      "map": null,
+      "motion": [],
+      "foreground": null,
+      "lights": null,
+      "animation": "existing delivery/status event only; no invented moving mechanism",
+      "progress": null
+    },
+    "Depot": {
+      "size": [
+        64,
+        64
+      ],
+      "rotations": [
+        "../logistics/buildings/depot-r0.png",
+        "../logistics/buildings/depot-r1.png",
+        "../logistics/buildings/depot-r2.png",
+        "../logistics/buildings/depot-r3.png"
+      ],
+      "base": "../logistics/buildings/depot-r0.png",
+      "menu": "../logistics/buildings/depot-r0.png",
+      "map": null,
+      "motion": [],
+      "foreground": null,
+      "lights": null,
+      "animation": "existing delivery/status event only; no invented moving mechanism",
+      "progress": null
+    },
+    "Crossover": {
+      "size": [
+        32,
+        32
+      ],
+      "rotations": [],
+      "base": null,
+      "menu": "../logistics/buildings/crossover-menu.png",
+      "map": "Layer a straight under-belt and its cargo, a bridge deck and tread, then over-belt cargo. Do not use this menu icon as a map tile.",
+      "motion": [],
+      "foreground": null,
+      "lights": null,
+      "animation": "existing delivery/status event only; no invented moving mechanism",
+      "progress": null
+    }
+  },
+  "shared": {
+    "progress-32": {
+      "size": [
+        32,
+        32
+      ],
+      "frames": [
+        "shared/progress-32/00.png",
+        "shared/progress-32/01.png",
+        "shared/progress-32/02.png",
+        "shared/progress-32/03.png",
+        "shared/progress-32/04.png",
+        "shared/progress-32/05.png",
+        "shared/progress-32/06.png",
+        "shared/progress-32/07.png",
+        "shared/progress-32/08.png",
+        "shared/progress-32/09.png",
+        "shared/progress-32/10.png",
+        "shared/progress-32/11.png",
+        "shared/progress-32/12.png",
+        "shared/progress-32/13.png",
+        "shared/progress-32/14.png",
+        "shared/progress-32/15.png",
+        "shared/progress-32/16.png",
+        "shared/progress-32/17.png",
+        "shared/progress-32/18.png",
+        "shared/progress-32/19.png",
+        "shared/progress-32/20.png",
+        "shared/progress-32/21.png",
+        "shared/progress-32/22.png",
+        "shared/progress-32/23.png",
+        "shared/progress-32/24.png",
+        "shared/progress-32/25.png",
+        "shared/progress-32/26.png",
+        "shared/progress-32/27.png",
+        "shared/progress-32/28.png",
+        "shared/progress-32/29.png",
+        "shared/progress-32/30.png",
+        "shared/progress-32/31.png",
+        "shared/progress-32/32.png"
+      ],
+      "select": "round(clamp(recipeProgress, 0, 1) * 32)"
+    },
+    "progress-64": {
+      "size": [
+        64,
+        64
+      ],
+      "frames": [
+        "shared/progress-64/00.png",
+        "shared/progress-64/01.png",
+        "shared/progress-64/02.png",
+        "shared/progress-64/03.png",
+        "shared/progress-64/04.png",
+        "shared/progress-64/05.png",
+        "shared/progress-64/06.png",
+        "shared/progress-64/07.png",
+        "shared/progress-64/08.png",
+        "shared/progress-64/09.png",
+        "shared/progress-64/10.png",
+        "shared/progress-64/11.png",
+        "shared/progress-64/12.png",
+        "shared/progress-64/13.png",
+        "shared/progress-64/14.png",
+        "shared/progress-64/15.png",
+        "shared/progress-64/16.png",
+        "shared/progress-64/17.png",
+        "shared/progress-64/18.png",
+        "shared/progress-64/19.png",
+        "shared/progress-64/20.png",
+        "shared/progress-64/21.png",
+        "shared/progress-64/22.png",
+        "shared/progress-64/23.png",
+        "shared/progress-64/24.png",
+        "shared/progress-64/25.png",
+        "shared/progress-64/26.png",
+        "shared/progress-64/27.png",
+        "shared/progress-64/28.png",
+        "shared/progress-64/29.png",
+        "shared/progress-64/30.png",
+        "shared/progress-64/31.png",
+        "shared/progress-64/32.png"
+      ],
+      "select": "round(clamp(recipeProgress, 0, 1) * 32)"
+    },
+    "progress-96": {
+      "size": [
+        96,
+        96
+      ],
+      "frames": [
+        "shared/progress-96/00.png",
+        "shared/progress-96/01.png",
+        "shared/progress-96/02.png",
+        "shared/progress-96/03.png",
+        "shared/progress-96/04.png",
+        "shared/progress-96/05.png",
+        "shared/progress-96/06.png",
+        "shared/progress-96/07.png",
+        "shared/progress-96/08.png",
+        "shared/progress-96/09.png",
+        "shared/progress-96/10.png",
+        "shared/progress-96/11.png",
+        "shared/progress-96/12.png",
+        "shared/progress-96/13.png",
+        "shared/progress-96/14.png",
+        "shared/progress-96/15.png",
+        "shared/progress-96/16.png",
+        "shared/progress-96/17.png",
+        "shared/progress-96/18.png",
+        "shared/progress-96/19.png",
+        "shared/progress-96/20.png",
+        "shared/progress-96/21.png",
+        "shared/progress-96/22.png",
+        "shared/progress-96/23.png",
+        "shared/progress-96/24.png",
+        "shared/progress-96/25.png",
+        "shared/progress-96/26.png",
+        "shared/progress-96/27.png",
+        "shared/progress-96/28.png",
+        "shared/progress-96/29.png",
+        "shared/progress-96/30.png",
+        "shared/progress-96/31.png",
+        "shared/progress-96/32.png"
+      ],
+      "select": "round(clamp(recipeProgress, 0, 1) * 32)"
+    },
+    "smoke": {
+      "frames": [
+        "shared/smoke-0.png",
+        "shared/smoke-1.png",
+        "shared/smoke-2.png",
+        "shared/smoke-3.png"
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        16,
+        28
+      ],
+      "durationSeconds": 0.65,
+      "clock": "event",
+      "fade": "existing particle lifetime"
+    },
+    "sparks": {
+      "frames": [
+        "shared/sparks-0.png",
+        "shared/sparks-1.png",
+        "shared/sparks-2.png",
+        "shared/sparks-3.png"
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "durationSeconds": 0.65,
+      "clock": "event",
+      "fade": "existing particle lifetime"
+    }
+  }
+}
